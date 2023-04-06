@@ -3,10 +3,11 @@
 }
 html, body {
     height: 100vh;
-    width: 100vw;
+    /* width: 100vw; */
     padding: 0;
     margin: 0;
     border: none;
+    scroll-behavior: smooth;
 }
 body {
     font-family: 'Poppins', sans-serif;
@@ -19,7 +20,7 @@ body {
 nav {
     position: fixed;
     top: 0;
-    width: 100vw;
+    width: 100%;
     padding: 10px;
     background-color: #1d0450;
     transition: 0.5s;
@@ -31,7 +32,7 @@ nav {
     width: 30px;
     height: 30px;
     float: left;
-    margin: 20px 20px 0px 20px;
+    margin: 20px 10px 10px 20px;
 }
 
 #nav-list {
@@ -44,6 +45,11 @@ nav {
     padding: 0px 10px;
     float: right;
     font-size: 15px;
+}
+
+#nav-list li a {
+    text-decoration: none;
+    color: white;
 }
 
 nav.fade {
@@ -105,10 +111,15 @@ nav.fade {
     gap: 30px;
 }
 
+.card-container a {
+    color: white;
+    text-decoration: none;
+}
+
 .card-kreator {
     background-color: #5500ff;
     min-width: 70vw;
-    height: 50vh;
+    height: 60vh;
     transition: .5s;
     border-bottom: 10px solid rgb(255, 77, 46);
     display: flex;
@@ -137,6 +148,7 @@ nav.fade {
 .card-kreator h5 {
     width: 60%;
     padding: 0;
+    margin: 30px auto;
 }
 
 .card-kreator h1 {
@@ -150,8 +162,19 @@ nav.fade {
     background-color: rgb(255, 77, 46);
     color: white;
     font-family: 'Poppins', sans-serif;
+    transition: 0.3s;
 }
 
+.card-kreator button:hover {
+    transform: scale(1.1);
+    background-color: rgb(255, 96, 68);
+    box-shadow: 5px 5px 10px #00000050;
+}
+
+.card-kreator button a {
+    text-decoration: none;
+    color: white;
+}
 
 /* ======================== Konten Kami ============================== */
 
@@ -212,6 +235,7 @@ nav.fade {
     background-color: rgb(255, 77, 46);
     color: white;
     font-family: 'Poppins', sans-serif;
+    transition: 0.3s;
 }
 
 .lihat {
@@ -225,19 +249,30 @@ nav.fade {
     font-size: 0.8rem;
 }
 
+.konten-box button:hover {
+    transform: scale(1.1);
+    background-color: rgb(255, 96, 68);
+    box-shadow: 5px 5px 10px #00000050;
+}
+
+.konten-box button a {
+    text-decoration: none;
+    color: white;
+}
+
 
 
 /* Web Desktop */
 
 @media (min-width: 900px) {
     body div, nav {
-        padding: 0 20vw;
+        padding: 0 15vw;
     }
 
     .brand {
         width: 50px;
         height: 50px;
-        margin: 20px 20px 0px 30px;
+        margin: 20px 10px 10px 30px;
     }
 
     #nav-list li {
@@ -256,16 +291,16 @@ nav.fade {
     }
 
     .card-kreator {
-        min-width: 500px;
-        height: 700px;
+        min-width: 200px;
+        height: 600px;
         overflow: hidden;
         padding: 20px;
         z-index: 2;
     }
 
     .card-kreator img {
-        width: 400px;
-        height: 400px;
+        width: 300px;
+        height: 300px;
         border-radius: 700px;
         border: 5px solid #5500ff;
     }
