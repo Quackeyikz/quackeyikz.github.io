@@ -1,7 +1,7 @@
 .nav-container {
     padding: 5px 0px;
     background-color: white;
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
 }
 
 .navbar-brand img {
@@ -9,6 +9,11 @@
     min-height: 30px;
     max-width: 160px;
     max-height: 35px;
+}
+
+.nav.scrolled {
+    padding-top: 10px;
+    box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.1);
 }
 
 .landing-container {
@@ -252,6 +257,11 @@
 }
 
 @media (min-width: 768px) {
+    .nav-container {
+        padding-top: 30px;
+        transition: 0.3s;
+    }
+
     .landing img {
         width: 470px;
         height: 470px;
@@ -260,6 +270,11 @@
     .landing2-img {
         width: 500px !important;
         height: 400px !important;
+    }
+
+    .navbar-nav li {
+        padding: 0px 10px;
+        font-weight: 500;
     }
 }
 

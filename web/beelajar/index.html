@@ -17,9 +17,19 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+
+    <!-- Navbar Changer -->
+    <script>
+      $(function () {
+        $(document).scroll(function () {
+          var $nav = $(".nav");
+          $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+        });
+      });
+    </script>
 </head>
 <body>
-    <div class="container-fluid fixed-top nav-container">
+    <div class="nav container-fluid fixed-top nav-container">
         <div class="container">
             <nav class="navbar navbar-expand-lg bg-body-tertiary">
                 <div class="container-fluid nav-aranger">
@@ -70,7 +80,7 @@
                         <a class="nav-link" href="#">Kontak</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link btn btn-warning text-white" href="#">Legalisir</a>
+                        <a class="nav-link btn btn-warning text-white rounded-pill pe-4 ps-4" href="#">Legalisir</a>
                       </li>
                     </ul>
                   </div>
