@@ -1,5 +1,14 @@
 :root {
-    --card-shadow :box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);;
+    --card-shadow : 0px 0px 10px rgba(0, 0, 0, 0.1);
+    --color-warning: #ffc107;
+}
+
+.color-warning {
+    color: #ffc107;
+}
+
+.padding-ab {
+    padding: 100px 0px;
 }
 
 * {
@@ -8,8 +17,13 @@
 }
 
 body {
-    background-color: #fbfbfb;
-}    
+    background-color: #fbfbfb !important;
+    overflow-x: hidden;
+}
+
+.mt-10 {
+    margin-top: 10rem;
+}
 
 .raleway {
     font-family: 'Raleway', sans-serif;
@@ -33,7 +47,7 @@ body {
 
 .nav-container {
     padding: 5px 0px;
-    background-color: white;
+    background-color: transparent;
     transition: 0.3s;
 }
 
@@ -47,14 +61,19 @@ body {
 .nav.scrolled {
     padding-top: 10px;
     box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.1);
+    background-color: white;
 }
 
 .navbar-nav li {
     padding: 5px 5px;
 }
 
-.nav-link:hover:not(:last-child) {
+.nav-link:hover {
     color: #ffc107 !important;
+}
+
+.nav-link-no-hover:hover {
+    color: white !important;
 }
 
 .landing-container {
@@ -78,7 +97,7 @@ body {
 
 .landing .landing-link a {
     border-radius: 10px !important;
-    padding: 15px 20px;
+    padding: 15px 15px;
     text-align: center;
     font-size: 0.8rem;
 }
@@ -190,6 +209,86 @@ a span {
     margin: -100px auto auto auto;
 }
 
+/* Infografis */
+.infografis {
+    flex-direction: column;
+    width: 100%;
+}
+
+.infografis-card {
+    background-color: white;
+    box-shadow: var(--card-shadow);
+    border-radius: 10px;
+    width: 100%;
+    padding: 20px;
+    gap: 10px;
+}
+
+.infografis-card div {
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+
+.infografis-card div:last-child {
+    font-size: 1rem;
+}
+
+.infografis-card span:not(:last-child) {
+    font-size: 4rem;
+}
+
+.infografis-angka {
+    line-height: 20px;
+}
+
+#infografis-warning {
+    transition: 0.3s;
+}
+#infografis-warning:first-child {
+    color: #ffc107;
+}
+#infografis-warning:hover {
+    background-color: #ffc107;
+    color: white !important;
+}
+
+#infografis-piala {
+    transition: 0.3s;
+}
+#infografis-piala:first-child {
+    color: rgb(111, 158, 170);
+}
+#infografis-piala:hover {
+    background-color: rgb(111, 158, 170);
+    color: white !important;
+}
+
+#infografis-task {
+    transition: 0.3s;
+}
+#infografis-task:first-child {
+    color: rgb(209, 159, 209);
+}
+#infografis-task:hover {
+    background-color: rgb(209, 159, 209);
+    color: white !important;
+}
+
+#infografis-tentor {
+    transition: 0.3s;
+}
+#infografis-tentor:first-child {
+    color: rgb(224, 162, 86);
+}
+#infografis-tentor:hover {
+    background-color: rgb(224, 162, 86);
+    color: white !important;
+}
+
+.infografis-card:hover div {
+    color: white;
+}
 
 /* Kelebihan */
 .kelebihan-container {
@@ -374,9 +473,209 @@ a span {
     color: lightgray !important;
 }
 
-@media (min-width:992px) {
-    .navbar-nav li a {
-        padding: auto 100px !important;
+/* Testimoni */
+.testimoni {
+    position: relative;
+    width: 300%;
+    margin: 0 auto;
+    overflow-x: hidden;
+}
+
+.testimoni-card {
+    border-radius: 30px;
+    background-color: white;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.05);
+    padding: 30px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.testimoni-profil img {
+    width: 50px;
+    height: 50px;
+}
+
+.testimoni-profil div h6 {
+    line-height: 15px;
+}
+
+.testimoni-profil div span {
+    display: inline-block;
+    font-size: 0.8rem;
+}
+
+/* Mitra */
+.mitra-card {
+    margin-bottom: 50px;
+}
+
+.mitra-icon {
+    min-width: 50px;
+    min-height: 50px;
+    max-width: 100px;
+    max-height: 100px;
+}
+
+/* Karir */
+.karir {
+    flex-direction: column;
+    overflow-x: hidden;
+    text-align: center;
+}
+
+.karir div {
+    width: 100%;
+}
+
+.karir img {
+    width: 100%;
+}
+
+.karir-link {
+    justify-content: center;
+}
+
+.karir-link a {
+    padding: 10px 20px;
+}
+
+/* Kontak */
+.kontak {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.k1 {
+    flex-direction: column;
+    width: 100%;
+}
+
+.k2 {
+    flex-direction: column;
+    width: 100%;
+}
+
+.kontak-card {
+    width: 100%;
+}
+
+.kontak-card span {
+    font-size: 0.9rem;
+}
+
+.kontak-icon {
+    display: block;
+    font-size: 40px !important;
+}
+
+.form-pesan {
+    width: 100%;
+}
+
+.nama-class,.email-class {
+    width: 100%;
+}
+
+.form-pesan input {
+    margin: 10px 0px;
+    padding: 5px;
+    border: 1px solid #aaa;
+}
+.form-pesan textarea {
+    border: 1px solid #aaa;
+    margin: 20px 0px;
+    height: 100px;
+    padding: 5px;
+}
+.form-pesan button {
+    margin: 10px 0px;
+}
+
+.form-pesan button {
+    width: 100% !important;
+    padding: 10px;
+}
+
+/* Footer */
+.footer-container {
+    background-color: #222;
+}
+
+.footer {
+    flex-direction: column;
+}
+
+.footer-main ul {
+    list-style-type: none;
+    color: white;
+}
+
+.footer-main ul li:not(:first-child) {
+    color: #aaa;
+    padding: 5px 0px;
+}
+
+@media screen and (min-width: 768px) {
+    .nav-link {
+        font-size: 0.9rem !important;
+    }
+    
+    .nav-container {
+        padding-top: 30px;
+        transition: 0.3s;
+    }
+
+    .landing img {
+        width: 45%;
+    }
+
+    .landing2-img {
+        width: 500px !important;
+        height: 400px !important;
+    }
+
+    .navbar-nav li {
+        font-weight: 500;
+    }
+
+    .paket {
+        flex-direction: row;
+    }
+
+    .paket-card {
+        width: 25%;
+    }
+
+    .infografis {
+        flex-direction: row;
+    }
+
+    .karir div {
+        width: 45%;
+    }
+    
+    .karir img {
+        width: 45%;
+    }
+    
+    .karir {
+        flex-direction: row-reverse;
+        text-align: left;
+    }
+
+    .karir-link {
+        justify-content: start;
+    }
+
+    .footer {
+        flex-direction: row;
+    }
+}
+
+@media screen and (min-width:992px) {
+    .nav-link {
+        font-size: 1rem;
     }
 
     .landing {
@@ -386,8 +685,8 @@ a span {
     }
 
     .landing img {
-        width: 50%;
-        height: 600px;
+        width: 45%;
+        height: 50%;
         margin: auto;
         align-self: center;
         justify-self: center;
@@ -435,11 +734,11 @@ a span {
         justify-content: center;
         align-items: center;
         grid-template-rows: 1fr 1fr;
-        grid-template-columns: 30% 30% 30%;
+        grid-template-columns: 32% 32% 32%;
         grid-template-areas: 
             'card' 'card' 'card'
             'card' 'card' 'card';
-        gap: 35px;
+        gap: 25px;
     }
 
     .layanan-card {
@@ -487,30 +786,36 @@ a span {
     .event-card p {
         font-size: 0.9rem;
     }
-}
 
-@media (min-width: 768px) {
-    .nav-container {
-        padding-top: 30px;
-        transition: 0.3s;
+    .testimoni {
+        width: 100%;
     }
 
-    /* .landing img {
-        width: 470px;
-        height: 470px;
-    } */
-
-    .landing2-img {
-        width: 500px !important;
-        height: 400px !important;
-    }
-
-    .navbar-nav li {
-        padding: 0px 5px;
-        font-weight: 500;
-    }
-
-    .paket {
+    .kontak {
         flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .kontak-child {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .k1 {
+        flex-direction: row;
+    }
+    
+    .k2 {
+        flex-direction: row;
+    }
+
+    .nama-class,.email-class {
+        width: 48%;
+    }
+
+    .email-class {
+        float: right;
     }
 }
