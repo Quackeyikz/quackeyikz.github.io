@@ -256,33 +256,43 @@ a span {
 #infografis-piala {
     transition: 0.3s;
 }
-#infografis-piala:first-child {
+.color-piala {
     color: rgb(111, 158, 170);
 }
 #infografis-piala:hover {
     background-color: rgb(111, 158, 170);
     color: white !important;
 }
+#infografis-piala:hover .color-piala {
+    color: white !important;
+}
 
 #infografis-task {
     transition: 0.3s;
 }
-#infografis-task:first-child {
+.color-task {
     color: rgb(209, 159, 209);
 }
+
 #infografis-task:hover {
     background-color: rgb(209, 159, 209);
+    color: white !important;
+}
+#infografis-task:hover .color-task {
     color: white !important;
 }
 
 #infografis-tentor {
     transition: 0.3s;
 }
-#infografis-tentor:first-child {
+.color-tentor {
     color: rgb(224, 162, 86);
 }
 #infografis-tentor:hover {
-    background-color: rgb(224, 162, 86);
+    background-color: rgb(224, 162, 40);
+    color: white !important;
+}
+#infografis-tentor:hover .color-tentor {
     color: white !important;
 }
 
@@ -476,7 +486,7 @@ a span {
 /* Testimoni */
 .testimoni {
     position: relative;
-    width: 300%;
+    width: 100%;
     margin: 0 auto;
     overflow-x: hidden;
 }
@@ -537,13 +547,14 @@ a span {
 
 .karir-link a {
     padding: 10px 20px;
+    font-size: 0.8rem;
 }
 
 /* Kontak */
 .kontak {
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: start;
 }
 
 .k1 {
@@ -600,20 +611,71 @@ a span {
 /* Footer */
 .footer-container {
     background-color: #222;
+    padding: 50px 0px;
+    font-size: 0.9rem;
 }
 
 .footer {
     flex-direction: column;
 }
 
+.footer-main {
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer-main div {
+    margin: 0px;
+    padding: 0px;
+}
+
 .footer-main ul {
     list-style-type: none;
     color: white;
+    padding: 0;
 }
 
 .footer-main ul li:not(:first-child) {
-    color: #aaa;
     padding: 5px 0px;
+    color: #aaa;
+}
+
+.footer-main ul li:first-child {
+    margin-bottom: 10px;
+}
+
+.footer-main ul li .footer-text-list {
+    color: #aaa;
+}
+
+.footer-main ul li a:hover {
+    color: #ddd;
+}
+
+.footer hr {
+    color: white;
+    width: 80%;
+    margin: auto;
+}
+
+.footer-bottom {
+    flex-direction: column;
+    height: 200px;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1 1 0px;
+    font-size: 0.8rem;
+}
+
+.footer-bottom img {
+    width: 200px;
+}
+
+.sosmed a {
+    padding: 10px 15px;
+    border-radius: 1000px;
+    border: 1px solid #888;
 }
 
 @media screen and (min-width: 768px) {
@@ -647,6 +709,10 @@ a span {
         width: 25%;
     }
 
+    .semua-card {
+        width: 100%;
+    }
+
     .infografis {
         flex-direction: row;
     }
@@ -668,7 +734,26 @@ a span {
         justify-content: start;
     }
 
+
     .footer {
+        flex-direction: row;
+        padding: 100px 0px;
+    }
+
+    .footer-main {
+        flex-direction: row;
+        width: 90%;
+        margin: auto;
+    }
+
+    .footer-container {
+        padding: 50px 0px;
+    }
+
+    .footer-bottom {
+        width: 90%;
+        height: 20px;
+        margin: auto;
         flex-direction: row;
     }
 }
@@ -789,6 +874,10 @@ a span {
 
     .testimoni {
         width: 100%;
+    }
+
+    .karir-link a {
+        font-size: 1rem;
     }
 
     .kontak {

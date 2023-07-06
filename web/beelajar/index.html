@@ -179,21 +179,21 @@
           </div>
         </div>
         <div id="infografis-piala" class="d-flex flex-row justify-content-center align-items-center infografis-card">
-          <span class="material-symbols-rounded">trophy</span>
+          <span class="material-symbols-rounded color-piala">trophy</span>
           <div class="justify-content-center align-items-center margin-auto">
             <span class="raleway-b fs-1 infografis-angka">17927</span><br>
             <span class="raleway-sb">Peserta Olimpiade</span>
           </div>
         </div>
         <div id="infografis-task" class="d-flex flex-row justify-content-center align-items-center infografis-card">
-          <span class="material-symbols-rounded">fact_check</span>
+          <span class="material-symbols-rounded color-task">fact_check</span>
           <div class="justify-content-center align-items-center margin-auto">
             <span class="raleway-b fs-1 infografis-angka">678</span><br>
             <span class="raleway-sb">Penerima Beasiswa</span>
           </div>
         </div>
-        <div id="infografis-warning" class="d-flex flex-row justify-content-center align-items-center infografis-card">
-          <span class="material-symbols-rounded">person_pin</span>
+        <div id="infografis-tentor" class="d-flex flex-row justify-content-center align-items-center infografis-card">
+          <span class="material-symbols-rounded color-tentor">person_pin</span>
           <div class="justify-content-center align-items-center margin-auto">
             <span class="raleway-b fs-1 infografis-angka">162</span><br>
             <span class="raleway-sb">Tentor Terbaik</span>
@@ -227,42 +227,42 @@
             <img src="img/colleagues with gadgets.png" alt="">
             <div>
               <div class="semua-grid">
-                <div class="semua-card d-flex flex-row gap-3 justify-content-center align-items-center">
+                <div class="semua-card d-flex flex-row gap-3 justify-content-start align-items-center">
                   <span class="material-symbols-rounded">supervisor_account</span>
                   <div>
                     <h6 class="raleway-b">Tentor Berkualitas dan Kompeten</h6>
                     <span>Beelajar akan mencarikan tentor terbaik dan berkompeten untuk kamu.</span>
                   </div>
                 </div>
-                <div class="semua-card d-flex flex-row gap-3 justify-content-center align-items-center">
+                <div class="semua-card d-flex flex-row gap-3 justify-content-start align-items-center">
                   <span class="material-symbols-rounded">shield_lock</span>
                   <div>
                     <h6 class="raleway-b">Sistem CBT Berintegrasi</h6>
                     <span>Beelajar memfasilitasi sistem CBT dengan pengawasan ketat dan terintegrasi.</span>
                   </div>
                 </div>
-                <div class="semua-card d-flex flex-row gap-3 justify-content-center align-items-center">
+                <div class="semua-card d-flex flex-row gap-3 justify-content-start align-items-center">
                   <span class="material-symbols-rounded">book</span>
                   <div>
                     <h6 class="raleway-b">Kurikulum Terbaru</h6>
                     <span>Menggunakan kurikulum terbaru dan sesuai standar Nasional maupun Internasional.</span>
                   </div>
                 </div>
-                <div class="semua-card d-flex flex-row gap-3 justify-content-center align-items-center">
+                <div class="semua-card d-flex flex-row gap-3 justify-content-start align-items-center">
                   <span class="material-symbols-rounded">task</span>
                   <div>
                     <h6 class="raleway-b">Berlisensi dan Diakui</h6>
                     <span>Beelajar memberikan e-Sertifikat berlisensi dan qualified untuk kamu.</span>
                   </div>
                 </div>
-                <div class="semua-card d-flex flex-row gap-3 justify-content-center align-items-center">
+                <div class="semua-card d-flex flex-row gap-3 justify-content-start align-items-center">
                   <span class="material-symbols-rounded">workspace_premium</span>
                   <div>
                     <h6 class="raleway-b">Beasiswa Prestasi</h6>
                     <span>Beelajar memberikan Beasiswa hingga jutaan rupiah untuk pengguna yang berprestasi.</span>
                   </div>
                 </div>
-                <div class="semua-card d-flex flex-row gap-3 justify-content-center align-items-center">
+                <div class="semua-card d-flex flex-row gap-3 justify-content-start align-items-center">
                   <span class="material-symbols-rounded">local_fire_department</span>
                   <div>
                     <h6 class="raleway-b">Jaminan Kompetensi Meningkat</h6>
@@ -385,7 +385,7 @@
         <h5 class="text-warning text-center">Testimoni</h5>
         <h1 class="text-center raleway-b">Testimoni Tentang Beelajar!</h1>
         <div class="testimoni-container mt-3">
-          <swiper-container class="mySwiper testimoni" pagination="true" pagination-clickable="true" space-between="30" slides-per-view="3" grab-cursor="true" loop="true" pagination-dynamic-bullets="true">
+          <swiper-container id="testimoni" class="mySwiper testimoni" pagination="true" pagination-clickable="true" space-between="30" slides-per-view="3" grab-cursor="true" loop="true" pagination-dynamic-bullets="true" autoplay-delay="5000" autoplay-disable-on-interaction="false">
             <swiper-slide class="testimoni-card d-flex gap-2 flex-column">
               <div class="d-flex flex-row justify-content-between">
                 <div class="d-flex flex-row">
@@ -516,8 +516,8 @@
       <div class="container text-center">
         <h5 class="text-warning">Mitra & Kerja Sama</h5>
         <h1 class="raleway-b">Mitra & Kerja Sama <span class="text-warning raleway-b">Beelajar!</span></h1>
-        <div class="mt-4">
-          <swiper-container class="mySwiper" pagination="true" pagination-clickable="true" space-between="30" slides-per-view="5" grab-cursor="true" loop="true" pagination-dynamic-bullets="true">
+        <div class="mt-5">
+          <swiper-container id="mitraswiper" class="mitraSwiper mySwiper" pagination="true" pagination-clickable="true" space-between="30" slides-per-view="5" grab-cursor="true" loop="true" pagination-dynamic-bullets="true" autoplay-delay="2500" autoplay-disable-on-interaction="false">
             <swiper-slide class="d-flex justify-content-center align-items-center mitra-card"><img class="mitra-icon" src="img/logo.png" alt=""></swiper-slide>
             <swiper-slide class="d-flex justify-content-center align-items-center mitra-card"><img class="mitra-icon" src="img/logo.png" alt=""></swiper-slide>
             <swiper-slide class="d-flex justify-content-center align-items-center mitra-card"><img class="mitra-icon" src="img/logo.png" alt=""></swiper-slide>
@@ -536,8 +536,8 @@
 
     <!-- Portal Karir -->
     <div class="container-fluid mt-5">
-      <div class="container karir d-flex justify-content-center align-items-center">
-        <img src="img/1.png" alt="">
+      <div class="container karir d-flex justify-content-center align-items-center gap-4">
+        <img src="img/young people working at the desk.png" alt="">
         <div class="d-flex flex-column gap-3">
           <h5 class="text-warning">Portal Karir</h5>
           <h1 class="raleway-b">Info Karir Dan Lowongan Kerja</h1>
@@ -551,12 +551,12 @@
     </div>
 
     <!-- Kontak -->
-    <div id="kontak" class="container-fluid mt-10">
+    <div id="kontak" class="container-fluid padding-ab">
       <div class="container">
         <h5 class="text-center text-warning">Kontak</h5>
         <h1 class="text-center raleway-b">Informasi Lebih Lanjut</h1>
 
-        <div class="kontak-container mt-3">
+        <div class="kontak-container mt-4">
           <div class="d-flex kontak gap-3">
 
             <div class="kontak-child">
@@ -600,7 +600,7 @@
               </div>
             </div>
 
-            <div class="padding-ab">
+            <div class="align-self-center">
               <form class="form-pesan" action="">
                 <input class="nama-class" type="text" placeholder="Nama Anda">
                 <input class="email-class" type="text" placeholder="Email Anda"><br>
@@ -616,36 +616,56 @@
     </div>
 
     <!-- Footer -->
-    <div class="container-fluid footer-container p-5">
+    <div class="container-fluid footer-container">
       <div class="container footer">
-        <div class="footer-main d-flex">
+        <div class="footer-main d-flex gap-4">
           <div>
-            <h6>Alamat</h6>
+            <ul>
+              <li class="raleway-sb">Alamat</li>
+              <li class="d-flex align-items-start gap-3"><span class="material-symbols-rounded text-warning">location_on</span><p><span class="text-white">Kantor Pusat</span><br>Sugihwaras RT 11/RW 03 - Candi - Sidoarjo</p></li>
+              <li class="d-flex align-items-start gap-3"><span class="material-symbols-rounded text-warning">location_on</span><p><span class="text-white">Kantor Representatif</span><br>Sugihwaras RT 11/RW 03 - Candi - Sidoarjo</p></li>
+            </ul>
           </div>
           <div>
             <ul>
               <li class="raleway-sb">Tautan Luar</li>
-              <li>Kerja Sama</li>
-              <li>Karir</li>
-              <li>Beasiswa</li>
-              <li>Info Kompetisi</li>
+              <li><a class="text-decoration-none footer-text-list" href="#">Kerja Sama</a></li>
+              <li><a class="text-decoration-none footer-text-list" href="#">Karir</a></li>
+              <li><a class="text-decoration-none footer-text-list" href="#">Beasiswa</a></li>
+              <li><a class="text-decoration-none footer-text-list" href="#">Info Kompetisi</a></li>
             </ul>
           </div>
           <div>
             <ul>
               <li class="raleway-sb">Tentang Perusahaan</li>
-              <li>Tentang Kami</li>
-              <li>Kerja Sama</li>
-              <li>Kontak</li>
+              <li><a class="text-decoration-none footer-text-list" href="#">Tentang Kami</a></li>
+              <li><a class="text-decoration-none footer-text-list" href="#">Kerja Sama</a></li>
+              <li><a class="text-decoration-none footer-text-list" href="#">Kontak</a></li>
             </ul>
           </div>
           <div>
             <ul>
               <li class="raleway-sb">Kontak</li>
-              <li>Tentang Kami</li>
-              <li>Kerja Sama</li>
-              <li>Kontak</li>
+              <li class="d-flex align-items-center gap-3"><span class="material-symbols-rounded text-warning">call</span>123 456 789</li>
+              <li class="d-flex align-items-center gap-3"><span class="material-symbols-rounded text-warning">drafts</span>beelajar.official@gmail.com</li>
+              <li class="d-flex align-items-start gap-3"><span class="material-symbols-rounded text-warning">schedule</span><p><span class="text-white">Jam Operasional</span><br>Senin-Jum'at<br>09:00 - 17:00 WIB</p></li>
             </ul>
+          </div>
+        </div>
+
+        <hr>
+
+        <div class="footer-bottom mt-5 d-flex">
+          <img src="img/logotext.png" alt="">
+          <div class="d-flex justify-content-center gap-4">
+            <a class="text-decoration-none text-white pe-4" href="#">Terms</a>
+            <a class="text-decoration-none text-white pe-4" href="#">Privacy</a>
+            <a class="text-decoration-none text-white pe-4" href="#">Cookies</a>
+          </div>
+          <div class="d-flex flex-row gap-3 justify-content-center sosmed">
+            <a href="#"><i class="fa fa-linkedin text-white"></i></a>
+            <a href="#"><i class="fa fa-facebook text-white"></i></a>
+            <a href="#"><i class="fa fa-twitter text-white"></i></a>
           </div>
         </div>
       </div>
@@ -654,19 +674,44 @@
     
 
     <script>
-        function toggleScrollClass() {
-        var nav = document.getElementById('nav');
-        window.pageYOffset > 0 ? nav.classList.add('scrolled') : nav.classList.remove('scrolled')
-        }
-        window.addEventListener('scroll', function() {toggleScrollClass()});
-        toggleScrollClass();
-
-        $(document).ready(function() {
-          $('.navbar-toggler').click(function() {
-            $('.nav-container').css('background-color','white');
-          });
+      $(document).ready(function() {
+        $('.navbar-toggler').click(function() {
+          $('.nav-container').css('background-color','white');
         });
+      });
+
+      function toggleScrollClass() {
+      var nav = document.getElementById('nav');
+      window.pageYOffset > 0 ? nav.classList.add('scrolled') : nav.classList.remove('scrolled')
+      }
+      window.addEventListener('scroll', function() {toggleScrollClass()});
+      toggleScrollClass();
+
+      const swiperEl = document.getElementById('testimoni')
+      Object.assign(swiperEl, {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        pagination: {
+          clickable: true,
+        },
+        breakpoints: {
+          0: {
+            slidesPerView: 1,
+          },
+          640: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          992: {
+            slidesPerView: 3,
+            spaceBetween: 40,
+          },
+        },
+      });
+      swiperEl.initialize();
     </script>
+
+    <script src="js/mitra.js"></script>
 
     <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-element-bundle.min.js"></script>
