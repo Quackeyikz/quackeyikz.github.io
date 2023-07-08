@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title & Favicon -->
+    <title>Beeasiswa</title>
+    <link rel="icon" href="img/Logo.png">
+
+    <!-- Raleway Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Jquery -->
+    <script src="assets/jquery/jquery.min.js"></script>
+
+    <!-- SwiperJS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Google Icon -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,1,0" />
+</head>
+
+<body>
+    <!-- ================ Navbar ================ -->
+    <div id="nav" class="nav container-fluid fixed-top nav-container">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#"><img src="img/Logo1.png" alt=""></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="justify-content-end collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="#home">Beranda</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#tentang-kami">Informasi Beasiswa</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#layanan">Panduan</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white rounded-pill pe-4 ps-4 btn-blue text-center"
+                                    href="#">Kontak</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <!-- ================ Landing ================== -->
+    <div class="container-fluid">
+        <div class="container d-flex flex-column justify-content-center align-items-center vh-100 text-center">
+            <h1 class="raleway-b title">Siapkan Jalan Suksesmu Bersama <span class="text-blue raleway-b">Beeasiswa!</span></h1>
+            <h5 class="raleway-sb mt-4 sub-title">Lembaga pengembangan pendidikan digital #1 legal dan terpercaya</h5> 
+            <div class="d-flex flex-row mt-5 fs-8 landing-link">
+                <a class="btn-blue btn-blue-shadow text-white text-decoration-none pt-3 pb-3 ps-4 pe-4 rounded-pill raleway-sb" href="#">Daftar Sekarang</a>
+                <a class="btn-light-blue text-blue text-decoration-none pt-3 pb-3 ps-4 pe-4 rounded-pill raleway-sb" href="#">Cek Status Beasiswa</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- ================= Pictures ================== -->
+    <div class="container-fluid">
+        <div class="container">
+            <img class="w-100 pictures" src="img/Photo.png" alt="">
+        </div>
+    </div>
+
+    <!-- ================= Fasilitas =============== -->
+    <div class="container-fluid text-center fasilitas-container padding-ab">
+        <div class="container">
+            <h1 class="raleway-b">Fasilitas <span class="text-blue raleway-b">Beeasiswa!</span></h1>
+
+            <div class="fasilitas-grid mt-4">
+                <div class="fasilitas-card rounded-5 d-flex flex-column gap-3 p-5 justify-content-center align-items-center">
+                    <img src="img/fluent_person-money-24-filled.png" alt="">
+                    <h5 class="raleway-b">Biaya Pendidikan</h5>
+                    <p class="raleway-sb">Beasiswa sering kali mencakup biaya lainnya yang terkait dengan pendidikan</p>
+                </div>
+                <div class="fasilitas-card rounded-5 d-flex flex-column gap-3 p-5 justify-content-center align-items-center">
+                    <img src="img/ic_round-model-training.png" alt="">
+                    <h5 class="raleway-b">Pelatihan</h5>
+                    <p class="raleway-sb">Pelatihan dilakukan untuk meningkatkan nilai kompetensi para penerima beasiswa</p>
+                </div>
+                <div class="fasilitas-card rounded-5 d-flex flex-column gap-3 p-5 justify-content-center align-items-center">
+                    <img src="img/fa-solid_chalkboard-teacher.png" alt="">
+                    <h5 class="raleway-b">Mentoring</h5>
+                    <p class="raleway-sb">Beasiswa menawarkan dukungan mentor yang berpengalaman untuk membantu siswa.</p>
+                </div>
+                <div class="fasilitas-card rounded-5 d-flex flex-column gap-3 p-5 justify-content-center align-items-center">
+                    <img src="img/Group.png" alt="">
+                    <h5 class="raleway-b">Kesempatan Magang</h5>
+                    <p class="raleway-sb">Beasiswa menyediakan kesempatan magang dengan perusahaan atau organisasi terkait</p>
+                </div>
+                <div class="fasilitas-card rounded-5 d-flex flex-column gap-3 p-5 justify-content-center align-items-center">
+                    <img src="img/material-symbols_work-update-rounded.png" alt="">
+                    <h5 class="raleway-b">Bantuan Karir</h5>
+                    <p class="raleway-sb">Beeasiswa menyediakan dukungan karir, seperti layanan penempatan kerja, pelatihan keterampilan, dll.</p>
+                </div>
+                <div class="fasilitas-card rounded-5 d-flex flex-column gap-3 p-5 justify-content-center align-items-center">
+                    <img src="img/ph_share-network-fill.png" alt="">
+                    <h5 class="raleway-b">Jaringan Profesional</h5>
+                    <p class="raleway-sb">Akses ke sumber daya dan jaringan profesional yang luas, seperti seminar, workshop, dll.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--=================== Testimoni =================== -->
+    <div class="container-fluid padding-ab">
+        <div class="container">
+            <h5 class="raleway-sb text-blue text-center">Testimoni</h5>
+            <h1 class="raleway-b text-center">Testimoni tentang <span class="text-blue raleway-b">Beeasiswa!</span></h1>
+
+            <div class="testimoni-container mt-3">
+                <swiper-container id="testimoni" class="mySwiper testimoni" pagination="true" pagination-clickable="true" space-between="30" slides-per-view="3" grab-cursor="true" loop="true" pagination-dynamic-bullets="true" autoplay-delay="5000" autoplay-disable-on-interaction="false">
+                  <swiper-slide class="testimoni-card d-flex gap-2 flex-column">
+                    <div class="d-flex flex-row justify-content-between">
+                      <div class="d-flex flex-row">
+                        <span class="material-symbols-rounded text-warning">star</span>
+                        <span class="material-symbols-rounded text-warning">star</span>
+                        <span class="material-symbols-rounded text-warning">star</span>
+                        <span class="material-symbols-rounded text-warning">star</span>
+                        <span class="material-symbols-rounded text-warning">star</span>
+                      </div>
+                      <span class="material-symbols-rounded fs-1 text-primary">format_quote</span>
+                    </div>
+                    <p class="fst-italic raleway-sb">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae accusamus eligendi libero ut corrupti voluptatem, nobis officia assumenda. Placeat necessitatibus distinctio ducimus quos provident consequatur officiis voluptate explicabo nam corporis?</p>
+                    <div class="d-flex flex-row testimoni-profil gap-3 align-items-center">
+                      <img class="rounded-circle w-auto" src="img/logo.png" alt="">
+                      <div>
+                        <h6 class="raleway-b">Ahmad Alif</h6>
+                        <span class="raleway-sb">Siswa SMKN 2 Bojonegoro</span>
+                      </div>
+                    </div>
+                  </swiper-slide>
+                  <swiper-slide class="testimoni-card d-flex gap-2 flex-column">
+                    <div class="d-flex flex-row justify-content-between">
+                      <div class="d-flex flex-row">
+                        <span class="material-symbols-rounded text-warning">star</span>
+                        <span class="material-symbols-rounded text-warning">star</span>
+                        <span class="material-symbols-rounded text-warning">star</span>
+                        <span class="material-symbols-rounded text-warning">star</span>
+                        <span class="material-symbols-rounded text-warning">star</span>
+                      </div>
+                      <span class="material-symbols-rounded fs-1 text-primary">format_quote</span>
+                    </div>
+                    <p class="fst-italic raleway-sb">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae accusamus eligendi libero ut corrupti voluptatem, nobis officia assumenda. Placeat necessitatibus distinctio ducimus quos provident consequatur officiis voluptate explicabo nam corporis?</p>
+                    <div class="d-flex flex-row testimoni-profil gap-3 align-items-center">
+                      <img class="rounded-circle w-auto" src="img/logo.png" alt="">
+                      <div>
+                        <h6 class="raleway-b">Ahmad Alif</h6>
+                        <span class="raleway-sb">Siswa SMKN 2 Bojonegoro</span>
+                      </div>
+                    </div>
+                  </swiper-slide>
+                  <swiper-slide class="testimoni-card d-flex gap-2 flex-column">
+                    <div class="d-flex flex-row justify-content-between">
+                      <div class="d-flex flex-row">
+                        <span class="material-symbols-rounded text-warning">star</span>
+                        <span class="material-symbols-rounded text-warning">star</span>
+                        <span class="material-symbols-rounded text-warning">star</span>
+                        <span class="material-symbols-rounded text-warning">star</span>
+                        <span class="material-symbols-rounded text-warning">star</span>
+                      </div>
+                      <span class="material-symbols-rounded fs-1 text-primary">format_quote</span>
+                    </div>
+                    <p class="fst-italic raleway-sb">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae accusamus eligendi libero ut corrupti voluptatem, nobis officia assumenda. Placeat necessitatibus distinctio ducimus quos provident consequatur officiis voluptate explicabo nam corporis?</p>
+                    <div class="d-flex flex-row testimoni-profil gap-3 align-items-center">
+                      <img class="rounded-circle w-auto" src="img/logo.png" alt="">
+                      <div>
+                        <h6 class="raleway-b">Ahmad Alif</h6>
+                        <span class="raleway-sb">Siswa SMKN 2 Bojonegoro</span>
+                      </div>
+                    </div>
+                  </swiper-slide>
+                  <swiper-slide class="testimoni-card d-flex gap-2 flex-column">
+                    <div class="d-flex flex-row justify-content-between">
+                      <div class="d-flex flex-row">
+                        <span class="material-symbols-rounded text-warning">star</span>
+                        <span class="material-symbols-rounded text-warning">star</span>
+                        <span class="material-symbols-rounded text-warning">star</span>
+                        <span class="material-symbols-rounded text-warning">star</span>
+                        <span class="material-symbols-rounded text-warning">star</span>
+                      </div>
+                      <span class="material-symbols-rounded fs-1 text-primary">format_quote</span>
+                    </div>
+                    <p class="fst-italic raleway-sb">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae accusamus eligendi libero ut corrupti voluptatem, nobis officia assumenda. Placeat necessitatibus distinctio ducimus quos provident consequatur officiis voluptate explicabo nam corporis?</p>
+                    <div class="d-flex flex-row testimoni-profil gap-3 align-items-center">
+                      <img class="rounded-circle w-auto" src="img/logo.png" alt="">
+                      <div>
+                        <h6 class="raleway-b">Ahmad Alif</h6>
+                        <span class="raleway-sb">Siswa SMKN 2 Bojonegoro</span>
+                      </div>
+                    </div>
+                  </swiper-slide>
+                  <swiper-slide class="testimoni-card d-flex gap-2 flex-column">
+                    <div class="d-flex flex-row justify-content-between">
+                      <div class="d-flex flex-row">
+                        <span class="material-symbols-rounded text-warning">star</span>
+                        <span class="material-symbols-rounded text-warning">star</span>
+                        <span class="material-symbols-rounded text-warning">star</span>
+                        <span class="material-symbols-rounded text-warning">star</span>
+                        <span class="material-symbols-rounded text-warning">star</span>
+                      </div>
+                      <span class="material-symbols-rounded fs-1 text-primary">format_quote</span>
+                    </div>
+                    <p class="fst-italic raleway-sb">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae accusamus eligendi libero ut corrupti voluptatem, nobis officia assumenda. Placeat necessitatibus distinctio ducimus quos provident consequatur officiis voluptate explicabo nam corporis?</p>
+                    <div class="d-flex flex-row testimoni-profil gap-3 align-items-center">
+                      <img class="rounded-circle w-auto" src="img/logo.png" alt="">
+                      <div>
+                        <h6 class="raleway-b">Ahmad Alif</h6>
+                        <span class="raleway-sb">Siswa SMKN 2 Bojonegoro</span>
+                      </div>
+                    </div>
+                  </swiper-slide>
+                  <swiper-slide class="testimoni-card d-flex gap-2 flex-column">
+                    <div class="d-flex flex-row justify-content-between">
+                      <div class="d-flex flex-row">
+                        <span class="material-symbols-rounded text-warning">star</span>
+                        <span class="material-symbols-rounded text-warning">star</span>
+                        <span class="material-symbols-rounded text-warning">star</span>
+                        <span class="material-symbols-rounded text-warning">star</span>
+                        <span class="material-symbols-rounded text-warning">star</span>
+                      </div>
+                      <span class="material-symbols-rounded fs-1 text-primary">format_quote</span>
+                    </div>
+                    <p class="fst-italic raleway-sb">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae accusamus eligendi libero ut corrupti voluptatem, nobis officia assumenda. Placeat necessitatibus distinctio ducimus quos provident consequatur officiis voluptate explicabo nam corporis?</p>
+                    <div class="d-flex flex-row testimoni-profil gap-3 align-items-center">
+                      <img class="rounded-circle w-auto" src="img/logo.png" alt="">
+                      <div>
+                        <h6 class="raleway-b">Ahmad Alif</h6>
+                        <span class="raleway-sb">Siswa SMKN 2 Bojonegoro</span>
+                      </div>
+                    </div>
+                  </swiper-slide>
+                </swiper-container>
+              </div>
+        </div>
+    </div>
+
+    <!-- =============== Mitra ================ -->
+    <div id="mitra" class="container-fluid padding-ab">
+        <div class="container text-center">
+          <h5 class="text-blue raleway-sb">Mitra & Kerja Sama</h5>
+          <h1 class="raleway-b">Mitra & Kerja Sama <span class="text-blue raleway-b">Beeasiswa!</span></h1>
+          <div class="mt-5">
+            <swiper-container id="mitraswiper" class="mitraSwiper mySwiper" pagination="true" pagination-clickable="true" space-between="30" slides-per-view="5" grab-cursor="true" loop="true" pagination-dynamic-bullets="true" autoplay-delay="2500" autoplay-disable-on-interaction="false">
+              <swiper-slide class="d-flex justify-content-center align-items-center mitra-card"><img class="mitra-icon" src="img/logo.png" alt=""></swiper-slide>
+              <swiper-slide class="d-flex justify-content-center align-items-center mitra-card"><img class="mitra-icon" src="img/logo.png" alt=""></swiper-slide>
+              <swiper-slide class="d-flex justify-content-center align-items-center mitra-card"><img class="mitra-icon" src="img/logo.png" alt=""></swiper-slide>
+              <swiper-slide class="d-flex justify-content-center align-items-center mitra-card"><img class="mitra-icon" src="img/logo.png" alt=""></swiper-slide>
+              <swiper-slide class="d-flex justify-content-center align-items-center mitra-card"><img class="mitra-icon" src="img/logo.png" alt=""></swiper-slide>
+              <swiper-slide class="d-flex justify-content-center align-items-center mitra-card"><img class="mitra-icon" src="img/logo.png" alt=""></swiper-slide>
+              <swiper-slide class="d-flex justify-content-center align-items-center mitra-card"><img class="mitra-icon" src="img/logo.png" alt=""></swiper-slide>
+              <swiper-slide class="d-flex justify-content-center align-items-center mitra-card"><img class="mitra-icon" src="img/logo.png" alt=""></swiper-slide>
+              <swiper-slide class="d-flex justify-content-center align-items-center mitra-card"><img class="mitra-icon" src="img/logo.png" alt=""></swiper-slide>
+              <swiper-slide class="d-flex justify-content-center align-items-center mitra-card"><img class="mitra-icon" src="img/logo.png" alt=""></swiper-slide>
+              <swiper-slide class="d-flex justify-content-center align-items-center mitra-card"><img class="mitra-icon" src="img/logo.png" alt=""></swiper-slide>
+            </swiper-container>
+          </div>
+        </div>
+    </div>
+
+      <!-- =================== Kontak =================== -->
+    <div id="kontak" class="container-fluid padding-ab">
+        <div class="container">
+          <h5 class="text-center text-blue raleway-sb">Kontak</h5>
+          <h1 class="text-center raleway-b">Informasi Lebih Lanjut</h1>
+  
+          <div class="kontak-container mt-4">
+            <div class="d-flex kontak gap-3">
+  
+              <div class="kontak-child">
+                <div class="d-flex k1 gap-3">
+                  <div class="p-3 d-flex flex-column gap-2 kontak-card">
+                    <span class="material-symbols-rounded kontak-icon text-blue">distance</span>
+                    <h4 class="raleway-b">Kantor Pusat</h4>
+                    <span class="raleway-sb">
+                      Sugihwaras RT 11/RW 03 - Candi - Sidoarjo <br>
+                      Kode Pos : 61271
+                    </span>
+                  </div>
+                  <div class="p-3 d-flex flex-column gap-2 kontak-card">
+                    <span class="material-symbols-rounded kontak-icon text-blue">call</span>
+                    <h4 class="raleway-b">Narahubung</h4>
+                    <span class="raleway-sb">
+                      0895-3668-86931 (SMP) <br>
+                      0819-9815-9800 (SMA) <br>
+                      0851-5619-0163 (Helpdesk)
+                    </span>
+                  </div>
+                </div>
+  
+                <div class="d-flex k2 gap-3">
+                  <div class="p-3 d-flex flex-column gap-2 kontak-card">
+                    <span class="material-symbols-rounded kontak-icon text-blue">drafts</span>
+                    <h4 class="raleway-b">Email</h4>
+                    <span class="raleway-sb">
+                      admin@beelajar.com <br>
+                      beelajar.official@gmail.com
+                    </span>
+                  </div>
+                  <div class="p-3 d-flex flex-column gap-2 kontak-card">
+                    <span class="material-symbols-rounded kontak-icon text-blue">schedule</span>
+                    <h4 class="raleway-b">Jam Operasional</h4>
+                    <span class="raleway-sb">
+                      Senin - Jum'at <br>
+                      09:00 - 17:00 WIB
+                    </span>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="align-self-center">
+                <form class="form-pesan" action="">
+                  <input class="nama-class" type="text" placeholder="Nama Anda">
+                  <input class="email-class" type="text" placeholder="Email Anda"><br>
+                  <input class="w-100" type="text" placeholder="Subjek Pesan"><br>
+                  <textarea class="w-100" type="text" placeholder="Isi Pesan"></textarea><br>
+                  <button class="btn-blue w100 rounded p-2 text-white raleway-sb" type="submit">Kirim Pesan</button>
+                </form>
+              </div>
+  
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <!-- ================= Footer ================== -->
+    <div class="container-fluid footer-container p-5 fs-9 mt-5">
+        <div class="container footer">
+            <div class="footer-main d-flex justify-content-between gap-5">
+                <img src="img/Logo 2.png" alt="">
+                <ul>
+                    <li class="raleway-sb text-white">Tautan Luar</li>
+                    <li><a href="#">Informasi Beasiswa</a></li>
+                    <li><a href="#">Panduan</a></li>
+                    <li><a href="#">Cek Status Beasiswa</a></li>
+                </ul>
+                <ul>
+                    <li class="raleway-sb text-white">Kontak Kami</li>
+                    <li>Telepon : <span class="text-white">123-456-789</span></li>
+                    <li>Email : <span class="text-white">beelajar.official@gmail.com</span></li>
+                </ul>
+                <ul>
+                    <li class="raleway-sb text-white">Sosial</li>
+                    <li><a class="text-white" href="#">
+                        <i class="fa fa-facebook text-white"></i>
+                        <i class="fa fa-instagram text-white"></i>
+                        <i class="fa fa-twitter text-white"></i>
+                        <i class="fa fa-youtube text-white"></i>
+                        <i class="fa fa-wordpress text-white"></i>
+                    </a></li>
+                </ul>
+            </div>
+
+            <hr class="mt-5">
+
+            <p class="text-secondary mt-4 text-center">@ 2023 Beeasiswa | All Right Reserved</p>
+        </div>
+    </div>
+
+    <script>
+        function toggleScrollClass() {
+            var nav = document.getElementById('nav');
+            window.pageYOffset > 0 ? nav.classList.add('scrolled') : nav.classList.remove('scrolled')
+        }
+        window.addEventListener('scroll', function () { toggleScrollClass() });
+        toggleScrollClass();
+
+        const swiperEl = document.getElementById('testimoni')
+        Object.assign(swiperEl, {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        pagination: {
+          clickable: true,
+        },
+        breakpoints: {
+          0: {
+            slidesPerView: 1,
+          },
+          640: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          992: {
+            slidesPerView: 3,
+            spaceBetween: 40,
+          },
+        },
+      });
+      swiperEl.initialize();
+    </script>
+
+    <script src="js/mitra.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-element-bundle.min.js"></script>
+</body>
+
+</html>
