@@ -117,6 +117,39 @@ body {
     justify-self: center;
 }
 
+.hidden-mobile {
+    display: none;
+}
+
+.hidden-tablet {
+    display:none;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.landing-deco {
+    position: absolute;
+    top: -200px;
+    left: -40px;
+    width: 50px !important;
+    height: 50px !important;
+}
+
+.landing-deco-double {
+    z-index: -1;
+    bottom: 0;
+}
+
+.landing2-deco {
+    position: absolute;
+    top: -250px;
+    left: 20px;
+    width: 70px !important;
+    height: 70px !important;
+}
+
 .landing2-a {
     width: 80% !important;
 }
@@ -679,6 +712,10 @@ a span {
 }
 
 @media screen and (min-width: 768px) {
+    .hidden-tablet {
+        display:none;
+    }
+    
     .nav-link {
         font-size: 0.9rem !important;
     }
@@ -759,6 +796,28 @@ a span {
 }
 
 @media screen and (min-width:992px) {
+    .hidden-mobile {
+        display:block;
+    }
+
+    .hidden-tablet {
+        display:block;
+    }
+
+    .landing-deco-double {
+        right: 5vw;
+        top: auto;
+        bottom: auto;
+    }
+
+    .landing2-deco {
+        position: absolute;
+        top: -280px;
+        left: 20px;
+        width: 70px !important;
+        height: 70px !important;
+    }
+    
     .nav-link {
         font-size: 1rem;
     }
@@ -828,6 +887,32 @@ a span {
 
     .layanan-card {
         margin: auto;
+    }
+
+    .layanan-deco-pot {
+        top: 0;
+    }
+
+    .layanan-deco-micro {
+        right: -200px;
+    }
+
+    .layanan-deco-hat {
+        left: 20px;
+        bottom: 0;
+    }
+
+    .layanan-deco-cactus {
+        right: -200px;
+        bottom: 0;
+    }
+
+    .semua-deco-star {
+        left: 0px;
+    }
+
+    .semua-deco-bolt {
+        right: -120px;
     }
 
     .kelebihan-img {
