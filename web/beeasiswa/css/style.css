@@ -3,6 +3,77 @@
     --btn-blue: #4475F2;
 }
 
+.absolute {
+    position: absolute;
+}
+
+/* ============= Gradient Deco =============== */
+/* .gradient-ball {
+    background-color: #4475F2;
+    border-radius: 1000px;
+    display: block;
+    position: absolute;
+} */
+
+.gradient-item {
+    position: absolute;
+    display: block;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+.gi-1 {
+    height: 500px;
+    width: 200px;
+    top: 5vh;
+    bottom: auto;
+    right: 0;
+    left: auto;
+}
+
+.gi-2 {
+    height: 600px;
+    width: 300px;
+    top: 40vh;
+    bottom: auto;
+    left: 0;
+    right: auto;
+    transform: scaleX(-1);
+}
+
+.gi-3 {
+    height: 800px;
+    width: 200px;
+    top: 140vh;
+    right: 0;
+    left: auto;
+}
+
+.gi-4 {
+    height: 800px;
+    width: 200px;
+    top: 170vh;
+    right: auto;
+    left: 0;
+    transform: scaleX(-1);
+}
+
+.gi-5 {
+    height: 800px;
+    width: 200px;
+    top: auto;
+    bottom: 2000px;
+    right: 0;
+    left: auto;
+}
+
+.gi-6 {
+    height: 800px;
+    width: 200px;
+    right: auto;
+    left: 0;
+    transform: scaleX(-1);
+}
 /* ============= Fonts ============== */
 .raleway {
     font-family: 'Raleway', sans-serif;
@@ -48,6 +119,7 @@
 
 body {
     background-color: #fbfbfb !important;
+    scroll-behavior: smooth;
 }
 
 .btn-blue {
@@ -155,6 +227,7 @@ body {
 .testimoni-profil img {
     width: 50px;
     height: 50px;
+    border-radius: 1000px;
 }
 
 .testimoni-profil div h6 {
@@ -172,7 +245,7 @@ body {
 }
 
 .mitra-icon {
-    min-width: 50px;
+    min-width: 60px;
     min-height: 50px;
     max-width: 100px;
     max-height: 100px;

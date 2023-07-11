@@ -1,0 +1,202 @@
+:root {
+    --beeasiswa-blue: #4475F2;
+    --btn-blue: #4475F2;
+}
+
+.raleway {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+}
+
+.raleway-m {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+}
+
+.raleway-sb {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+}
+
+.raleway-b {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+}
+
+.fs-7 {
+    font-size: 0.7rem;
+}
+
+.fs-8 {
+    font-size: 0.8rem;
+}
+
+.fs-9 {
+    font-size: 0.9rem;
+}
+
+.w-50 {
+    width: 50%;
+}
+
+
+
+
+* {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+}
+
+body {
+    background-color: #fbfbfb !important;
+    scroll-behavior: smooth;
+}
+
+.btn-blue {
+    background-color: #4475F2;
+    transition: 0.3s;
+}
+
+.btn-blue:hover {
+    background-color: #3c68d6;
+}
+
+.btn-blue-shadow {
+    box-shadow: 0px 5px 20px #4475f271;
+}
+
+.btn-light-blue {
+    background-color: #E0E8FF;
+    transition: 0.3s;
+}
+
+.btn-light-blue:hover {
+    background-color: #cad4f0;
+}
+
+.text-blue {
+    color: #4475F2;
+}
+
+.padding-ab {
+    padding: 50px 0px 30px 0px;
+}
+
+/* ============== Deco =============== */
+.gradient-item {
+    position: absolute;
+    display: block;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+.gi-1 {
+    height: 500px;
+    width: 300px;
+    top: 25vh;
+    bottom: auto;
+    right: 0;
+    left: auto;
+}
+
+.gi-2 {
+    height: 500px;
+    width: 300px;
+    top: 75vh;
+    bottom: auto;
+    right: auto;
+    left: 0;
+    transform: scaleX(-1);
+}
+
+/* ============== Top =============== */
+.top-brand img {
+    width: 30%;
+    height: auto;
+    transition: 0.3s;
+}
+
+.pagination a {
+    z-index: 2;
+}
+
+.pagination-hr {
+    z-index: -5;
+    margin-top: -20px;
+    border: 2px solid #4475F2;
+}
+
+/* ================ Form =============== */
+.form-container, .form-container form {
+    margin: auto;
+    transition: 0.3s;
+}
+
+.form-container form input {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    color: black;
+    background-color: white;
+    transition: 0.3s;
+    margin-bottom: 30px;
+}
+
+.form-container form select {
+    background-color: white;
+    margin-bottom: 30px;
+}
+
+.form-container form textarea {
+    margin-bottom: 30px;
+}
+
+.form-container form label {
+    margin-bottom: 10px;
+}
+
+.form-container form input:focus {
+    outline: 2px solid rgba(190, 208, 253, 0.867);
+    border-color: #4475F2;
+}
+
+::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #ccc !important;
+    opacity: 1;
+    /* Firefox */
+}
+
+:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: #ccc !important;
+}
+
+::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: #ccc !important;
+}
+
+
+@media screen and (min-width:768px) {
+    .top-brand img {
+        width: 20%;
+        height: auto;
+    }
+
+    /* ======= Form ======== */
+    .form-container form {
+        width: 80%;
+    }
+}
+
+@media screen and (min-width:992px) {
+    .top-brand img {
+        width: 15%;
+        height: auto;
+    }
+
+    /* ======= Form ======== */
+    .form-container form {
+        width: 70%;
+    }
+}
