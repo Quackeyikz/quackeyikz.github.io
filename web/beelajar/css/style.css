@@ -127,6 +127,7 @@ body {
 
 .absolute {
     position: absolute;
+    margin: auto;
 }
 
 .landing-deco {
@@ -553,7 +554,7 @@ a span {
 }
 
 .mitra-icon {
-    min-width: 50px;
+    min-width: 60px;
     min-height: 50px;
     max-width: 100px;
     max-height: 100px;
@@ -888,7 +889,7 @@ a span {
     .layanan-card {
         margin: auto;
     }
-
+    
     .layanan-deco-pot {
         top: 0;
     }
