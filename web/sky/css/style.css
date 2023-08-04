@@ -1,0 +1,179 @@
+/* Class Collection */
+.shine-shadow {
+    filter: drop-shadow(0 0 0.75rem rgba(255, 217, 0, 0.473));
+}
+
+.animation-hover {
+    animation: hover 0.5s;
+}
+
+.animation-scale {
+    animation: scale 0.5s;
+}
+
+@keyframes scale {
+    0% {
+        transform: scale(1.0);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1.0);
+    }
+}
+
+@keyframes hover {
+    0% {
+        margin-top: -0px;
+    }
+
+    50% {
+        margin-top: -15px;
+    }
+
+    100% {
+        margin-top: -0px;
+    }
+}
+
+/* ============ Navbar =========== */
+nav {
+    transition: 0.3s;
+}
+
+.navbar-nav li a {
+    color: white;
+}
+.navbar-nav li a {
+    color: white;
+}
+
+.navbar-nav li a:hover {
+    color: gray;
+}
+
+.navbar-toggler:focus {
+    border: 0 !important;
+    box-shadow: none !important;
+}
+
+.navbar-toggler {
+    border: 0 !important;
+    transition: 0.3s;
+}
+
+/* =========== Landing ============= */
+.landing-container {
+    background-image: url('/img/skyimg/SKY_20230804_095704_.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    transition: 0.3s;
+}
+
+.title h1 {
+    font-size: 5rem;
+}
+
+/* =============== About ================ */
+.about-container {
+    background-color: white;
+    background-image: url('/img/skyimg/SKY_20230804_100930_.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    box-shadow: 0px -10px 20px rgba(0, 0, 0, 0.384);
+}
+
+.about-ui-top {
+    backdrop-filter: blur(5px);
+    background-color: rgba(0, 0, 0, 0.363);
+    width: 100%;
+    height: 200px;
+    border-bottom: 1px solid rgba(255, 232, 198, 0.719);
+    box-shadow: inset 0px -10px 20px black;
+}
+
+.about-ui-top span {
+    margin-top: -20px;
+}
+
+.about-ui-top button {
+    height: 100px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+.ui-top-box {
+    width: 80px;
+    height: 80px;
+    transition: 0.3s;
+    margin-bottom: -20px;
+}
+
+.ui-top-box i {
+    font-size: 2rem;
+}
+
+.ui-top-box:hover {
+    transform: scale(1.13);
+    background-image: linear-gradient(rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.068), rgba(255, 255, 255, 0.13));
+}
+
+.about {
+    backdrop-filter: blur(5px);
+    background-color: rgba(0, 0, 0, 0.363);
+    width: 100%;
+    height: 100vh;
+}
+
+
+/* JS tabcontent */
+.tabcontent {
+    display: none;
+}
+
+@media screen and (max-width:768px) {
+    /* ============ Navbar ============== */
+    .navbar-nav li {
+        background-color: rgba(0, 0, 0, 0.288);
+        border-radius: 5px;
+        margin: 5px auto;
+        padding: 0px 10px;
+        width: 70%;
+    }
+}
+
+@media screen and (min-width:768px) {
+    /* ============ Landing ============== */
+    /* .landing-container {
+        background-position: 80%;
+    } */
+}
+
+@media screen and (max-width:992px) {
+    .navbar-nav li {
+        background-color: rgba(0, 0, 0, 0.288);
+        border-radius: 5px;
+        margin: 5px auto;
+        padding: 0px 10px;
+        width: 100%;
+    }
+}
+
+@media screen and (min-width:992px) {
+
+    /* ========== Navbar =========== */
+    .navbar-nav li {
+        padding: 0px 15px;
+    }
+
+    /* ========== Landing ============ */
+    /* .landing-container {
+        background-position: 100%;
+    } */
+}
