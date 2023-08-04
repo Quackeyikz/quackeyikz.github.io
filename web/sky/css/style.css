@@ -67,7 +67,7 @@ nav {
 
 /* =========== Landing ============= */
 .landing-container {
-    background-image: url('/img/skyimg/SKY_20230804_095704_.jpg');
+    background-image: url('../img/skyimg/SKY_20230804_095704_.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50%;
@@ -81,7 +81,7 @@ nav {
 /* =============== About ================ */
 .about-container {
     background-color: white;
-    background-image: url('/img/skyimg/SKY_20230804_100930_.jpg');
+    background-image: url('../img/skyimg/SKY_20230804_100930_.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50%;
