@@ -17,11 +17,14 @@
 
     <!-- FA -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Swiper JS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
 </head>
 
 <body>
     <!-- ========== Navbar ========== -->
-    <nav class="navbar navbar-expand-lg fixed-top">
+    <nav class="navbar navbar-expand-lg fixed-top landing-item-hide">
         <div class="container">
             <a class="navbar-brand" href="https://www.thatskygame.com/">
                 <img src="img/logo.png" alt="Sky" width="45" height="45">
@@ -51,13 +54,41 @@
 
     <!-- ========== Landing =========== -->
     <div class="container-fluid landing-container vh-100">
-        <!-- <div class="container landing h-100">
+        <div class="container landing h-100 landing-item-hide">
             <div class="text-white title d-flex flex-column justify-content-center margin-auto h-100">
                 <img src="img/logo.png" alt="Sky" width="200" height="200">
                 <h2>Children of The Light</h2>
-                <p>Explore the Sky!</p>
+                <p>Explore the Sky with Quackey!</p>
             </div>
-        </div> -->
+        </div>
+
+        <ul class="fireflies">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+
+        <i id="hide-hud" class="hide-hud fa fa-eye"></i>
+
+        <img id="audioToggler" class="audioToggler landing-item-hide" src="img/musicOff.png" width="30px" height="30px">
+        <audio id="audio" autoplay controls loop src='audio/bgmusic.mp3'></audio>
     </div>
 
     <!-- ============= About ============== -->
@@ -84,18 +115,72 @@
         <div class="about pt-5 pd-5">
             <div class="container">
                 <div id="photo" class="tabcontent">
-                    <h1>Photography</h1>
-                    <p>Explore Photo!</p>
+                    <h1 class="mb-3">Photography</h1>
+                    <p>Look at some shots that i've taken from in-game using the camera from Season of Moments!</p>
+
+                    <div class="swiper-box p-3 mt-4">
+                        <swiper-container class="mySwiper" init="false" effect="cards" pagination-dynamic-bullets="true">
+                            <swiper-slide><img src="img/skyimg/1.jpg" alt=""></swiper-slide>
+                            <swiper-slide><img src="img/skyimg/3.jpg" alt=""></swiper-slide>
+                            <swiper-slide><img src="img/skyimg/5.jpg" alt=""></swiper-slide>
+                            <swiper-slide><img src="img/skyimg/6.jpg" alt=""></swiper-slide>
+                            <swiper-slide><img src="img/skyimg/7.jpg" alt=""></swiper-slide>
+                            <swiper-slide><img src="img/skyimg/8.jpg" alt=""></swiper-slide>
+                            <swiper-slide><img src="img/skyimg/9.jpg" alt=""></swiper-slide>
+                            <swiper-slide><img src="img/skyimg/10.jpg" alt=""></swiper-slide>
+                            <swiper-slide><img src="img/skyimg/11.jpg" alt=""></swiper-slide>
+                            <swiper-slide><img src="img/skyimg/12.jpg" alt=""></swiper-slide>
+                            <swiper-slide><img src="img/skyimg/13.jpg" alt=""></swiper-slide>
+                            <swiper-slide><img src="img/skyimg/14.jpg" alt=""></swiper-slide>
+                            <swiper-slide><img src="img/skyimg/16.jpg" alt=""></swiper-slide>
+                            <swiper-slide><img src="img/skyimg/17.jpg" alt=""></swiper-slide>
+                            <swiper-slide><img src="img/skyimg/18.jpg" alt=""></swiper-slide>
+                            <swiper-slide><img src="img/skyimg/19.jpg" alt=""></swiper-slide>
+                            <swiper-slide><img src="img/skyimg/20.jpg" alt=""></swiper-slide>
+                            <swiper-slide><img src="img/skyimg/21.jpg" alt=""></swiper-slide>
+                            <swiper-slide><img src="img/skyimg/22.jpg" alt=""></swiper-slide>
+                        </swiper-container>
+
+                        <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-element-bundle.min.js"></script>
+
+                        <script>
+                            const swiperEl = document.querySelector('swiper-container')
+                            Object.assign(swiperEl, {
+                                slidesPerView: 1,
+                                spaceBetween: 10,
+                                pagination: {
+                                    clickable: true,
+                                },
+                                // breakpoints: {
+                                //     640: {
+                                //         slidesPerView: 2,
+                                //         spaceBetween: 10,
+                                //     },
+                                //     768: {
+                                //         slidesPerView: 2,
+                                //         spaceBetween: 10,
+                                //     },
+                                //     992: {
+                                //         slidesPerView: 3,
+                                //         spaceBetween: 10,
+                                //     },
+                                // },
+                            });
+                            swiperEl.initialize();
+                        </script>
+                    </div>
+
+                    <a href="" class="btn btn-primary ps-3 pe-3 mt-5 mb-5">View More</a>
                 </div>
 
                 <div id="travel" class="tabcontent">
-                    <h1>Traveling Spirit</h1>
-                    <p>Explore Spirit</p>
+                    <h1 class="mb-3">Traveling Spirit</h1>
+                    <p>Check and see the node tree of the traveling spirits that have came by for the future plan!</p>
                 </div>
 
                 <div id="story" class="tabcontent">
-                    <h1>Story</h1>
-                    <p>Explore Story</p>
+                    <h1 class="mb-3">Story</h1>
+                    <p>Relax and read the story and lectures I wrote about Sky and random things!</p>
                 </div>
             </div>
         </div>
@@ -106,6 +191,7 @@
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"
         integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
     <script src="js/home.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 </body>
 
 </html>
