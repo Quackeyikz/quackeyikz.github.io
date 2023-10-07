@@ -84,14 +84,14 @@
 
 .di-1 {
     width: 40px;
-    top: 30vh;
+    top: 20vh;
     bottom: auto;
     left: 5vw;
 }
 
 .di-2 {
     width: 50px;
-    top: 30vh;
+    top: 20vh;
     bottom: auto;
     right: 5vw;
 }
@@ -441,6 +441,10 @@ body {
 
     .landing-link {
         gap: 20px;
+    }
+
+    .di-1, .di-2 {
+        top: 25vh;
     }
 
     /* ========= Fasilitas ========= */
