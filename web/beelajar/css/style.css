@@ -540,7 +540,8 @@ a span {
 }
 
 .testimoni-profil div h6 {
-    line-height: 15px;
+    line-height: 0px;
+    margin-top: 10px;
 }
 
 .testimoni-profil div span {
@@ -859,8 +860,8 @@ a span {
     }
 
     .landing2-img {
-        width: 600px;
-        height: 400px;
+        width: 700px;
+        height: 300px;
         margin: auto;
         align-self: center;
         justify-self: center;
