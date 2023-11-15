@@ -1,0 +1,208 @@
+* {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #00bBF0;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Font */
+.poppins-r {
+    font-family: 'Poppins';
+    font-weight: 400;
+}
+
+.poppins-med {
+    font-family: 'Poppins';
+    font-weight: 500;
+}
+
+.poppins-sm {
+    font-family: 'Poppins';
+    font-weight: 600;
+}
+
+.poppins-b {
+    font-family: 'Poppins';
+    font-weight: 700;
+}
+
+
+/* ========= Header ========== */
+header {
+    height: 35vh;
+    transition: 0.3s;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+#weather-gradient {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -13;
+}
+
+#white-gradient {
+    height: 100%;
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+    z-index: -12;
+}
+
+#cold-weather {
+    width: 40%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: -11;
+}
+
+#hot-weather {
+    width: 45%;
+    top: 0;
+    right: 0;
+    position: absolute;
+    z-index: -10;
+}
+
+#clouds {
+    width: 100%;
+    top: 35%;
+    left: 0;
+    position: absolute;
+    z-index: -9;
+}
+
+#distant-mountain {
+    width: 100%;
+    top: 45%;
+    left: 0;
+    position: absolute;
+    z-index: -8;
+}
+
+#city {
+    width: 100%;
+    top: 35%;
+    left: 0;
+    position: absolute;
+    z-index: -7;
+}
+
+#close-mountain {
+    width: 100%;
+    top: 47%;
+    left: 0;
+    position: absolute;
+    z-index: -6;
+}
+
+#forest {
+    width: 100%;
+    top: 50%;
+    left: 0;
+    position: absolute;
+    z-index: -5;
+}
+
+#grass-light {
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    z-index: -4;
+}
+
+#grass-dark {
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    z-index: -3;
+}
+
+#title-logo-container {
+    position: absolute;
+    top: 8%;
+    gap: 2vh;
+}
+
+#header-logo {
+    width: 5%;
+    z-index: -2;
+}
+
+#header-title {
+    width: 30%;
+    z-index: -1;
+}
+
+
+
+
+
+/* ============= Navbar ============== */
+nav {
+    background-color: #012631;
+    height: 1000px;
+}
+
+
+/* =========== Responsive Screens =========== */
+/* Mobile : 300x480px */
+/* Tablet : 760x1024px */
+/* Desktop : 1440x900px */
+
+
+
+
+
+
+/* Tablet */
+@media screen and (min-width:760px) and (min-height:1024px) {
+    header {
+        height: 45vh;
+    }
+}
+
+
+
+/* Desktop */
+@media screen and (min-width:992px) {
+    header {
+        height: 100vh;
+    }
+    
+    #cold-weather {
+        width: 35%;
+    }
+    
+    #hot-weather {
+        width: 40%;
+    }
+
+    #forest {
+        top: 50%;
+    }
+}
+
+
+/* Specified Dimension */
+@media screen and (orientation:landscape) {
+    header {
+        height: 100vh;
+    }
+}
+
+@media screen and (width:1024px) and (height:760px) {
+    header {
+        height: 80vh;
+    }
+}
+

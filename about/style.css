@@ -186,12 +186,19 @@ body {
     background-color: rgb(238, 235, 230);
     border: 2px solid rgb(197, 197, 197);
     position: relative;
-    overflow: auto;
-    height: auto;
     max-height: 78vh;
 }
 
+.tabcontent {
+    overflow-y: auto;
+    max-height: calc(100%-32px);
+}
+
 @media screen and (max-width:768px){
+    html {
+        font-size: 14px;
+    }
+
     body {
         overflow: hidden;
     }
@@ -209,5 +216,22 @@ body {
         backdrop-filter: blur(10px);
         background-color: rgba(0, 0, 139, 0.527);
         z-index: 99;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:992px) {
+    html {
+        font-size: 14px;
+    }
+
+    .thought {
+        padding: 12px 5px 10px 15px;
+        gap: 10px !important;
+    }
+}
+
+@media screen and (min-width:992px) {
+    html {
+        font-size: 16px;
     }
 }

@@ -48,10 +48,10 @@
         <!--============ Left (Options) ===========-->
         <div class="left-main">
             <!-- Search -->
-            <div class="search-box d-flex flex-row gap-2 p-2 ps-3 rounded-pill">
+            <!-- <div class="search-box d-flex flex-row gap-2 p-2 ps-3 rounded-pill">
                 <i class="fi fi-br-search search-icon"></i>
                 <input id="searchInput" class="search" type="text" placeholder="Cari topik...">
-            </div>
+            </div> -->
 
             <!-- Results -->
             <div id="results" class="mt-2 results d-flex flex-column gap-1">
@@ -60,8 +60,8 @@
                     onclick="openThought('1', this)" id="defaultOpen">
                     <i class="fi fi-sr-search-alt thought-icon"></i>
                     <div>
-                        <h6>Tentang Aku</h6>
-                        <span>Hal</span>
+                        <h6>Halo</h6>
+                        <span>Hai...</span>
                     </div>
                 </button>
                 <!-- Thoughts boxes here -->
@@ -69,8 +69,17 @@
                     onclick="openThought('2', this)">
                     <i class="fi fi-sr-search-alt thought-icon"></i>
                     <div>
-                        <h6 class="h6">Tentang Kamu</h6>
-                        <span>Hal</span>
+                        <h6 class="h6">Awal Perjalanan</h6>
+                        <span>Yang Memulai Semuanya</span>
+                    </div>
+                </button>
+                <!-- Thoughts boxes here -->
+                <button class="thought d-flex flex-row gap-3 align-items-center tablink"
+                    onclick="openThought('3', this)">
+                    <i class="fi fi-sr-search-alt thought-icon"></i>
+                    <div>
+                        <h6 class="h6">Penyesuaian</h6>
+                        <span>Akan Perubahan</span>
                     </div>
                 </button>
             </div>
@@ -81,15 +90,27 @@
             <div class="content p-3">
                 <!-- Content here -->
                 <div id="1" class="tabcontent">
-                    <h2>My Thoughts...</h2>
-                    <br>
-                    <p>They're all... gone now.</p>
+                    <h2>Halo Namaku Erik</h2>
+                    <hr>
+                    <p>Hai, aku hanya ingin berbagi pendapat mengenai berbagai hal. Aku masih belum yakin apa saja batasan yang aku punya. Aku ingin menulis banyak hal, tetapi hal ini bisa menuai berbagai masalah yang tak diinginkan untuk terjadi.</p>
                 </div>
                 <!-- Content here -->
                 <div id="2" class="tabcontent">
-                    <h2>My Thoughts 2...</h2>
-                    <br>
-                    <p>They're all... gone now.</p>
+                    <h2>Awal Perjalanan</h2>
+                    <hr>
+                    <p>Sebuah jalan baru telah terbuka, jalan yang belum pernah kutelusuri sebelumnya. Bahkan, aku tak tahu bahwa jalan ini ada sebelumnya. 
+                    <br><br>
+                    Awalnya, aku merasa takut. Sebagai seorang yang selalu mempersiapkan segalanya dengan sangat matang agar diriku sendiri tidak terkena masalah apapun, aku merasa tidak berdaya di hadapan jalan baru ini.
+                    <br><br>
+                    Walaupun begitu, tidak peduli apa yang aku sebenarnya inginkan, harus kujalani karena ini menentukan diriku di masa depan nantinya.
+                    </p>
+                </div>
+                <!-- Content here -->
+                <div id="3" class="tabcontent">
+                    <h2>Penyesuaian</h2>
+                    <hr>
+                    <p>Program selama satu tahun telah banyak mempengaruhiku. Aku telah menyesuaikan dan membiasakan diri di sana (kota itu). Bahkan, aku merasa rumahku sendiri sudah terasa asing, aku mulai lupa bagaimana sikap orang2 di rumah yang biasanya ditujukkan padaku. Terkadang, aku takut untuk pulang. Takut untuk menyesuaikan diri lagi setelah menemukan tempat yang nyaman, jauh dari rasa khawatir dan penuh kepeningan.
+                    </p>
                 </div>
             </div>
         </div>
