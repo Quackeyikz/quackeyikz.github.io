@@ -1,5 +1,6 @@
 * {
     scroll-behavior: smooth;
+    --main-color: #012631;
 }
 
 body {
@@ -29,6 +30,10 @@ body {
     font-family: 'Poppins';
     font-weight: 700;
 }
+
+.rem-7 { font-size: 0.7rem; }
+.rem-8 { font-size: 0.8rem; }
+.rem-9 { font-size: 0.9rem; }
 
 
 /* ========= Header ========== */
@@ -150,6 +155,57 @@ header {
 /* ============= Navbar ============== */
 nav {
     background-color: #012631;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    position: sticky;
+    top: 0;
+    right: 0;
+    left: 0;
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.2);
+    z-index: 99;
+    font-size: 0.6rem;
+    transition: 0.3s;
+    padding: 15px 0px;
+}
+
+nav > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.nav-button {
+    gap: 15px;
+}
+
+.nav-logo {
+    top: 0;
+    bottom: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.nav-profile {
+    background-color: blue;
+    top: 0;
+    bottom: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+    border-radius: 1000px;
+}
+
+.nav-pic {
+    width: 20px;
+}
+
+
+
+/* ================ Content Section ================= */
+section {
+    background-color: var(--main-color);
+    position: relative;
     height: 1000px;
 }
 
@@ -168,6 +224,18 @@ nav {
 @media screen and (min-width:760px) and (min-height:1024px) {
     header {
         height: 45vh;
+    }
+
+    nav {
+        font-size: 0.9rem;
+    }
+
+    .nav-pic {
+        width: 40px;
+    }
+
+    .nav-button {
+        gap: 30px;
     }
 }
 
@@ -189,6 +257,18 @@ nav {
 
     #forest {
         top: 50%;
+    }
+
+    nav {
+        font-size: 0.9rem;
+    }
+
+    .nav-pic {
+        width: 45px;
+    }
+
+    .nav-button {
+        gap: 40px;
     }
 }
 
