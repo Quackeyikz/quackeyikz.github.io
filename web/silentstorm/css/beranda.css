@@ -5,6 +5,7 @@
 
 body {
     background-color: #00bBF0;
+    color: white;
     margin: 0;
     padding: 0;
 }
@@ -198,8 +199,52 @@ nav > div {
 section {
     background-color: var(--main-color);
     position: relative;
-    height: 1000px;
+    transition: 0.3s;
 }
+
+.materi-container {
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    color: white;
+    padding: 70px 0px;
+}
+
+.materi-icon {
+    width: 50px;
+}
+
+.materi-title {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.materi-content {
+    margin-top: 20px;
+}
+
+/* =========== Pengertian ============ */
+.pengertian {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding: 0px 30px;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.pengertian img {
+    width: 200px;
+}
+
+.pengertian p span {
+    margin-top: 15px;
+    display: block;
+}
+
 
 
 /* =========== Responsive Screens =========== */
@@ -209,7 +254,17 @@ section {
 
 
 
-
+@media screen and (max-width:759px) {
+    h1  {
+        font-size: 1.1rem !important;
+    }
+    h6 {
+        font-size: 0.8rem !important;
+    }
+    .materi-container p {
+        font-size: 0.8rem;
+    }
+}
 
 
 /* Tablet */
@@ -227,6 +282,11 @@ section {
 
     .nav-button {
         gap: 30px;
+    }
+
+    /* Pengertian */
+    .pengertian img {
+        width: 250px;
     }
 }
 
@@ -259,6 +319,15 @@ section {
 
     .nav-button {
         gap: 40px;
+    }
+
+    /* Section */
+
+    /* Pengertian */
+    .pengertian {
+        flex-direction: row;
+        text-align: left;
+        padding: 0px 70px;
     }
 }
 
