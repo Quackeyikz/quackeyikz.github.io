@@ -180,6 +180,7 @@ nav > div {
 
 .nav-button {
     gap: 10px;
+    margin-left: -15px;
 }
 
 .nav-logo {
@@ -220,7 +221,7 @@ section {
 }
 
 .materi-content {
-    margin-top: 20px;
+    margin-top: 40px;
 }
 
 /* =========== Pengertian ============ */
@@ -246,6 +247,75 @@ section {
 }
 
 
+/* =========== Penyebab ============ */
+.penyebab-container {
+    background-color: rgba(9, 49, 63, 0.5);
+}
+
+.penyebab {
+    margin-top: 30px;
+    display: grid;
+    gap: 10px;
+    grid-area:
+     'penyebab-grid''penyebab-grid'
+     'penyebab-grid''penyebab-grid'
+     'penyebab-grid';
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.penyebab-grid {
+    background-image: linear-gradient(#015B77, #013647);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 10px 20px 10px;
+    border-radius: 15px;
+    text-align: center;
+    gap: 10px;
+}
+
+.penyebab-grid h5 {
+    margin-top: 20px;
+}
+
+.penyebab-grid img {
+    width: 50px;
+}
+
+
+/* =========== Dampak ========== */
+.dampak-container {
+    background-color: #09313F;
+}
+.dampak {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    width: 100%;
+}
+
+.dampak-grid {
+    background-image: linear-gradient(#015B77, #013647);
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    padding: 10px 15px;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 15px;
+    border: 5px solid #006F93;
+}
+
+.dampak-grid img {
+    width: 30px;
+    vertical-align: middle;
+}
+
+
 
 /* =========== Responsive Screens =========== */
 /* Mobile : 300x480px */
@@ -256,10 +326,13 @@ section {
 
 @media screen and (max-width:759px) {
     h1  {
-        font-size: 1.1rem !important;
+        font-size: 1.3rem !important;
     }
     h6 {
         font-size: 0.8rem !important;
+    }
+    h5 {
+        font-size: 0.9rem !important;
     }
     .materi-container p {
         font-size: 0.8rem;
@@ -282,11 +355,44 @@ section {
 
     .nav-button {
         gap: 30px;
+        margin-left: -25px;
     }
 
     /* Pengertian */
     .pengertian img {
         width: 250px;
+    }
+
+    /* Penyebab */
+    .penyebab {
+        grid-area:
+         'penyebab-grid''penyebab-grid'
+         'penyebab-grid''penyebab-grid'
+         'penyebab-grid';
+         grid-template-columns: 1fr 1fr;
+         grid-template-rows: 1fr 1fr 1fr;
+    }
+
+    .penyebab-grid {
+        padding: 30px 40px 20px 40px;
+    }
+
+    .penyebab-grid img {
+        width: 70px;
+    }
+
+    /* Dampak */
+    .dampak {
+        gap: 10px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+    
+    .dampak-grid {
+        gap: 20px;
+        padding: 10px 15px;
+        border-radius: 15px;
+        border: 5px solid #006F93;
     }
 }
 
@@ -319,6 +425,7 @@ section {
 
     .nav-button {
         gap: 40px;
+        margin-left: -25px;
     }
 
     /* Section */
@@ -328,6 +435,40 @@ section {
         flex-direction: row;
         text-align: left;
         padding: 0px 70px;
+    }
+
+    /* Penyebab */
+    .penyebab {
+        grid-area:
+         'penyebab-grid''penyebab-grid''penyebab-grid''penyebab-grid''penyebab-grid';
+         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+         grid-template-rows: 1fr;
+    }
+
+    .penyebab-grid {
+        padding: 30px 20px 20px 20px;
+    }
+
+    .penyebab-grid p {
+        font-size: 0.9rem;
+    }
+
+    .penyebab-grid img {
+        width: 80px;
+    }
+
+    /* Dampak */
+    .dampak {
+        gap: 15px;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    
+    .dampak-grid {
+        gap: 20px;
+        padding: 10px 15px;
+        border-radius: 15px;
+        border: 5px solid #006F93;
     }
 }
 
