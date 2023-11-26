@@ -274,6 +274,12 @@ section {
     border-radius: 15px;
     text-align: center;
     gap: 10px;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+}
+
+.penyebab-grid:hover {
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.5);
 }
 
 .penyebab-grid h5 {
@@ -308,6 +314,14 @@ section {
     align-items: center;
     border-radius: 15px;
     border: 5px solid #006F93;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+}
+
+.dampak-grid:hover {
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.5);
+    transform: scale(1.03);
+    border-color: #29a5ce;
 }
 
 .dampak-grid img {
@@ -315,6 +329,132 @@ section {
     vertical-align: middle;
 }
 
+.dampak-grid h6 {
+    margin-top: 5px;
+}
+
+
+
+
+/* ============== Data Suhu ============== */
+.data-suhu-container {
+    padding: 70px 0px;
+    background-color: #013647;
+}
+
+.data-suhu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 50px;
+    z-index: 5;
+}
+
+.data-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.data-button {
+    background-image: linear-gradient(to bottom right, #0FACC2, #4472C4);
+    padding: 10px 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+}
+
+.data-button:hover {
+    background-image: linear-gradient(to bottom right, #29cee4, #285096);
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+.data-button p {
+    padding: 0;
+    margin: 0;
+}
+
+.data-number h1 {
+    color: #FF8181;
+    font-size: 4rem !important;
+    text-align: center;
+}
+
+.data-number p {
+    text-align: center;
+}
+
+#data-grass-light {
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+    z-index: 3;
+}
+
+#data-grass-dark {
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+    z-index: 4;
+}
+
+
+
+/* ================ Footer ================ */
+footer {
+    position: relative;
+    padding: 70px 0px;
+    background-color: #00212A;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    padding: 0px 30px !important;
+}
+
+.footer img {
+    width: 50%;
+    margin: auto;
+}
+
+.footer div ul {
+    margin: auto;
+    padding: 0;
+    list-style-type: none;
+    list-style-position: inside;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+}
+
+.footer div ul li {
+    margin: 0;
+    padding: 0;
+}
+
+.footer div ul li:first-child {
+    color: white;
+}
+
+.footer div ul li a {
+    text-decoration: none;
+    color: #7E7E7E;
+}
+
+.footer-quote {
+    text-align: center;
+}
 
 
 /* =========== Responsive Screens =========== */
@@ -394,6 +534,17 @@ section {
         border-radius: 15px;
         border: 5px solid #006F93;
     }
+
+    /* Data SUhu */
+    .data-suhu-container {
+        padding: 70px 0px 22% 0px;
+    }
+
+    /* Footer */
+    .footer img {
+        width: 30%;
+        margin: auto;
+    }
 }
 
 
@@ -469,6 +620,49 @@ section {
         padding: 10px 15px;
         border-radius: 15px;
         border: 5px solid #006F93;
+    }
+
+    /* Data Suhu */
+    .data-suhu-container {
+        padding: 70px 0px 22% 0px;
+    }
+
+    .data-suhu {
+        flex-direction: row;
+        align-items: center;
+        gap: 50px;
+    }
+
+    .data-text {
+        width: 60%;
+    }
+
+    .data-number h1 {
+        font-size: 5rem !important;
+    }
+
+    .data-number {
+        width: 40%;
+    }
+
+    /* Footer */
+    .footer img {
+        width: 15%;
+        margin: 0;
+    }
+
+    .footer {
+        flex-direction: row;
+        gap: 50px;
+    }
+
+    .footer div ul {
+        text-align: left;
+    }
+
+    .footer-quote {
+        text-align: left;
+        width: 30%;
     }
 }
 
