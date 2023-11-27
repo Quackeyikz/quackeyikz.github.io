@@ -29,7 +29,7 @@ body {
 
 .poppins-b {
     font-family: 'Poppins';
-    font-weight: 700;
+    font-weight: 800;
 }
 
 .rem-7 { font-size: 0.7rem; }
@@ -189,9 +189,10 @@ nav > div {
 }
 
 .nav-profile {
-    background-color: blue;
+    background-color: white;
     border-radius: 1000px;
     width: 20px;
+    border: 1px solid #00bBF0;
 }
 
 
@@ -445,6 +446,7 @@ footer {
 
 .footer div ul li:first-child {
     color: white;
+    margin-bottom: 10px;
 }
 
 .footer div ul li a {
