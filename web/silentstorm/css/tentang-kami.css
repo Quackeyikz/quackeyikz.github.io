@@ -1,9 +1,13 @@
+* {
+    transition: 0.3s;
+}
+
 body {
     background-image: url('../img/Background.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50% 0%;
-    height: auto;
+    min-height: 100vh;
 }
 
 .tk-container {
