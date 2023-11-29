@@ -11,9 +11,18 @@ body {
     min-height: 100vh;
 }
 
+.logo-link {
+    margin: auto;
+    display: block;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
 .logo {
     width: 30%;
     margin: auto auto 30px auto;
+    display: block;
 }
 
 form {

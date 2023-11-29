@@ -183,6 +183,10 @@ nav > div {
     margin-left: -15px;
 }
 
+.nav-button a:hover {
+    color: rgb(179, 179, 179) !important;
+}
+
 .nav-logo {
     width: 40px;
     vertical-align: middle;
@@ -452,6 +456,10 @@ footer {
 .footer div ul li a {
     text-decoration: none;
     color: #7E7E7E;
+}
+
+.footer div ul li a:hover {
+    color: #bdbdbd;
 }
 
 .footer-quote {
