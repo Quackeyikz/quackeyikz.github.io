@@ -1,0 +1,101 @@
+body {
+    background-image: url('../img/Background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 0%;
+    backdrop-filter: brightness(0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.logo {
+    width: 30%;
+    margin: auto auto 30px auto;
+}
+
+form {
+    transition: 0.3s;
+    margin-top: 20px;
+}
+
+input {
+    border: 2px solid #5fd7ff;
+}
+
+button[type=submit] {
+    background-image: linear-gradient(to bottom, #006F93, #013647);
+    border-radius: 1000px;
+    border: 2px solid #006F93;
+    padding: 10px 0px;
+    transition: 0.3s;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.3);
+}
+
+button[type=submit]:hover {
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.7);
+    border-color: #5fd7ff;
+}
+
+.sosmed-login {
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+.sosmed-login img {
+    width: 50px;
+}
+
+.alternative-login {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.alternative-login h5 {
+    margin-top: 30px;
+}
+
+@media screen and (max-width:759px) {
+    form, .alternative-login {
+        transform: scale(0.9);
+    }
+}
+
+
+/* Tablet */
+@media screen and (min-width:760px) and (min-height:1024px) {
+    form {
+        width: 80% !important;
+    }
+
+    .logo {
+        width: 15%;
+    }
+
+    .alternative-login h5 {
+        margin-top: 40px;
+    }
+}
+
+
+/* Desktop */
+@media screen and (min-width:992px) {
+    form {
+        width: 50% !important;
+    }
+
+    .logo {
+        width: 10%;
+    }
+
+    .alternative-login h5 {
+        margin-top: 50px;
+    }
+}
