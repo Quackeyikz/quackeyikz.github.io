@@ -19,7 +19,7 @@ body, html {
 
 body {
     background-color: rgb(55, 55, 80);
-    font-family: 'genshin';
+    font-family: 'genshin', Arial, Helvetica, sans-serif;
 }
 
 /* Navbar */
@@ -178,7 +178,7 @@ body {
 .right-main {
     flex: 7;
     background-color: rgb(230, 227, 221);
-    height: 88vh;
+    /* height: 88vh; */
     border: 10px solid var(--dark-blue);
 }
 
@@ -186,21 +186,16 @@ body {
     background-color: rgb(238, 235, 230);
     border: 2px solid rgb(197, 197, 197);
     position: relative;
-    max-height: 78vh;
+    /* max-height: 78vh; */
 }
 
 .tabcontent {
     overflow-y: auto;
-    max-height: calc(100%-32px);
 }
 
 @media screen and (max-width:768px){
     html {
         font-size: 14px;
-    }
-
-    body {
-        overflow: hidden;
     }
 
     .mobile {

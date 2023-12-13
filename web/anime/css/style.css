@@ -1,0 +1,276 @@
+.d-flex {
+    display: flex;
+}
+
+.flex-row {
+    flex-direction: row;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.gap-1 {
+    gap: 10px
+}
+
+.gap-2 {
+    gap: 20px
+}
+
+.gap-3 {
+    gap: 30px
+}
+
+.gap-4 {
+    gap: 40px
+}
+
+.gap-5 {
+    gap: 50px
+}
+
+.width-100 {
+    width: 100%
+}
+
+.yellow { color: yellow !important;}
+.blue { color: rgb(90, 200, 243) !important;}
+.green { color: rgb(71, 196, 71) !important;}
+.gray { color: rgba(167, 167, 167, 0.3) !important;}
+.orange { color: orange !important;}
+
+a {
+    text-decoration: none !important;
+}
+
+body {
+    min-height: 100vh;
+    width: auto;
+    background-color: rgb(0, 45, 85);
+    padding: 0px;
+    margin: 0px;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+}
+
+/* Navbar */
+#navbar {
+    /* background-color: #0c111d; */
+    background-image: linear-gradient(to bottom, #182133, #0c111d);
+    display: block;
+    width: 17%;
+    padding: 15px;
+}
+
+.tier-list-button {
+    padding: 10px;
+    background-color: #253146;
+    color: white;
+    font-weight: 500;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.3);
+    transition: 0.3s;
+    border-radius: 5px;
+}
+
+.tier-list-button:hover {
+    background-color: #1c2b49;
+    box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
+}
+
+.nav-anime-list {
+    color: rgb(97, 122, 155);
+    font-size: 0.8rem;
+}
+
+.nav-anime-list:hover {
+    color: rgb(132, 154, 182);
+    background-color: rgb(30, 45, 63);
+}
+
+.nav-anime-list-image {
+    width: 20px;
+    height: 20px;
+    object-fit: cover;
+}
+
+/* Main Container */
+#main-container {
+    /* background-color: #151e31; */
+    background-image: linear-gradient(to bottom right, #253046, #151e31, #101729);
+    display: block;
+    width: 83%;
+    padding: 30px;
+}
+
+
+.title {
+    color: #bbb;
+    align-items: center;
+    position: relative;
+}
+
+.title span.about-title {
+    font-size: 1.4rem;
+    font-weight: 200;
+}
+
+.title hr {
+    border: none;
+    border-top: 1px solid rgb(79, 93, 131);
+    margin: 12px 0px;
+    width: 100%;
+    height: 0.05px;
+}
+
+/* Grid Anime */
+.grid-container {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.grid-anime {
+    width: 150px;
+    height: 250px;
+    display: block;
+    position: relative;
+    background-size: cover;
+    background-color: rgb(49, 78, 121);
+    background-position: 50% 0%;
+    box-shadow: 0px 10px 10px #00000077;
+    transition: 0.3s;
+    padding: 0px;
+    margin: 0px;
+}
+
+.grid-anime:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 10px 10px #00000033;
+    z-index: 100;
+}
+
+.grid-anime:hover>.about-hover {
+    display: block;
+    transition: 0.3s;
+}
+
+.about-hover {
+    display: none;
+    position: absolute;
+    backdrop-filter: blur(50px);
+    padding: 15px;
+    left: 110%;
+    transition: 0.3s;
+    width: 130%;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.about-hover span {
+    color: white;
+    font-size: 1rem;
+}
+
+.about-hover p.about-sinopsis {
+    font-size: 0.6rem;
+    color: #bbb;
+    line-height: 10px;
+    margin: 10px 0px 20px 0px;
+    text-align: justify;
+}
+
+.about-hover p.about-detail {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: #bbb;
+}
+
+.anime-tier {
+    top: 0;
+    right: 0;
+    padding: 0px;
+    margin: 0px;
+    width: 50px;
+    position: absolute;
+}
+
+.about-detail i {
+    vertical-align: middle;
+}
+
+#the-apothecary-diaries { background-image: url('../img/The Apothecary Diaries.jpg'); }
+#tensei-shitara-slime-datta-ken { background-image: url('../img/Tensei shitara Slime Datta Ken.jpg'); }
+#overlord { background-image: url('../img/Overlord.jpg'); }
+#violet-evergarden { background-image: url('../img/Violet Evergarden.jpg'); }
+#mahoutsukai-no-yome { background-image: url('../img/Mahoutsukai No Yome.jpg'); }
+#kimetsu-no-yaiba { background-image: url('../img/Kimetsu no Yaiba.jpg'); }
+#one-punch-man { background-image: url('../img/One Punch Man.jpg'); }
+#classroom-of-the-elite { background-image: url('../img/Classroom of The Elite.jpg'); }
+#shangri-la-frontier { background-image: url('../img/Shangri-La Frontier.jpg'); }
+
+
+
+
+
+.accordion {
+    --bs-accordion-color: var(--bs-body-color);
+    --bs-accordion-bg: transparent;
+    --bs-accordion-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, border-radius 0.15s ease;
+    --bs-accordion-border-color: transparent;
+    --bs-accordion-border-width: var(--bs-border-width);
+    --bs-accordion-border-radius: 0;
+    --bs-accordion-inner-border-radius: 0;
+    --bs-accordion-btn-padding-x: 5px;
+    --bs-accordion-btn-padding-y: 5px;
+    --bs-accordion-btn-color: rgb(169, 202, 247);
+    --bs-accordion-btn-bg: linear-gradient(to right, #202a3f, #18213300);
+    --bs-accordion-btn-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+    --bs-accordion-btn-icon-width: 1.25rem;
+    --bs-accordion-btn-icon-transform: rotate(-180deg);
+    --bs-accordion-btn-icon-transition: transform 0.2s ease-in-out;
+    --bs-accordion-btn-active-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23052c65'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+    --bs-accordion-btn-focus-border-color: #86b6fe00;
+    --bs-accordion-btn-focus-box-shadow: 0 0 0 0.25rem rgba(13, 109, 253, 0);
+    --bs-accordion-body-padding-x: 0;
+    --bs-accordion-body-padding-y: 15px;
+    --bs-accordion-active-color: rgb(169, 202, 247);
+    --bs-accordion-active-bg: transparent;
+}
+
+.accordion-button {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: var(--bs-accordion-btn-padding-y) var(--bs-accordion-btn-padding-x);
+    font-size: 1rem;
+    color: var(--bs-accordion-btn-color);
+    text-align: left;
+    background-image: var(--bs-accordion-btn-bg);
+    border: 0;
+    border-radius: 0;
+    overflow-anchor: none;
+    transition: var(--bs-accordion-transition);
+}
+
+.anti-mobile {
+    display: none;
+}
+
+@media screen and (max-width:600px) {
+    .anti-mobile {
+        min-height: 100vh;
+        min-width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        z-index: 999;
+        color: white;
+        background-color: #182133ea;
+        backdrop-filter: blur(5px);
+        font-size: 2rem;
+    }
+}
