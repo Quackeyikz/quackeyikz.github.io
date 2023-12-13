@@ -274,3 +274,14 @@ body {
         font-size: 2rem;
     }
 }
+
+@media screen and (max-width:1080px) {
+    #navbar {
+        display: none;
+        width: 0%;
+    }
+
+    #main-container {
+        width: 100%;
+    }
+}
