@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What day is it?</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="background-grid">
+        <div class="bg-grid"></div>
+        <div class="bg-grid"></div>
+        <div class="bg-grid"></div>
+        <div class="bg-grid"></div>
+        <div class="bg-grid"></div>
+        <div class="bg-grid"></div>
+        <div class="bg-grid"></div>
+        <div class="bg-grid"></div>
+        <div class="bg-grid"></div>
+        <div class="bg-grid"></div>
+        <div class="bg-grid"></div>
+        <div class="bg-grid"></div>
+        <div class="bg-grid"></div>
+        <div class="bg-grid"></div>
+        <div class="bg-grid"></div>
+        <div class="bg-grid"></div>
+        <div class="bg-grid"></div>
+        <div class="bg-grid"></div>
+        <div class="bg-grid"></div>
+        <div class="bg-grid"></div>
+        <div class="bg-grid"></div>
+        <div class="bg-grid"></div>
+        <div class="bg-grid"></div>
+        <div class="bg-grid"></div>
+        <div class="bg-grid"></div>
+        <div class="bg-grid"></div>
+        <div class="bg-grid"></div>
+        <div class="bg-grid"></div>
+        <div class="bg-grid"></div>
+        <div class="bg-grid"></div>
+        <div class="bg-grid"></div>
+        <div class="bg-grid"></div>
+        <div class="bg-grid"></div>
+        <div class="bg-grid"></div>
+        <div class="bg-grid"></div>
+        <div class="bg-grid"></div>
+    </div>
+    <div class="card-container">
+        <img src="steam.svg">
+        <p class="pp">Rp12.000</p>
+        <div class="cs">
+            <p>Kode :</p>
+            <input type="text" value="HA73-AS9B-4JKMS-59PO" id="myInput" readonly><br>
+            <button onclick="myFunction()">Copy Reedem Code</button>
+        </div>
+    </div>
+
+    <script>
+        function myFunction() {
+            var copyText = document.getElementById("myInput");
+
+            copyText.select();
+            copyText.setSelectionRange(0, 99999);
+
+            navigator.clipboard.writeText(copyText.value);
+        }
+    </script>
+</body>
+
+</html>
