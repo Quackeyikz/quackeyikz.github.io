@@ -52,8 +52,8 @@
         <p class="pp">Rp12.000</p>
         <div class="cs">
             <p>Kode :</p>
-            <input type="text" value="HA73-AS9B-4JKMS-59PO" id="myInput" readonly><br>
-            <button onclick="myFunction()">Copy Reedem Code</button>
+            <input type="text" value="KODE" id="myInput" readonly><br>
+            <button id="copyButton" onclick="myFunction()">Copy Reedem Code</button>
         </div>
     </div>
 
@@ -65,6 +65,9 @@
             copyText.setSelectionRange(0, 99999);
 
             navigator.clipboard.writeText(copyText.value);
+
+            document.getElementById('copyButton').innerHTML = 'Sukses!';
+            document.getElementById('copyButton').style.borderColor = 'green';
         }
     </script>
 </body>
