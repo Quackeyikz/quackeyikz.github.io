@@ -1,0 +1,65 @@
+body {
+    background-color: rgb(18, 17, 29);
+    padding: 0;
+    margin: 0;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+    padding: 15px 30px;
+}
+
+
+/* Main */
+
+main {
+    padding: 0px 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.tier-container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.tier {
+    font-weight: 700;
+    font-size: 1.5rem;
+    width: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.tier-content {
+    background-color: rgb(12, 10, 20);
+    position: relative;
+    width: 95%;
+    height: inherit;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    flex-wrap: wrap;
+    flex: 1;
+}
+
+.anime-box {
+    height: 100px;
+    aspect-ratio: 1.4 / 2;
+    display: block;
+    position: relative;
+    background-size: cover;
+}
+
+#tier-s {background-color: rgb(182, 37, 37);}
+#tier-a {background-color: rgb(224, 163, 30);}
+#tier-b {background-color: rgb(37, 95, 182);}
+#tier-c {background-color: rgb(65, 170, 34);}
+#tier-d {background-color: rgb(94, 94, 94);}
+
