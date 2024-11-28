@@ -360,8 +360,8 @@ footer {
 
 .blog-group:nth-child(2) .blog-card-sm:nth-child(1) { background-image: url('../img/online-mis.png'); }
 .blog-group:nth-child(2) .blog-card-sm:nth-child(2) { background-image: url('../img/online-mis.png'); }
-.blog-group:nth-child(2) .blog-card-sm:nth-child(1) .bc-overlay { background-image: linear-gradient(to bottom, #003161, #003161cc, #00316100); }
-.blog-group:nth-child(2) .blog-card-sm:nth-child(2) .bc-overlay { background-image: linear-gradient(to bottom, #001E6C, #001E6Ccc, #001E6C00); }
+.blog-group:nth-child(2) .blog-card-sm:nth-child(1) .bc-overlay { background-image: linear-gradient(to bottom, #007c65, #00c5a1cc, #00c5a100); }
+.blog-group:nth-child(2) .blog-card-sm:nth-child(2) .bc-overlay { background-image: linear-gradient(to bottom, #001E6C, #001e6ccc, #001E6C00); }
 
 @media screen and (min-width:762px) {
     nav {

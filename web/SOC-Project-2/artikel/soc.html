@@ -7,17 +7,17 @@
     <title>Artikel - EEPISSOC</title>
 
     <!-- CSS -->
-    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="../style/style.css">
 
     <!-- Favicon -->
-    <link rel="icon" href="img/PENS_Logo_Outline_NoText_15pt.png">
+    <link rel="icon" href="../img/PENS_Logo_Outline_NoText_15pt.png">
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="bootstrap-5.3.3-dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="bootstrap-icons-1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../bootstrap-5.3.3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../bootstrap-icons-1.11.3/font/bootstrap-icons.min.css">
 </head>
 
 <body data-bs-spy="scroll" data-bs-target="#nav-spy" data-bs-smooth-scroll="true">
@@ -26,7 +26,7 @@
         <div class="container">
             <a class="navbar-brand" href="#">
                 <div class="nav-brand d-flex flex-row gap-3 align-items-center">
-                    <img src="img/Logo_PENS.png" class="mb" alt="Logo PENS" width="30px" height="30px">
+                    <img src="../img/Logo_PENS.png" class="mb" alt="Logo PENS" width="30px" height="30px">
                     <div class="d-flex flex-column">
                         <h3><i>EEPISSOC</i></h3>
                         <small class="fs-9 text-danger">Security Operation Center</small>
@@ -39,13 +39,13 @@
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
                 <div id="nav-spy" class="navbar-nav">
-                    <a id="nav-link-1" class="nav-link" href="index.html#"><i
+                    <a id="nav-link-1" class="nav-link" href="../index.html#"><i
                             class="bi bi-circle-square text-primary"></i>&nbsp;&nbsp;Beranda</a>
-                    <a id="nav-link-2" class="nav-link active" href="artikel.html"><i
+                    <a id="nav-link-2" class="nav-link active" href="../artikel.html"><i
                             class="bi bi-file-earmark text-primary"></i>&nbsp;&nbsp;Artikel</a>
-                    <a id="nav-link-3" class="nav-link" href="index.html#services"><i
+                    <a id="nav-link-3" class="nav-link" href="../index.html#services"><i
                             class="bi bi-wallet2 text-primary"></i>&nbsp;&nbsp;Layanan Kami</a>
-                    <a id="nav-link-4" class="nav-link" href="index.html#faq"><i
+                    <a id="nav-link-4" class="nav-link" href="../index.html#faq"><i
                             class="bi bi-question-circle text-primary"></i>&nbsp;&nbsp;FAQ</a>
                     <a id="nav-link-5" class="nav-link" href="#footer"><i
                             class="bi bi-telephone text-primary"></i>&nbsp;&nbsp;Kontak</a>
@@ -54,84 +54,31 @@
         </div>
     </nav>
 
-    <!------------------ Main ------------------>
+    <!------------------ Artikel ------------------>
     <main class="container-fluid py-5">
-        <div class="container blog-container">
-            <h1>Jelajahi Artikel</h1>
-            <p class="small text-success">Baca Artikel Yang Tersedia</p>
+        <div class="container article-container d-flex flex-column">
+            <p class="text-center mb-2 text-primary">Teknologi</p>
+            <h1 class="text-center fw-bold">Security Operation Center, Solusi Permasalahan Ancaman Siber dan Keamanan Lainnya</h1>
+            <p class="small text-center fw-semibold text-dark-emphasis mt-3">Akses Data Mahasiswa dan Staff Menggunakan Local Internet</p>
 
-            <div class="blog d-flex flex-no-wrap gap-3 mt-5">
+            <img class="article-img rounded-2 m-auto mt-3 mb-5" src="../img/Security.webp" alt="">
+            
+            <div class="article-text m-auto">
+                <h4 class="fw-semibold text-dark fs-5">Sistem absensi yang terintegrasi langsung dengan data center PENS. Dosen dapat dengan cepat membuka absensi perkuliahan dan mahasiswa dapat menggunakan smart card sebagai akses untuk absen.</h4>
 
-                <div class="blog-group d-flex gap-3">
-                    <div class="blog-card-lg">
-                        <div class="bc-overlay d-flex flex-column">
-                            <div>
-                                <small>Teknologi</small>
-                                <h4>Security Operation Center, Solusi Permasalahan Ancaman Siber dan Keamanan Lainnya</h4>
-                            </div>
-                            <a href="artikel/soc.html" class="btn btn-light fw-medium">Baca Artikel</a>
-                        </div>
-                    </div>
-                    
-                    <div class="blog-sm-container d-flex flex-row gap-3">
-                        <div class="blog-card-sm">
-                            <div class="bc-overlay d-flex flex-column">
-                                <div>
-                                    <small>Layanan</small>
-                                    <h4>Smart Card Sebagai Solusi Pengganti Absensi Konvensional</h4>
-                                </div>
-                                <a href="layanan/smart-card.html" class="btn btn-light fw-medium">Baca Artikel</a>
-                            </div>
-                        </div>
-                        <div class="blog-card-sm">
-                            <div class="bc-overlay d-flex flex-column">
-                                <div>
-                                    <small>Layanan</small>
-                                    <h4>Parkir Kendaraan Aman Dengan Fasilitas Smart Parking Gate</h4>
-                                </div>
-                                <a href="layanan/smart-park.html" class="btn btn-light fw-medium">Baca Artikel</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <p class="text-dark-emphasis">Mesin absensi smartcard merupakan peralatan yang digunakan di PENS untuk mempermudah proses belajar mengajar. Dengan adanya mesin smartcard ini dosen cukup memilih matakuliah yang akan diajarkan dan kemudian diikuti oleh absensi mahasiswa. Dan pada akhirnya data absensi tersebut akan masuk ke database, sehingga memudahkan staff Akademik dalam melakukan rekapitulasi absensi perkuliahan. <br><br> Berikut adalah keunggulan dari Smart Card :</p>
 
-                <div class="blog-group d-flex gap-3">
-                    <div class="blog-card-lg">
-                        <div class="bc-overlay d-flex flex-column">
-                            <div>
-                                <small>Teknologi</small>
-                                <h4>Perbedaan SOC dengan NOC, Mengapa Keduanya Penting Demi Mencegah Adanya Ancaman?</h4>
-                            </div>
-                            <a href="artikel/Perbedaan_SOC_NOC.html" class="btn btn-light fw-medium">Baca Artikel</a>
-                        </div>
-                    </div>
-                    
-                    <div class="blog-sm-container d-flex flex-row gap-3">
-                        <div class="blog-card-sm">
-                            <div class="bc-overlay d-flex flex-column">
-                                <div>
-                                    <small>Layanan</small>
-                                    <h4>Akses Data dan Informasi Kampus Secara Lokal Dengan MIS</h4>
-                                </div>
-                                <a href="layanan/mis.html" class="btn btn-light fw-medium">Baca Artikel</a>
-                            </div>
-                        </div>
-                        <div class="blog-card-sm">
-                            <div class="bc-overlay d-flex flex-column">
-                                <div>
-                                    <small>Layanan</small>
-                                    <h4>Akses Informasi Manajemen Dari Mana Saja Dengan Online-MIS</h4>
-                                </div>
-                                <a href="layanan/online-mis.html" class="btn btn-light fw-medium">Baca Artikel</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <h3>1. Mudah Dibawa</h3>
+                <p class="text-dark-emphasis">Karena bentuknya yang kecil dan memiliki ukuran kartu pada umumnya, menjadikan smart card sebagai salah satu alternatif yang mudah untuk dipraktikkan dibandingkan dengan absensi konvensional karena dapat muat di berbagai macam tempat. Contohnya adalah dompet, tas, atau bahkan lanyard / gantungan kartu.</p>
 
+                <h3>2. Penggunaan Praktis</h3>
+                <p class="text-dark-emphasis">Berbeda dengan absensi konvensional yang memerlukan mahasiswa untuk menulis atau absensi dengan cara memanggil mahasiswa satu persatu, smart card menyediakan fitur scan cepat dalam 1-2 detik pada mesin yang disediakan.</p>
 
+                <h3>3. Multi Fungsi</h3>
+                <p class="text-dark-emphasis">Tidak hanya absensi, smart card ini juga dapat digunakan sebagai akses untuk menggunakan smart parking yang disediakan di dalam kampus PENS. Mahasiswa dapat memasuki area parkir yang aman hanya dengan cara scan smart card pada gate parkir. Selain itu, smart card juga dapat digunakan sebagai bukti identitas mahasiswa sebagai mahasiswa PENS.</p>
 
+                <small class="fw-medium fs-6">Baca Juga : <a href="../layanan/smart-park.html" class="text-decoration-none">Parkir Kendaraan Aman Dengan Fasilitas Smart Parking Gate</a></small>
             </div>
-
         </div>
     </main>
 
@@ -143,7 +90,7 @@
         <div class="container footer-container">
             <div class="footer d-flex gap-3">
                 <div class="flex-fill footer-brand d-flex flex-row gap-3 align-items-center">
-                    <img src="img/Logo_PENS.png" class="mb-2" alt="Logo PENS" width="60px" height="60px">
+                    <img src="../img/Logo_PENS.png" class="mb-2" alt="Logo PENS" width="60px" height="60px">
                     <div>
                         <h1><i>EEPISSOC</i></h1>
                         <small class="fs-8 text-warning">Security Operation Center</small>
@@ -152,10 +99,10 @@
                 <div class="footer-link d-flex flex-wrap mt-4 gap-4">
                     <div class="flex-fill d-flex flex-column gap-3 mb-4">
                         <h4>EEPISSOC</h4>
-                        <a href="index.html#">Beranda</a>
-                        <a href="index.html#services">Layanan</a>
-                        <a href="index.html#faq">FAQ</a>
-                        <a href="#">Artikel</a>
+                        <a href="../index.html#">Beranda</a>
+                        <a href="../index.html#services">Layanan</a>
+                        <a href="../index.html#faq">FAQ</a>
+                        <a href="../artikel.html">Artikel</a>
                     </div>
                     <div class="flex-fill d-flex flex-column gap-3 mb-4">
                         <h4>Tautan Kami</h4>
@@ -166,10 +113,10 @@
                     </div>
                     <div class="flex-fill d-flex flex-column gap-3 mb-4">
                         <h4>Layanan</h4>
-                        <a href="layanan/smart-card.html">Smart Card</a>
-                        <a href="layanan/smart-park.html">Smart Park</a>
-                        <a href="layanan/mis.html">MIS</a>
-                        <a href="layanan/online-mis.html">Online-MIS</a>
+                        <a href="../layanan/smart-card.html">Smart Card</a>
+                        <a href="../layanan/smart-park.html">Smart Park</a>
+                        <a href="../layanan/mis.html">MIS</a>
+                        <a href="../layanan/online-mis.html">Online-MIS</a>
                     </div>
                     <div class="flex-fill d-flex flex-column gap-3 mb-4">
                         <h4>Kontak</h4>
@@ -186,11 +133,11 @@
         </div>
     </footer>
 
-    <script src="js/script.js"></script>
-    <script src="js/scrollSpyArtikel.js"></script>
+    <script src="../js/script.js"></script>
+    <script src="../js/scrollSpyArtikel.js"></script>
 
     <!-- Bootstrap JS & Popper -->
-    <script src="bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
     <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script> -->
     <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script> -->
     <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script> -->
