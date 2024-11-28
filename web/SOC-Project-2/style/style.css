@@ -77,8 +77,9 @@ a {
 /* ----- Navbar ----- */
 nav {
     font-weight: 600;
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    /* box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2); */
     padding: 10px 0px !important;
+    border-bottom: 1px solid rgb(212, 212, 212);
 }
 
 .nav-brand h3 {
@@ -272,10 +273,95 @@ footer {
     width: 100%;
 }
 
-.article-text p:not(:nth-child(1)) {
+.article-text p {
+    text-indent: 30px;
     text-align: justify;
     padding: 10px 0px;
 }
+
+
+/* Blog */
+
+.blog {
+    flex-direction: column;
+}
+
+.blog-group {
+    flex-direction: column;
+    flex-grow: 1;
+    color: white;
+}
+
+.blog-group:nth-child(2) {
+    flex-direction: column-reverse;
+}
+
+
+.bc-overlay {
+    justify-content: space-between;
+    border-radius: inherit;
+    flex-wrap: wrap;
+    padding: 20px;
+    height: 100%;
+    width: 100%;
+}
+
+.bc-overlay div h4 {
+    margin-top: 10px;
+}
+
+.blog-card-lg {
+    flex-grow: 1;
+    min-height: 200px;
+    border-radius: 5px;
+    background-color:rgb(197, 252, 252);
+    background-size: 120%;
+    background-repeat: repeat-x;
+    background-position: 0% 50%;
+}
+
+.blog-card-lg .bc-overlay a {
+    margin-top: 100px;
+}
+
+.blog-card-sm {
+    flex-grow: 1;
+    min-height: 300px;
+    border-radius: 5px;
+    background-color: rgb(255, 212, 163);
+    background-size: cover;
+    background-repeat: repeat-x;
+    background-position: 50% 50%;
+}
+
+/* 
+--soc-warna-biru-darker: #0e162b;
+--soc-warna-biru-gelap: #001E6C;
+--soc-warna-biru-muda: #035397;
+--soc-warna-hijau-gelap: #003161;
+--soc-warna-hijau-muda: #006A67;
+--soc-warna-hijau: rgb(0, 197, 161);
+--soc-warna-peach: #FFF4B7;
+--soc-warna-orange: #E8630A;
+--soc-warna-kuning: #FCD900;
+*/
+
+/* Blog BG Customization */
+.blog-group:nth-child(1) .blog-card-lg { background-image: url('../img/Security.webp'); }
+.blog-group:nth-child(1) .blog-card-lg .bc-overlay { background-image: linear-gradient(to right, #001E6C, #001E6Cdd, #001E6C00); }
+
+.blog-group:nth-child(1) .blog-card-sm:nth-child(1) { background-image: url('../img/smart_card.jpg'); }
+.blog-group:nth-child(1) .blog-card-sm:nth-child(2) { background-image: url('../img/Parking_Gate_Barrier.jpg'); background-position: 100% 0%; }
+.blog-group:nth-child(1) .blog-card-sm:nth-child(1) .bc-overlay { background-image: linear-gradient(to bottom, #035397, #035397DD, #03539700); }
+.blog-group:nth-child(1) .blog-card-sm:nth-child(2) .bc-overlay { background-image: linear-gradient(to bottom, #006A67, #006A67DD, #006A6700); }
+
+.blog-group:nth-child(2) .blog-card-lg { background-image: url('../img/Secure.webp'); }
+.blog-group:nth-child(2) .blog-card-lg .bc-overlay { background-image: linear-gradient(to right, #a74b0f, #E8630Acc, #E8630A00); }
+
+.blog-group:nth-child(2) .blog-card-sm:nth-child(1) { background-image: url('../img/online-mis.png'); }
+.blog-group:nth-child(2) .blog-card-sm:nth-child(2) { background-image: url('../img/online-mis.png'); }
+.blog-group:nth-child(2) .blog-card-sm:nth-child(1) .bc-overlay { background-image: linear-gradient(to bottom, #003161, #003161cc, #00316100); }
+.blog-group:nth-child(2) .blog-card-sm:nth-child(2) .bc-overlay { background-image: linear-gradient(to bottom, #001E6C, #001E6Ccc, #001E6C00); }
 
 @media screen and (min-width:762px) {
     nav {
@@ -390,12 +476,31 @@ footer {
     }
 
 
+    .article-container h1 {
+        width: 80%;
+        margin: auto;
+        line-height: 1.3;
+    }
+
     .article-img {
         width: 85%;
     }
     
     .article-text {
         width: 80%;
+    }
+
+
+    .blog {
+        flex-direction: row;
+    }
+
+    .blog-card-lg .bc-overlay div h4 {
+        max-width: 75%;
+    }
+
+    .blog-card-lg .bc-overlay a {
+        width: 50%;
     }
 }
 
@@ -416,6 +521,10 @@ footer {
         flex-direction: row;
     }
 
+    
+    .article-container h1 {
+        width: 65%;
+    }
 
     .article-img {
         width: 70%;
