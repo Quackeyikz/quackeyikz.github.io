@@ -37,3 +37,23 @@
     font-family: 'Poppins';
     src: url(fonts/Poppins/Poppins-Regular.ttf);
 }
+
+.font-italiana {
+    font-family: 'Italiana';
+}
+
+.font-montserrat {
+    font-family: 'Montserrat';
+}
+
+.font-quicksand {
+    font-family: 'Quicksand';
+}
+
+.font-raleway {
+    font-family: 'Raleway';
+}
+
+.font-poppins {
+    font-family: 'Poppins';
+}

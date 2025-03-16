@@ -11,6 +11,7 @@ body {
     font-weight: 500;
 }
 
+
 /* Main */
 .calendar-header-day {
     display: grid;
@@ -21,6 +22,20 @@ body {
 
 .calendar-header-day div {
     min-width: 30px;
+}
+
+.chev {
+    background-color: #ddf9f0;
+    border-radius: 1000px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 5px 5px;
+    cursor: pointer;
+}
+
+.chev:hover {
+    background-color: var(--seagreen-pale);
 }
 
 #calendar-day {
@@ -51,6 +66,10 @@ body {
     background-color: var(--seagreen-pale);
 }
 
+.cell-inactive:hover {
+    background-color: whitesmoke;
+}
+
 .day-cell span {
     position: absolute;
     font-size: 0.5rem;
@@ -59,13 +78,111 @@ body {
     left: 3px;
 }
 
+.day-cell img {
+    max-width: 100%;
+}
+
+.cell-inactive span {
+    color: rgb(228, 196, 154);
+}
+
 .current-day {
     background-color: var(--seagreen-main);
     color: white;
     border-radius: 1000px;
 }
 
+.outfit-day-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.time-detail {
+    border-bottom: 1px solid rgb(229, 229, 229);
+    border-top: none;
+}
+
+.outfit-day-container .outfit-day-image {
+    background-color: #ddf9f0;
+    padding: 15px;
+    font-size: 0.8rem;
+    border-radius: 5px;
+    min-height: 100px;
+    flex-direction: column;
+}
+
+.outfit-day-image img {
+    border-radius: 10px;
+    max-width: 100%;
+}
+
+.outfit-summary div span {
+    color: var(--seagreen-main);
+    vertical-align: bottom;
+    display: none;
+    cursor: pointer;
+}
+
+.outfit-summary:hover {
+    div span {
+        display: block;
+    }
+}
+
+/* Form Overlay */
+
+.add-outfit-button {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    padding: 15px;
+    background-color: var(--seagreen-strong);
+    border-radius: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.add-outfit-button span {
+    color: white;
+}
+
+.add-outfit-button:hover {
+    cursor: pointer;
+    background-color: #7be5e9;
+}
+
+.form-overlay {
+    background-color: rgba(8, 8, 88, 0.322);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-content: center;
+}
+
+.outfit-form {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+@media screen and (min-width:440px) {
+    .outfit-day-image img {
+        max-width: 50%;
+    }
+}
+
 @media screen and (min-width:768px) {
+    .chev {
+        padding: 5px 15px;
+    }
+
     .calendar-header-day {
         font-size: 0.9rem;
     }
@@ -75,9 +192,36 @@ body {
         top: 5px;
         left: 5px;
     }
+
+    .outfit-day-container {
+        flex-direction: row;
+        gap: 0px;
+    }
+
+    .time-detail {
+        border-top: 1px solid rgb(229, 229, 229);
+        border-bottom: none;
+        width: 25%;
+    }
+
+    .outfit-day-container .outfit-day-image {
+        width: 75%;
+        font-size: 1rem;
+        border-radius: 10px;
+        flex-direction: row;
+        padding: 20px;
+    }
+
+    .outfit-day-image img {
+        max-width: 30%;
+    }
 }
 
 @media screen and (min-width:992px) {
+    .chev {
+        padding: 5px 20px;
+    }
+
     .calendar-header-day {
         font-size: 1rem;
     }
@@ -86,5 +230,9 @@ body {
         font-size: 0.9rem;
         top: 7px;
         left: 7px;
+    }
+
+    .outfit-day-image {
+        padding: 25px;
     }
 }
