@@ -1,0 +1,90 @@
+@import url(main.css);
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: rgb(240, 253, 250) !important;
+}
+
+.italiana {
+    font-family: 'Italiana';
+    font-weight: 500;
+}
+
+/* Main */
+.calendar-header-day {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    font-size: 0.7rem;
+    font-weight: 700;
+}
+
+.calendar-header-day div {
+    min-width: 30px;
+}
+
+#calendar-day {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 5px;
+}
+
+.day-cell {
+    padding: 20px;
+    border-radius: 5px;
+    position: relative;
+    min-width: 30px;
+    min-height: 100px;
+    background-color: #ddf9f0;
+    cursor: pointer;
+}
+
+.day-cell.cell-active {
+    background-color: #a1cefe;
+}
+
+.day-cell.cell-inactive {
+    background-color: whitesmoke;
+}
+
+.day-cell:hover {
+    background-color: var(--seagreen-pale);
+}
+
+.day-cell span {
+    position: absolute;
+    font-size: 0.5rem;
+    padding: 4px 8px;
+    top: 3px;
+    left: 3px;
+}
+
+.current-day {
+    background-color: var(--seagreen-main);
+    color: white;
+    border-radius: 1000px;
+}
+
+@media screen and (min-width:768px) {
+    .calendar-header-day {
+        font-size: 0.9rem;
+    }
+
+    .day-cell span {
+        font-size: 0.8rem;
+        top: 5px;
+        left: 5px;
+    }
+}
+
+@media screen and (min-width:992px) {
+    .calendar-header-day {
+        font-size: 1rem;
+    }
+
+    .day-cell span {
+        font-size: 0.9rem;
+        top: 7px;
+        left: 7px;
+    }
+}

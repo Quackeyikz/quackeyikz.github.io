@@ -1,0 +1,39 @@
+* {
+    box-sizing: content-box;
+    transition: 0.3s;
+    font-family: 'Quicksand', 'Montserrat', 'Raleway', 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    --navy-main: #205781;
+    --navy-strong: #003092;
+    --seagreen-main: #4F959D;
+    --seagreen-strong: #00879E;
+    --seagreen-pale: #98D2C0;
+    --orange-main: #FFAB5B;
+    --orange-pale: #FFF2DB;
+    --cream-main: #F6F8D5;
+}
+
+@font-face {
+    font-family: 'Italiana';
+    src: url(fonts/Italiana/Italiana-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url(fonts/Montserrat/Montserrat-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: 'Quicksand';
+    src: url(fonts/Quicksand/Quicksand-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url(fonts/Raleway/Raleway-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url(fonts/Poppins/Poppins-Regular.ttf);
+}
