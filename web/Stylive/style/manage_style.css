@@ -1,1 +1,30 @@
 @import url(main.css);
+
+body {
+    margin: 0;
+    padding: 20px;
+    font-family: sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+#drop-area {
+    width: 400px;
+    height: 200px;
+    margin: 20px auto;
+    text-align: center;
+    line-height: 200px;
+    border: 3px dashed #4F959D;
+    cursor: pointer;
+}
+
+#preview-container {
+    text-align: center;
+}
+
+.submit:hover{
+    text-decoration: underline;
+    text-underline-offset: 5px;
+}

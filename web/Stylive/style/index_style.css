@@ -74,7 +74,7 @@ nav {
 }
 
 .hero img {
-    width: 50px;
+    width: 60px;
 }
 
 .hero a {
@@ -234,7 +234,7 @@ footer {
     }
 
     .footer > div:not(:nth-child(1)) {
-        margin-top: 70px;
+        margin-top: 20px;
     }
 }
 

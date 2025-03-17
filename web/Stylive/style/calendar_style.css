@@ -3,7 +3,7 @@
 body {
     padding: 0;
     margin: 0;
-    background-color: rgb(240, 253, 250) !important;
+    background-color: var(--cream-main);
 }
 
 .italiana {
@@ -25,7 +25,7 @@ body {
 }
 
 .chev {
-    background-color: #ddf9f0;
+    background-color: rgb(248, 222, 167);
     border-radius: 1000px;
     display: flex;
     justify-content: center;
@@ -35,7 +35,7 @@ body {
 }
 
 .chev:hover {
-    background-color: var(--seagreen-pale);
+    background-color: var(--orange-main);
 }
 
 #calendar-day {
@@ -50,12 +50,12 @@ body {
     position: relative;
     min-width: 30px;
     min-height: 100px;
-    background-color: #ddf9f0;
+    background-color: #f6ebbc;
     cursor: pointer;
 }
 
 .day-cell.cell-active {
-    background-color: #a1cefe;
+    background-color: #fbd799;
 }
 
 .day-cell.cell-inactive {
@@ -63,7 +63,7 @@ body {
 }
 
 .day-cell:hover {
-    background-color: var(--seagreen-pale);
+    background-color: var(--orange-main);
 }
 
 .cell-inactive:hover {
@@ -83,7 +83,7 @@ body {
 }
 
 .cell-inactive span {
-    color: rgb(228, 196, 154);
+    color: orange;
 }
 
 .current-day {
@@ -105,7 +105,7 @@ body {
 }
 
 .outfit-day-container .outfit-day-image {
-    background-color: #ddf9f0;
+    background-color: rgb(253, 216, 170);
     padding: 15px;
     font-size: 0.8rem;
     border-radius: 5px;
