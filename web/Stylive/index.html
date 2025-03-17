@@ -20,39 +20,38 @@
 
 <body>
     <!-- Navbar -->
-    <div class="container-fluid nav-color fixed-top">
-        <nav class="navbar navbar-expand-sm ">
-            <div class="container-fluid">
-                <a class="navbar-brand fs-1 p-0 title-font" aria-current="page" href="index.html">Stylive</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <!--navbar element-->
-                <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                    <ul class="navbar-nav second-font fs-5">
-                        <li class="nav-item">
-                            <a class="nav-link" href="calendar_set.html">Calendar</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="manage_set.html">Manage wardrobe</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="body.html">Body type</a>
-                        </li>
-                    </ul>
-                </div>
+    <nav class="navbar navbar-expand-lg fixed-top ps-md-3 pe-md-3">
+        <div class="container-fluid">
+            <a class="navbar-brand font-italiana fs-1" href="#">Stylive</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="manage_set.html">Your Wardrobe</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="calendar_set.html">Outfit Schedule</a>
+                    </li>
+                </ul>
+                <a class="navbar-text" href="sign-up.html">
+                    <i class="bi bi-person-circle"></i>&nbsp;&nbsp;Register
+                </a>
             </div>
-        </nav>
-    </div>
+        </div>
+    </nav>
 
     <!--Hero-->
     <header class="hero-container container-fluid">
-        <div class="hero container">
+        <div class="hero container pt-5">
+            <img src="image/Pseudo_logo_image-Stylive.png">
             <h1 class="title-font">Stylive, Your Choice<br><i>of Outfit Scheduling</i></h1>
             <p class="title-secondary-font">Fit Your Daily Outfit</p>
-            <a class="mt-3" href="">Get Started <span class="material-symbols-outlined">chevron_right</span></a>
+            <a class="mt-3" href="manage_set.html">Get Started <span class="material-symbols-outlined">chevron_right</span></a>
         </div>
     </header>
 
@@ -64,16 +63,16 @@
                 <small>With Stylive</small>
                 <div class="mt-3 d-flex justify-content-around w-100">
                     <div class="feature-mini-section p-4 d-flex flex-column align-items-center gap-3">
-                        <span>1</span>
-                        <h5>Features 1</h5>
+                        <span><i class="bi bi-person-standing-dress"></i></span>
+                        <h5>Manage your outfits</h5>
                     </div>
                     <div class="feature-mini-section p-4 d-flex flex-column align-items-center gap-3">
-                        <span>2</span>
-                        <h5>Features 2</h5>
+                        <span><i class="bi bi-bag-fill"></i></span>
+                        <h5>Organize Wardrobe</h5>
                     </div>
                     <div class="feature-mini-section p-4 d-flex flex-column align-items-center gap-3">
-                        <span>3</span>
-                        <h5>Features 3</h5>
+                        <span><i class="bi bi-calendar2-week-fill"></i></span>
+                        <h5>Schedule your outfits</h5>
                     </div>
                 </div>
             </div>
@@ -89,16 +88,20 @@
             </section>
             <section class="features-right d-flex flex-column gap-3">
                 <div class="d-flex flex-column gap-2">
-                    <h4>Reason Why 1</h4>
-                    <p>At the small feel of the second paragraph is the first one being good. At the small feel of the second paragraph is the first one being good.</p>
+                    <h4>Managing Outfits Collection with Ease</h4>
+                    <p>Manage your outfits collection effortlessly with our intuitive interface and powerful tools. Easily categorize, sort, and update your wardrobe to keep everything organized and accessible.</p>
                 </div>
                 <div class="d-flex flex-column gap-2">
-                    <h4>Reason Why 2</h4>
-                    <p>At the small feel of the second paragraph is the first one being good. At the small feel of the second paragraph is the first one being good.</p>
+                    <h4>Creating Your Own Ideal Outfit Design</h4>
+                    <p>Create your perfect outfit designs with our easy-to-use design tools and customization options. Experiment with different styles, colors, and accessories to find the perfect look for any occasion.</p>
                 </div>
                 <div class="d-flex flex-column gap-2">
-                    <h4>Reason Why 3</h4>
-                    <p>At the small feel of the second paragraph is the first one being good. At the small feel of the second paragraph is the first one being good.</p>
+                    <h4>Bringing Outfit to Life With Photoscan</h4>
+                    <p>Bring your outfits to life with our advanced photoscan technology, capturing every detail. Visualize your clothing in high resolution and see how different pieces come together to create stunning ensembles.</p>
+                </div>
+                <div class="d-flex flex-column gap-2">
+                    <h4>Keep Track of Your Outfit with Schedule</h4>
+                    <p>Keep track of your outfits and schedule them with our convenient scheduling features. Plan your wardrobe for the week ahead and ensure you always have the perfect outfit ready for any event.</p>
                 </div>
             </section>
         </div>
@@ -108,16 +111,26 @@
     <footer class="container-fluid pt-5 pb-5">
         <div class="footer container d-flex gap-5">
             <div>
-                <h1 class="font-raleway">Stylive</h1>
+                <!-- <h1 class="font-raleway">Stylive</h1> -->
+                <img src="image/Pseudo_logo-Stylive.png" width="100px"><br><br>
                 <small>Made with Love, <i>Ngotak Team</i></small><br><br>
 
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias sint pariatur deleniti officiis consequatur repudiandae vero commodi fugit vel vitae. Sequi autem dignissimos voluptatum quas aliquam, nulla optio veritatis mollitia.</p>
+                <p>Choosing Stylive means embracing a seamless and stylish way to manage your wardrobe. Our platform offers intuitive tools, advanced features, and a user-friendly interface to help you stay organized and fashionable. Join us and experience the convenience and creativity that Stylive brings to your daily outfit planning.</p>
             </div>
             <div class="d-flex flex-column gap-2">
                 <h3 class="font-montserrat"><b>Contact</b></h3>
-                <a href=""><i class="bi bi-github"></i>&nbsp;&nbsp;Github</a>
-                <a href=""><i class="bi bi-instagram"></i>&nbsp;&nbsp;Instagram</a>
-                <a href=""><i class="bi bi-linkedin"></i>&nbsp;&nbsp;Linkedin</a>
+                <a href="https://github.com/Quackeyikz/"><i class="bi bi-github"></i>&nbsp;&nbsp;Github • Quackeyikz</a>
+                <a href="https://github.com/Rezdblz"><i class="bi bi-github"></i>&nbsp;&nbsp;Github • Rezdblz</a>
+                <a href="https://www.instagram.com/erik.yudh4"><i class="bi bi-instagram"></i>&nbsp;&nbsp;Instagram • erik.yudh4</a>
+                <a href="https://www.instagram.com/el.aisyle.lys"><i class="bi bi-instagram"></i>&nbsp;&nbsp;Instagram • el.aislye.lys</a>
+                <a href="https://www.linkedin.com/in/erik-triayuda-wijaya/"><i class="bi bi-linkedin"></i>&nbsp;&nbsp;Linkedin</a>
+            </div>
+            <div class="d-flex flex-column gap-2">
+                <h3 class="font-montserrat"><b>Our Pages</b></h3>
+                <a href="#">Home</a>
+                <a href="manage_set.html">Wardrobe Management</a>
+                <a href="calendar_set.html">Outfit Schedule</a>
+                <a href="sign-in.html">Resgiter Now!</a>
             </div>
             <div>
                 <h4 class="text-center font-italiana">Fit Your <br> Daily Outfit</h4>

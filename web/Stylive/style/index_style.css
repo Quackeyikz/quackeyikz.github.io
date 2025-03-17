@@ -12,6 +12,14 @@ body {
 
 /* Navbar */
 
+nav {
+    /* background-color: var(--seagreen-pale); */
+    background-color: var(--cream-main);
+    border-bottom: 1px solid darkslategray;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
 .nav-link:hover{
     text-decoration: underline;
     text-underline-offset: 5px;
@@ -24,6 +32,19 @@ body {
 .navbar-brand:hover {
     letter-spacing: 0.3rem;
 }
+
+.navbar-text {
+    padding: 10px 15px;
+    border: 1px solid darkslategray;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.navbar-text:hover {
+    background-color: darkslategray;
+    color: white;
+}
+
 
 
 /* Hero */
@@ -50,6 +71,10 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+}
+
+.hero img {
+    width: 50px;
 }
 
 .hero a {
@@ -93,7 +118,7 @@ body {
 }
 
 .feature-mini-section span {
-    padding: 10px 18px;
+    padding: 10px 13px;
     border-radius: 1000px;
     background-color: darkslategray;
     color: var(--cream-main);
@@ -138,13 +163,13 @@ footer {
     align-content: center;
 }
 
-.footer > div {
-    flex-grow: 1;
-}
-
 .footer a {
     text-decoration: none;
     color: var(--navy-main);
+}
+
+.footer a:hover {
+    color: rgb(23, 81, 61);
 }
 
 /* Responsive */
@@ -156,9 +181,21 @@ footer {
     .features-left h1 {
         font-size: 5rem;
     }
+
+    .hero img {
+        width: 55px;
+    }
 }
 
 @media (min-width: 768px) {
+    .nav-item {
+        margin: auto 10px;
+    }
+
+    .hero img {
+        width: 60px;
+    }
+
     .title-font{ font-size: 4rem; }
     .title-secondary-font{ font-size: 1.5rem; }
 
@@ -188,20 +225,24 @@ footer {
 
     .footer {
         flex-direction: row;
-        align-items: center;
+        align-items: flex-start;
+        justify-content: space-between;
     }
 
-    .footer > div:nth-child(2) {
-        min-width: 20%;
+    .footer > div:nth-child(1) {
+        width: 50%;
     }
 
-    .footer > div:nth-child(3) {
-        min-width: 15%;
-        align-content: center;
+    .footer > div:not(:nth-child(1)) {
+        margin-top: 70px;
     }
 }
 
 @media (min-width: 992px) {
+    .hero img {
+        width: 80px;
+    }
+
     .title-font{ font-size: 6rem; }
     .title-secondary-font{ font-size: 2rem; }
 
