@@ -1,0 +1,83 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+main {
+    background-color: white;
+}
+
+.sign-form input {
+    margin-bottom: 20px;
+    width: 100%;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid darkslategray;
+    font-weight: 500;
+}
+
+.sign-form input[type=submit] {
+    background-color: var(--navy-dark);
+    color: white;
+    font-weight: 700;
+}
+
+.sign-form input[type=submit]:hover {
+    background-color: rgb(20, 20, 27);
+    transform: translate(-5px, -2px);
+    box-shadow: 3px 3px 0px black;
+}
+
+span {
+    display: block;
+    text-align: center;
+    color: rgb(240, 147, 76);
+    transform: translateY(-28px);
+    background-color: white;
+    width: 50%;
+    margin: auto;
+}
+
+.social-login a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-family: 'Quicksand', 'Raleway', sans-serif;
+    font-weight: 800;
+    background-color: white;
+    color: rgb(49, 49, 49);
+    border: 1px solid rgb(37, 31, 107);
+    border-radius: 5px;
+    padding: 10px;
+    width: 100%;
+    gap: 15px;
+}
+
+.social-login a:hover {
+    background-color: whitesmoke;
+    transform: translate(-5px, -2px);
+    box-shadow: 3px 3px 0px black;
+    border-width: 2px;
+}
+
+.social-login a img {
+    width: 30px;
+}
+
+@media (min-width: 576px) {
+    span {
+        width: 40%;
+    }
+}
+
+@media (min-width: 768px) {
+    main {
+        width: 40%;
+    }
+}
+
+@media (min-width: 992px) {}

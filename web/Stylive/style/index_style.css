@@ -154,22 +154,27 @@ nav {
 /* Footer */
 
 footer {
-    background-color: var(--seagreen-pale);
+    background-color: var(--navy-dark);
 }
 
 .footer {
     flex-direction: column;
     justify-content: center;
     align-content: center;
+    color: white;
+}
+
+.footer img {
+    filter: invert(100%);
 }
 
 .footer a {
     text-decoration: none;
-    color: var(--navy-main);
+    color: rgb(218, 217, 217);
 }
 
 .footer a:hover {
-    color: rgb(23, 81, 61);
+    color: rgb(160, 160, 160);
 }
 
 /* Responsive */

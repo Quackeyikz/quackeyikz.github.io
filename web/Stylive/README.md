@@ -20,9 +20,9 @@ Stylive adalah aplikasi fashion dengan tema Quality of Life. Aplikasi ini bertuj
 - Quicksand
 - Raleway
 
-*Fallback Fonts*
+*Fallback Fonts:*
 Segoe UI, Tahoma, Geneva, Verdana, sans-serif.
 
-## Demo Website (WIP)
+## Demo Website
 - [Github Page](https://quackeyikz.github.io/web/Stylive)
-- [Vercel](https://)
+- [Vercel](https://stylive-quackeyikzs-projects.vercel.app/)

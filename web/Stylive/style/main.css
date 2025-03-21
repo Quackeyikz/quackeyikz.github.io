@@ -3,6 +3,7 @@
     transition: 0.3s;
     font-family: 'Quicksand', 'Montserrat', 'Raleway', 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
+    --navy-dark: rgb(32, 32, 42);
     --navy-main: #205781;
     --navy-strong: #003092;
     --seagreen-main: #4F959D;
@@ -57,3 +58,8 @@
 .font-poppins {
     font-family: 'Poppins';
 }
+
+
+@media (min-width: 576px) {}
+@media (min-width: 768px) {}
+@media (min-width: 992px) {}
