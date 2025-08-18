@@ -1,0 +1,34 @@
+* {
+    box-sizing: border-box;
+    transition: 0.3s;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #F9F9F9;
+}
+
+header {
+    background-color: #1751a5;
+    background-image: linear-gradient(to bottom right, #134181, #1751a5, #18a79b);
+    height: 110dvh;
+    position: relative;
+    color: white;
+}
+
+header nav hr {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    opacity: 0.2;
+}
+
+.header-waves {
+    position: absolute;
+    display: block;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+}

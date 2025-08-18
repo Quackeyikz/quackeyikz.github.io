@@ -1,0 +1,374 @@
+* {
+    box-sizing: border-box;
+}
+html, body {
+    height: 100vh;
+    /* width: 100vw; */
+    padding: 0;
+    margin: 0;
+    border: none;
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Desain Mobile */
+
+/* ===================== Navigation Bar ======================= */
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 10px;
+    background-color: #1d0450;
+    transition: 0.5s;
+    box-shadow: 0px 5px 10px #00000020;
+    z-index: 9;
+}
+
+.brand {
+    width: 30px;
+    height: 30px;
+    float: left;
+    margin: 20px 10px 10px 20px;
+}
+
+#nav-list {
+    list-style-type: none;
+    color: white;
+}
+
+#nav-list li {
+    display: inline;
+    padding: 0px 10px;
+    float: right;
+    font-size: 15px;
+}
+
+#nav-list li a {
+    text-decoration: none;
+    color: white;
+}
+
+nav.fade {
+    background-color: transparent !important;
+    box-shadow: none;
+}
+/* ====================== Landing Page atau Halaman Utama ======================= */
+#landing-container {
+    display: flex;
+    flex-direction: row;
+    background-color: #120035;
+    background: url('bearbg.png') 60% center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#landing-page {
+    flex: 1;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 30px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.second-flex {
+    flex: 2;
+}
+
+#main-title {
+    font-size: 50px;
+    line-height: 50px;
+}
+
+
+/* ======================== Kreator ============================== */
+
+#tentang-kreator {
+    box-shadow: 0px -30px 30px 10px #00000090;
+    padding: 30px;
+    color: white;
+    background-image: linear-gradient(#120035, #24075f);
+}
+
+#tentang-kreator hr {
+    border: none;
+    border-top: 1px solid #8142ff69;
+}
+
+.card-container {
+    padding: 30px 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 30px;
+}
+
+.card-container a {
+    color: white;
+    text-decoration: none;
+}
+
+.card-kreator {
+    background-color: #5500ff;
+    min-width: 70vw;
+    height: 60vh;
+    transition: .5s;
+    border-bottom: 10px solid rgb(255, 77, 46);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    line-height: 20px;
+    margin: 0;
+}
+
+.card-kreator:hover {
+    box-shadow: 10px 10px 10px #00000050;
+    transform: scale(1.1);
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.card-kreator img {
+    width: 180px;
+    height: 180px;
+    border-radius: 700px;
+    border: 5px solid #5500ff;
+}
+
+.card-kreator h5 {
+    width: 60%;
+    padding: 0;
+    margin: 30px auto;
+}
+
+.card-kreator h1 {
+    padding: 0;
+    margin-bottom: 0;
+}
+
+.card-kreator button {
+    border: none;
+    padding: 8px 30px;
+    background-color: rgb(255, 77, 46);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    transition: 0.3s;
+}
+
+.card-kreator button:hover {
+    transform: scale(1.1);
+    background-color: rgb(255, 96, 68);
+    box-shadow: 5px 5px 10px #00000050;
+}
+
+.card-kreator button a {
+    text-decoration: none;
+    color: white;
+}
+
+/* ======================== Konten Kami ============================== */
+
+#konten-kami {
+    padding: 30px;
+    color: white;
+    background-image: linear-gradient(#120035, #1d0450);
+}
+
+#konten-kami hr {
+    border: none;
+    border-top: 1px solid #8142ff69;
+}
+
+.konten-container {
+    padding: 30px 10px 10px 10px;
+}
+
+.konten-box {
+    background-color: #5500ff;
+    min-width: 70vw;
+    height: 50vh;
+    transition: .5s;
+    border-bottom: 10px solid rgb(255, 77, 46);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    line-height: 20px;
+    margin-top: 10px;
+}
+
+.konten-box:hover {
+    box-shadow: 10px 10px 10px #00000050;
+    transform: scale(1.05);
+}
+
+.konten-box img {
+    width: 100%;
+    height: 60%;
+    border: 5px solid #5500ff;
+}
+
+.konten-box h5 {
+    width: 100%;
+    padding: 0;
+}
+
+.konten-box h1 {
+    padding: 0;
+    margin-bottom: 0;
+}
+
+.konten-box button {
+    border: none;
+    padding: 8px 30px;
+    background-color: rgb(255, 77, 46);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    transition: 0.3s;
+}
+
+.lihat {
+    color: #666;
+    float: right;
+    font-size: 0.7rem;
+}
+
+.footer {
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+.konten-box button:hover {
+    transform: scale(1.1);
+    background-color: rgb(255, 96, 68);
+    box-shadow: 5px 5px 10px #00000050;
+}
+
+.konten-box button a {
+    text-decoration: none;
+    color: white;
+}
+
+
+
+/* Web Desktop */
+
+@media (min-width: 900px) {
+    body div, nav {
+        padding: 0 15vw;
+    }
+
+    .brand {
+        width: 50px;
+        height: 50px;
+        margin: 20px 10px 10px 30px;
+    }
+
+    #nav-list li {
+        padding: 20px 20px;
+    }
+
+    #main-title {
+        font-size: 80px;
+        line-height: 90px;
+    }
+
+    .card-container {
+        flex: 1;
+        justify-content: center;
+        gap: 40px;
+    }
+
+    .card-kreator {
+        min-width: 200px;
+        height: 600px;
+        overflow: hidden;
+        padding: 20px;
+        z-index: 2;
+    }
+
+    .card-kreator img {
+        width: 300px;
+        height: 300px;
+        border-radius: 700px;
+        border: 5px solid #5500ff;
+    }
+    
+    .card-kreator h5 {
+
+        word-wrap: normal;
+        width: 100%;
+        padding: 0;
+    }
+    
+    .card-kreator h1 {
+        padding: 0;
+        margin-bottom: 0;
+        font-size: 50px;
+        line-height: 50px;
+    }
+    
+    .card-kreator button {
+        border: none;
+        padding: 8px 30px;
+        background-color: rgb(255, 77, 46);
+        color: white;
+        font-family: 'Poppins', sans-serif;
+    }
+
+
+
+
+    .konten-container {
+        padding: 20px;
+        justify-content: center;
+        width: 300px;
+        margin: auto;
+    }
+
+    .konten-box {
+        padding: 20px;
+        min-width: 300px;
+        height: 500px;
+    }
+    
+    .konten-box:hover {
+        box-shadow: 10px 10px 10px #00000050;
+        transform: scale(1.05);
+    }
+    
+    .konten-box img {
+        width: 100%;
+        height: 60%;
+        border: 5px solid #5500ff;
+    }
+    
+    .konten-box h5 {
+        width: 100%;
+        padding: 0;
+    }
+    
+    .konten-box h1 {
+        padding: 0;
+        margin-bottom: 0;
+    }
+    
+    .konten-box button {
+        border: none;
+        padding: 8px 30px;
+        background-color: rgb(255, 77, 46);
+        color: white;
+        font-family: 'Poppins', sans-serif;
+    }
+}

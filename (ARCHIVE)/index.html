@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles/view.css">
+
+    <!-- Font dan Icon -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <link rel="icon" href="img/logo.png">
+
+    <!-- Judul -->
+    <title>Web Passion Erik</title>
+</head>
+<body>
+    <!-- ===================== Navigation Bar ===================== -->
+    <nav>
+        <img class="brand" src="img/logo.png" alt="logo">
+        <ul id="nav-list">
+            <li><a href="#tentang-kreator">Profil</a></li>
+            <li><a href="#konten-kami">Konten</a></li>
+            <li><a href="">Galeri</a></li>
+        </ul>
+    </nav>
+
+    <!-- =============== Landing Page ================== -->
+    <div id="landing-container">
+        <div id="landing-page">
+            <h1 id="main-title">Hai, <br> Selamat <br> Datang</h1>
+            <h5>Ini adalah website passion project yang dibuat untuk mengisi waktu luang</h5>
+            <h6 id="tentang-landing">Creativity, Passion, and Story</h6>
+            <p>&nbsp;</p>
+        </div>
+
+        <div class="second-flex">
+            &nbsp;
+        </div>
+    </div>
+
+    <!-- =============== Kreator ================== -->
+    <div id="tentang-kreator">
+        <div>
+            <h2>Berkenalan Dengan Para Kreator</h2>
+            <hr>
+            <p>Projek ini dibuat oleh dua orang beginner front-end developer. Untuk menguji sejauh mana skill yang dimiliki sekaligus mendalami kemampuan-kemampuan melalui discovery hal baru. dan Berikut adalah kreator atau pembuat dari website passion project ini.</p>
+        </div>
+
+        <!-- Card Creator -->
+        <div class="card-container">
+            <a href="quack.html">
+            <div class="card-kreator">
+                <img src="img/travel.png" alt="Author 1">
+                <h1>Quackey</h1>
+                <h5>Kreator utama, content designer dan suka berkarya</h5>
+                <button><a href="quack.html">Profil</a></button>
+            </div>
+            </a>
+
+            <a href="quack.html">
+            <div class="card-kreator">
+                <img src="img/sit.png" alt="Author 2">
+                <h1>Alfyneiz</h1>
+                <h5>Kreator kedua, menyukai konsistensi dan keteraturan</h5>
+                <button>Profil</button>
+            </div>
+            </a>
+        </div>
+    </div>
+    
+    
+    <!-- =============== Konten Kami ================== -->
+    <div id="konten-kami">
+        <div>
+            <h2>Jelajahi Konten Yang Telah Kami Buat</h2>
+            <hr>
+            <p>Ada banyak hal menarik yang mungkin sesuai dengan minat kamu. Dari graphic design, photography, cerita, artikel menarik, sampai randomness.</p>
+        </div>
+
+        <div class="lihat">
+            Lihat Selengkapnya >
+        </div>
+
+        <div class="konten-container">
+            <div class="konten-box">
+                <img src="img/discovery.png" alt="Author 1">
+                <h1>Discovery</h1>
+                <h5>New Inventions and Overall Upgrades</h5>
+                <button>Baca</button>
+            </div>
+        </div>
+
+        <br><br>
+
+        <!-- Footer -->
+        <div class="footer">
+            Always Be Creative and Keep Looking Forward!
+        </div>
+    </div>
+
+
+
+
+    <!-- =============== JS ================ -->
+    <script>
+        function toggleScrollClass() {
+        var nav = document.querySelectorAll('nav')[0];
+        window.pageYOffset > 0 ? nav.classList.remove('fade') : nav.classList.add('fade')
+        }
+        window.addEventListener('scroll', function() {toggleScrollClass()});
+        toggleScrollClass();
+    </script>
+</body>
+</html>

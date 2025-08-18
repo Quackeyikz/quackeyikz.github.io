@@ -4,7 +4,7 @@ html {
 
 * {
     box-sizing: border-box;
-    transition: 0.2s;
+    /* transition: 0.3s; */
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
@@ -63,6 +63,107 @@ main h1 {
 main p {
     text-align: justify;
     line-height: 1.5rem;
+}
+
+/* Venti's Wind Magic - Floating Elements */
+.floating-elements {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 100;
+}
+
+.anemo-particle {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background: radial-gradient(circle, #4DD0E1 0%, #81E6D9 50%, transparent 70%);
+    border-radius: 50%;
+    animation: floatAnemo 15s infinite ease-in-out;
+    opacity: 0.7;
+}
+
+.anemo-particle:nth-child(1) {
+    left: 10%;
+    animation-delay: 0s;
+    animation-duration: 12s;
+}
+
+.anemo-particle:nth-child(2) {
+    left: 50%;
+    animation-delay: -3s;
+    animation-duration: 18s;
+}
+
+.anemo-particle:nth-child(3) {
+    left: 80%;
+    animation-delay: -6s;
+    animation-duration: 15s;
+}
+
+.dandelion-seed {
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    background: #F0E68C;
+    border-radius: 50%;
+    animation: floatDandelion 20s infinite ease-in-out;
+    opacity: 0.6;
+}
+
+.dandelion-seed:nth-child(4) {
+    left: 25%;
+    animation-delay: -2s;
+}
+
+.dandelion-seed:nth-child(5) {
+    left: 75%;
+    animation-delay: -8s;
+}
+
+@keyframes floatAnemo {
+    0% {
+        transform: translateY(100vh) translateX(0px) rotate(0deg);
+        opacity: 0;
+    }
+    10% {
+        opacity: 0.7;
+    }
+    50% {
+        transform: translateY(50vh) translateX(30px) rotate(180deg);
+        opacity: 0.8;
+    }
+    90% {
+        opacity: 0.3;
+    }
+    100% {
+        transform: translateY(-10vh) translateX(-20px) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+@keyframes floatDandelion {
+    0% {
+        transform: translateY(100vh) translateX(0px) rotate(0deg);
+        opacity: 0;
+    }
+    15% {
+        opacity: 0.6;
+    }
+    50% {
+        transform: translateY(40vh) translateX(50px) rotate(90deg);
+        opacity: 0.8;
+    }
+    85% {
+        opacity: 0.4;
+    }
+    100% {
+        transform: translateY(-5vh) translateX(-30px) rotate(180deg);
+        opacity: 0;
+    }
 }
 
 @media screen and (min-width: 760px) {
