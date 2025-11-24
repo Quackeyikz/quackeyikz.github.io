@@ -1,0 +1,93 @@
+:root {
+    --color-theme: oklch(60.823% 0.17155 23.701);
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+/* ========== Main Ref Page =========== */
+.reference-box {
+    padding: 15px 25px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 7px;
+    font-weight: 500;
+    font-size: larger;
+    transition: 0.3s ease-out;
+    min-width: 200px;
+}
+
+.reference-box:hover {
+    opacity: 70%;
+}
+
+.reference-box > i {
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 25px;
+}
+
+/* =========== Individual Ref =========== */
+
+.section-title {
+    font-size: 2rem;
+    margin-top: 30px;
+}
+
+.section-title > a {
+    color: var(--color-theme);
+}
+
+section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.code-block {
+    flex-grow: 1;
+    background-color: oklch(32.292% 0.03179 259.711);
+    border-radius: 20px;
+    position: relative;
+}
+
+.code-block h3 {
+    background-color: var(--color-theme);
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 0.8rem;
+    border-top-right-radius: inherit;
+    border-bottom-left-radius: inherit;
+    padding: 5px 15px;
+}
+
+.code-block pre {
+    padding: 0px 15px;
+    margin-bottom: 20px;
+}
+
+.code-block code {
+    display: block;
+    background-color: transparent;
+}
+
+pre, code {
+    white-space: pre-line;
+}
+
+.code-block p {
+    font-size: 1rem;
+    display: block;
+    padding: 15px 30px;
+    border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit;
+    background-color: oklch(22.671% 0.03819 261.625 / 0.438);
+    color: rgb(189, 189, 189);
+}
