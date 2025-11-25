@@ -32,12 +32,12 @@ body {
 
 /* =========== Individual Ref =========== */
 
-.section-title {
+main h1 {
     font-size: 2rem;
     margin-top: 30px;
 }
 
-.section-title > a {
+main h1 > a {
     color: var(--color-theme);
 }
 
@@ -80,6 +80,7 @@ section {
 
 pre, code {
     white-space: pre-line;
+    /* line-height: 1.5rem; */
 }
 
 .code-block p {
@@ -90,4 +91,10 @@ pre, code {
     border-bottom-right-radius: inherit;
     background-color: oklch(22.671% 0.03819 261.625 / 0.438);
     color: rgb(189, 189, 189);
+}
+
+.code-block p a {
+    text-decoration: underline;
+    color: var(--color-theme);
+    filter: brightness(2);
 }

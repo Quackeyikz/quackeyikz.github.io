@@ -20,7 +20,7 @@
     </style>
 </head>
 <body class="bg-gray-800 text-gray-200">
-    <header class="bg-gray-800 py-15 px-5 flex flex-col gap-4 justify-items-center text-center">
+    <header class="bg-gray-900 py-15 px-5 flex flex-col gap-4 justify-items-center text-center">
         <h1 class="text-5xl font-light"><span style="color: var(--color-theme);">Laravel</span> Cheatsheet</h1>
         <p class="text-gray-600">Code and commands cheatsheet for  
             <a href="https://laravel.com" target="_blank"
@@ -29,16 +29,16 @@
             </a>
         </p>
     </header>
-    <main class="bg-linear-to-b from-gray-800 to-red-500/30 min-h-[100dvh] gap-5 px-8 md:px-10 lg:px-12">
-        <h1 id="installation" class="section-title"><a href="#installation">#</a> Installation</h1>
+    <main class="bg-linear-to-b from-gray-900 to-red-500/30 min-h-[100dvh] gap-5 px-8 md:px-10 lg:px-12 pt-1 pb-8">
+        <h1 id="installation"><a href="#installation">#</a> Installation</h1>
         <section>
             <div class="code-block">
                 <h3>Composer</h3>
                 <pre><code>
-                    composer create-project laravel/laravel:^11.0 namaProject
+                    composer create-project laravel/laravel:^11.0 project_name
                 </code></pre>
                 <p>
-                    Create a new Laravel projet with specified version.
+                    Create a new Laravel projet with specified version using <a href="https://getcomposer.org">Composer</a>.
                 </p>
             </div>
             <div class="code-block">
@@ -46,11 +46,65 @@
                 <pre><code>
                     php artisan serve
                 </code></pre>
-                <p>Run the Laravel project locally.</p>
+                <p>Run the Laravel project locally, execute the command while in the root directory.</p>
             </div>
         </section>
 
-        <h1 id="routing" class="section-title"><a href="#routing">#</a> Routing</h1>
+        <h1 id="Migration"><a href="#Migration">#</a> Migration</h1>
+        <section>
+            <div class="code-block">
+                <h3>Table Creation</h3>
+                <pre><code>
+                    php artisan make:migration create_names_table
+
+                    php artisan make:migration create_names_table --create=names
+                </code></pre>
+                <p>
+                    Creating a new file in the 'database/migrations' folder. Contains functions to create (up) and delete (down) relation.
+                </p>
+            </div>
+            <div class="code-block">
+                <h3>Migration</h3>
+                <pre><code>
+                    php artisan migrate
+
+                    php artisan migrate:rollback
+                    
+                    php artisan migrate:refresh
+
+                    php artisan migrate:fresh
+                </code></pre>
+                <p>
+                    Running every migration file, will create table if not exist. Rollback to undo migration, fresh to start with empty table (fresh).
+                </p>
+            </div>
+            <div class="code-block">
+                <h3>DDL & DML</h3>
+                <pre><code>
+                    $table->string('name');
+                    $table->enum('col_name', ['choice1', 'choice2'])->default('choice1')->change();
+                    $table->integer('salary')->nullable();
+                    $table->unsignedBigInteger('company_id')->after('salary');
+                    
+                    $table->foreign('company_id')->on('companies')->references('id')->onDelete('cascade');
+                </code></pre>
+                <p>
+                    Defined in a up() function to determine definition, and manipulation. Use change() function to do an update from specified table. Recommended to do it in a different migration file.
+                </p>
+            </div>
+        </section>
+
+        <h1 id="model"><a href="#model">#</a> Model</h1>
+        <section>
+            <div class="code-block">
+                <h3>Model</h3>
+                <pre><code>
+                    php artisan make:model MyModel
+                </code></pre>
+            </div>
+        </section>
+
+        <h1 id="Controller"><a href="#Controller">#</a> Controller</h1>
         <section>
             <div class="code-block">
                 <h3>Web.php</h3>
@@ -59,6 +113,27 @@
                 </code></pre>
             </div>
         </section>
+
+        <h1 id="routing"><a href="#routing">#</a> Routing</h1>
+        <section>
+            <div class="code-block">
+                <h3>Web.php</h3>
+                <pre><code>
+                    
+                </code></pre>
+            </div>
+        </section>
+
+        <h1 id="Views"><a href="#Views">#</a> Views</h1>
+        <section>
+            <div class="code-block">
+                <h3>Web.php</h3>
+                <pre><code>
+                    
+                </code></pre>
+            </div>
+        </section>
+
     </main>
     <a href="https://quackeyikz.github.io/ref/" class="absolute top-5 left-5 text-gray-500 hover:text-gray-600 m-auto">Home | Back to Main Ref</a>
 
