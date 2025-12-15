@@ -1,0 +1,89 @@
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box;
+    /* transition: 0.3s; */
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #080A2B;
+}
+
+header {
+    overflow: hidden;
+    height: 30dvh;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: red; */
+}
+
+header img {
+    will-change: opacity;
+    width: 100%;
+    position: absolute;
+}
+
+main {
+    position: relative;
+    background-color: #080A2B;
+    background-image: linear-gradient(to bottom, #080A2B, rgb(5, 11, 63));
+    color: white;
+    padding: 50px 20px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* 
+    #### Modify This ####
+    Each region configuration should be different.
+    According to each layer of art in the header.
+*/
+#img-12 { top: 0; height: 100%; }
+#img-11 { top: 0; width: 80%; mix-blend-mode: color-dodge; left: 10%; }
+#img-10 { top: -30%; width: 60%; left: 20%; }
+#img-9 { bottom: 0; }
+#img-8 { bottom: 0; }      
+#img-7 { bottom: 0; margin-bottom: 13%; }
+#img-6 { bottom: 0; }
+#img-5 { top: 0; height: 100%; }
+#img-4 { transform: scale(0.93); animation: spin 180s linear infinite; }
+#img-3 { transform: scale(0.96); animation: spin 500s linear infinite; }
+#img-2 { bottom: 0; }
+#img-1 { bottom: 0; right: 0; width: 50%; }
+#img-0 { bottom: -1px; }
+
+@media screen and (min-width: 760px) {
+    header {
+        height: 50dvh;
+    }
+
+    main {
+        padding: 50px 50px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    header {
+        height: 100dvh;
+    }
+
+    main {
+        padding: 50px 100px;
+    }
+}
+
+@keyframes spin {
+    from { rotate: 0deg; }
+    to { rotate: 360deg; }
+}
