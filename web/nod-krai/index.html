@@ -6,9 +6,13 @@
     <title>Moon Blessed Land | Traveler's Journey in Nod-Krai</title>
 
     <link rel="stylesheet" href="style/index.css">
+
+    <!-- Preload images -->
+    <link rel="preload" as="image" href="img/Backdrop - Nod-Krai.webp">
+    <link rel="preload" as="image" href="img/Moon-Sign-02 - Nod-Krai.webp">
 </head>
 <body>
-    <header>
+    <header id="art">
         <img src="img/Backdrop - Nod-Krai.webp" id="img-12">
         <img src="img/0_Sky Lines - Nod-Krai.webp" id="img-11">
         <img src="img/1_The Moon - Nod-Krai.webp" id="img-10">
@@ -27,6 +31,43 @@
     <main>
         <img src="img/Traveler's Journey in Nod-Krai - Nod-Krai.webp" alt="Hai" width="50%">
     </main>
+
+    <div id="loading-overlay">
+        <img src="img/Moon-Sign-02 - Nod-Krai.webp" alt="Moon Sign" width="200px">
+        <div class="progress-track">
+            <div class="progress-bar"></div>
+        </div>
+    </div>
+
+    <!-- Wobble effect (It's brutal for performance tho) -->
+    <!-- <svg width="0" height="0" style="position:absolute">
+    <filter
+        id="lightWobbleSoft"
+        filterUnits="objectBoundingBox"
+        x="0" y="0" width="1" height="1">
+
+        <feTurbulence
+        type="fractalNoise"
+        baseFrequency="0.008"
+        numOctaves="1"
+        seed="1"
+        result="noise">
+        <animate
+            attributeName="seed"
+            from="1"
+            to="20"
+            dur="12s"
+            repeatCount="indefinite" />
+        </feTurbulence>
+
+        <feDisplacementMap
+        in="SourceGraphic"
+        in2="noise"
+        scale="4"
+        xChannelSelector="R"
+        yChannelSelector="G" />
+    </filter>
+    </svg> -->
 
     <script src="style/index.js"></script>
 </body>

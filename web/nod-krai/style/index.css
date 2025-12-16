@@ -21,15 +21,30 @@ header {
     padding: 0;
     position: relative;
     display: flex;
+    visibility: hidden;
     justify-content: center;
     align-items: center;
-    /* background-color: red; */
+    /* background-image: linear-gradient(to bottom, black, #0a1299); */
+    background-color: black;
 }
 
 header img {
     will-change: opacity;
     width: 100%;
     position: absolute;
+    opacity: 0;
+    transform: translateY(30px);
+    transition:
+        opacity 0.8s ease,
+        transform 0.8s cubic-bezier(.22,1,.36,1);
+    will-change: transform, opacity;
+}
+
+header img.loaded {
+    --hover-var: 0px;
+    --scroll-y: 0px;
+    opacity: 1;
+    transform: translateY(calc(var(--scroll-y) + var(--hover-var)));
 }
 
 main {
@@ -44,6 +59,50 @@ main {
     min-height: 100vh;
 }
 
+#loading-overlay {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #474caa;
+    background-image: url('../img/Backdrop\ -\ Nod-Krai.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: color-dodge;
+    color: white;
+    gap: 10px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: opacity 1s ease;
+    overflow: hidden;
+}
+
+#loading-overlay.fade-out {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.progress-track {
+    background-color: rgba(255, 255, 255, 0.308);
+    height: 5px;
+    width: 55%;
+    border-radius: 5px;
+    /* mix-blend-mode: hard-light; */
+}
+
+.progress-bar {
+    transform: scaleX(0);
+    transform-origin: left;
+    background-color: white;
+    height: 100%;
+    width: 100%;
+    transition: transform 0.2s ease;
+}
+
 /* 
     #### Modify This ####
     Each region configuration should be different.
@@ -52,7 +111,7 @@ main {
 #img-12 { top: 0; height: 100%; }
 #img-11 { top: 0; width: 80%; mix-blend-mode: color-dodge; left: 10%; }
 #img-10 { top: -30%; width: 60%; left: 20%; }
-#img-9 { bottom: 0; }
+#img-9 { bottom: 0;  }
 #img-8 { bottom: 0; }      
 #img-7 { bottom: 0; margin-bottom: 13%; }
 #img-6 { bottom: 0; }
@@ -62,6 +121,21 @@ main {
 #img-2 { bottom: 0; }
 #img-1 { bottom: 0; right: 0; width: 50%; }
 #img-0 { bottom: -1px; }
+
+/* Wobble on Hiisi Island */
+/* #img-9 {
+  filter: url(#lightWobbleSoft);
+
+  mask-image: radial-gradient(
+    120px 120px at 65% 30%,
+    black 0%,
+    black 35%,
+    transparent 60%
+  );
+
+  will-change: filter;
+} */
+
 
 @media screen and (min-width: 760px) {
     header {
@@ -86,4 +160,15 @@ main {
 @keyframes spin {
     from { rotate: 0deg; }
     to { rotate: 360deg; }
+}
+
+@keyframes fade-out {
+    from { opacity: 1.0; }
+    to { opacity: 0.0; }
+}
+
+@keyframes hovering {
+    0% { --hover-var: 0px }
+    50% { --hover-var: 10px }
+    100% { --hover-var: 0px }
 }
