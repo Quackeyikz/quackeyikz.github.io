@@ -76,6 +76,10 @@ document.addEventListener("DOMContentLoaded", async () => {
   /* ---- REVEAL PAGE ---- */
   header.style.visibility = "visible";
   overlay.classList.add("fade-out");
+  
+  setTimeout(() => {
+    header.style.backgroundImage = "none";
+  }, 2000);
 
   overlay.addEventListener("transitionend", () => {
     overlay.remove();
