@@ -5,13 +5,46 @@ html {
 * {
     box-sizing: border-box;
     /* transition: 0.3s; */
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 body {
     margin: 0;
     padding: 0;
     background-color: #080A2B;
+}
+
+h1, h2 {
+    color: #E6ECFF;
+    font-weight: 800;
+}
+
+h3 {
+    color: #C7D2FF;
+}
+
+p {
+    margin-top: 30px;
+    color: #B8C1E6;
+}
+
+.subtitle {
+    display: block;
+    font-size: 0.8rem;
+    margin-top: 20px;
+    color: #8F97C9;
+}
+
+.caption, .note {
+    color: #6F77B0;
+}
+
+a {
+    color: #9AA8FF;
+}
+
+a:hover {
+    color: #C1CBFF;
 }
 
 header {
@@ -36,7 +69,7 @@ header img {
     transform: translateY(30px);
     transition:
         opacity 0.8s ease,
-        transform 0.8s cubic-bezier(.22,1,.36,1);
+        transform 0.8s cubic-bezier(.22, 1, .36, 1);
     will-change: transform, opacity;
 }
 
@@ -54,9 +87,9 @@ header img.loaded {
 main {
     position: relative;
     background-color: #080A2B;
-    background-image: linear-gradient(to bottom, #080A2B, rgb(5, 11, 63));
+    background-image: linear-gradient(to bottom, #080A2B, #080A2B);
     color: white;
-    padding: 50px 20px;
+    padding: 50px 0px;
     margin: 0;
     display: flex;
     flex-direction: column;
@@ -86,8 +119,8 @@ main {
 }
 
 #loading-overlay.fade-out {
-  opacity: 0;
-  pointer-events: none;
+    opacity: 0;
+    pointer-events: none;
 }
 
 .progress-track {
@@ -113,19 +146,144 @@ main {
     Each region configuration should be different.
     According to each layer of art in the header.
 */
-#img-12 { top: 0; height: 100%; }
-#img-11 { top: 0; width: 80%; mix-blend-mode: color-dodge; left: 10%; animation: blink 5s ease-in-out infinite; }
-#img-10 { top: -40%; width: 60%; left: 20%; animation: dwindles 60s ease-in-out infinite; }
-#img-9 { bottom: 0; animation: blink 5s ease-in-out infinite }
-#img-8 { bottom: 0; }      
-#img-7 { bottom: 0; margin-bottom: 13%; animation: blink 6s ease-in-out infinite; }
-#img-6 { bottom: 0; }
-#img-5 { top: 0; height: 100%; }
-#img-4 { transform: scale(0.93); animation: spin 180s linear infinite; }
-#img-3 { transform: scale(0.96); animation: spin 500s linear infinite; }
-#img-2 { bottom: 0; }
-#img-1 { bottom: 0; right: 0; width: 50%; animation: blink 8s ease-in-out infinite; }
-#img-0 { bottom: -1px; }
+#img-12 {
+    top: 0;
+    height: 100%;
+}
+
+#img-11 {
+    top: 0;
+    width: 80%;
+    mix-blend-mode: color-dodge;
+    left: 10%;
+    animation: blink 5s ease-in-out infinite;
+}
+
+#img-10 {
+    top: -40%;
+    width: 60%;
+    left: 20%;
+    animation: dwindles 60s ease-in-out infinite;
+}
+
+#img-9 {
+    bottom: 0;
+    animation: blink 5s ease-in-out infinite;
+}
+
+#img-8 {
+    bottom: 0;
+}
+
+#img-7 {
+    bottom: 0;
+    margin-bottom: 13%;
+    animation: blink 6s ease-in-out infinite;
+}
+
+#img-6 {
+    bottom: 0;
+}
+
+#img-5 {
+    top: 0;
+    height: 100%;
+}
+
+#img-4 {
+    transform: scale(0.93);
+    animation: spin 180s linear infinite;
+}
+
+#img-3 {
+    transform: scale(0.96);
+    animation: spin 500s linear infinite;
+}
+
+#img-2 {
+    bottom: 0;
+}
+
+#img-1 {
+    bottom: 0;
+    right: 0;
+    width: 50%;
+    animation: blink 8s ease-in-out infinite;
+}
+
+#img-0 {
+    bottom: -1px;
+}
+
+
+
+/* =============== Main ============*/
+#title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 0px 20px;
+    color: #d9dbf3;
+}
+
+#title img {
+    width: 90%;
+    max-width: 700px;
+}
+
+/* Nod-Krai Overview */
+.img-span {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 25px 0px;
+    min-width: 60%;
+    gap: 10px;
+    transition: 0.3s ease-in-out;
+}
+
+.img-span > div {
+    --initial-width: 100%;
+    width: var(--initial-width);
+    min-height: 200px;
+    max-height: 400px;
+    display: block;
+    height: auto;
+    flex-grow: 1;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #0a184e;
+    transition: 0.3s ease-in-out;
+}
+
+.text-span {
+    position: relative;
+    padding: 30px 20px;
+}
+
+/* CLink-Clank */
+#Clink-Clank {
+    position: relative;
+    /* background-image: url(../img/clink-clank-workshop/Screenshot\ \(727\).png); */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.section-gradient {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    background-image: linear-gradient(to bottom, #080A2B, #080A2B00, #080A2B00, #080A2B);
+    /* background-color: #0a184e; */
+}
 
 /* Wobble on Hiisi Island */
 /* #img-9 {
@@ -148,7 +306,19 @@ main {
     }
 
     main {
-        padding: 50px 50px;
+        padding: 50px 0px;
+    }
+
+    #title img {
+        width: 75%;
+    }
+
+    .img-span {
+        flex-direction: row;
+    }
+
+    .text-span {
+        padding: 30px 25px;
     }
 }
 
@@ -158,41 +328,107 @@ main {
     }
 
     main {
-        padding: 50px 100px;
+        padding: 50px 0px;
+    }
+
+    #title img {
+        width: 60%;
+    }
+
+    .img-span > div {
+        min-height: 300px;
+    }
+
+    /* Hover only available on desktop */
+    main section:not(:nth-child(2)) .img-span > div:hover {
+        width: calc(var(--initial-width) + 100%);
+    }
+
+    .text-span {
+        padding: 35px 30px;
     }
 }
 
+
+
+/* =========== Animation =========== */
+
 @keyframes spin {
-    from { rotate: 0deg; }
-    to { rotate: 360deg; }
+    from {
+        rotate: 0deg;
+    }
+
+    to {
+        rotate: 360deg;
+    }
 }
 
 @keyframes fade-out {
-    from { opacity: 1.0; }
-    to { opacity: 0.0; }
+    from {
+        opacity: 1.0;
+    }
+
+    to {
+        opacity: 0.0;
+    }
 }
 
 @keyframes hovering {
-    0% { --hover-var: 0px }
-    50% { --hover-var: 10px }
-    100% { --hover-var: 0px }
+    0% {
+        --hover-var: 0px
+    }
+
+    50% {
+        --hover-var: 10px
+    }
+
+    100% {
+        --hover-var: 0px
+    }
 }
 
 @keyframes dwindles {
-    0% { rotate: 0deg; }
-    30% { rotate: -10deg; }
-    60% { rotate: 10deg; }
-    100% { rotate: 0deg; }
+    0% {
+        rotate: 0deg;
+    }
+
+    30% {
+        rotate: -10deg;
+    }
+
+    60% {
+        rotate: 10deg;
+    }
+
+    100% {
+        rotate: 0deg;
+    }
 }
 
 @keyframes sway {
-    0% { transform: translateX(0); }
-    50% { transform: translateX(10px); }
-    100% { transform: translateX(0); }
+    0% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(10px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
 }
 
 @keyframes blink {
-    0% { filter: brightness(1); }
-    50% { filter: brightness(0.8) saturate(0.8); }
-    0% { filter: brightness(1); }
+    0% {
+        filter: brightness(1);
+    }
+
+    50% {
+        filter: brightness(0.8) saturate(0.8);
+    }
+
+    100% {
+        filter: brightness(1);
+    }
 }

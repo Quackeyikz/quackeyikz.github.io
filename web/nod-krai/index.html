@@ -3,34 +3,101 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A personal travel journal documenting the Traveler’s journey through Nod-Krai in Genshin Impact. Screenshots, reflections, and lore-inspired notes.">
+    <meta property="og:title" content="Traveler's Journey in Nod-Krai">
+    <meta property="og:description" content="A personal, lore-inspired travel journal through Nod-Krai.">
+    <meta property="og:image" content="img/Traveler's Journey in Nod-Krai - Nod-Krai.webp">
+    <meta property="og:type" content="website">
+
     <title>Moon Blessed Land | Traveler's Journey in Nod-Krai</title>
 
     <link rel="stylesheet" href="style/index.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="icon" href="img/moon_icon.ico" sizes="48x48">
 
     <!-- Preload images -->
     <link rel="preload" as="image" href="img/Backdrop - Nod-Krai.webp">
     <link rel="preload" as="image" href="img/Moon-Sign-02 - Nod-Krai.webp">
+
+    <style type="text/tailwindcss">
+        @theme {
+            --color-h1: #E6ECFF;
+            --color-h3: #C7D2FF;
+            --color-body: #B8C1E6;
+            --color-caption: #6F77B0;
+            --color-subtitle: #8F97C9;
+            --color-link: #9AA8FF;
+            --color-link-hover: #C1CBFF;
+            --color-hr: #4B57A3;
+        }
+    </style>
 </head>
 <body>
     <header id="art">
-        <img src="img/Backdrop - Nod-Krai.webp" id="img-12">
-        <img src="img/0_Sky Lines - Nod-Krai.webp" id="img-11">
-        <img src="img/1_The Moon - Nod-Krai.webp" id="img-10">
-        <img src="img/2_Hiisi Island - Nod-Krai.webp" id="img-9">
-        <img src="img/3_Hiisi Terrain - Nod-Krai.webp" id="img-8">
-        <img src="img/4_Kuuvahki Back - Nod-Krai.webp" id="img-7">
-        <img src="img/5_Nasha Town Silouhette - Nod-Krai.webp" id="img-6">
-        <img src="img/6_Hero Layer Divider - Landing Page - Nod-Krai.webp" id="img-5">
-        <img src="img/7_Dashed Rings - Nod-Krai.webp" id="img-4">
-        <img src="img/8_Moon Rings - Nod-Krai.webp" id="img-3">
-        <img src="img/9_Front Building - Nod-Krai.webp" id="img-2">
-        <img src="img/10_Kuuvahki Front - Nod-Krai.webp" id="img-1">
-        <img src="img/11_Roof Foreground - Nod-Krai.webp" id="img-0">
+        <img src="img/Backdrop - Nod-Krai.webp" id="img-12" alt="Backdrop">
+        <img src="img/0_Sky Lines - Nod-Krai.webp" id="img-11" alt="Sky Lines">
+        <img src="img/1_The Moon - Nod-Krai.webp" id="img-10" alt="The Moon">
+        <img src="img/2_Hiisi Island - Nod-Krai.webp" id="img-9" alt="Hiisi Island">
+        <img src="img/3_Hiisi Terrain - Nod-Krai.webp" id="img-8" alt="Hiisi Terrain">
+        <img src="img/4_Kuuvahki Back - Nod-Krai.webp" id="img-7" alt="Kuuvahki Back">
+        <img src="img/5_Nasha Town Silouhette - Nod-Krai.webp" id="img-6" alt="Nasha Town Silhouette">
+        <img src="img/6_Hero Layer Divider - Landing Page - Nod-Krai.webp" id="img-5" alt="Hero Layer Divider">
+        <img src="img/7_Dashed Rings - Nod-Krai.webp" id="img-4" alt="Dashed Rings">
+        <img src="img/8_Moon Rings - Nod-Krai.webp" id="img-3" alt="Moon Rings">
+        <img src="img/9_Front Building - Nod-Krai.webp" id="img-2" alt="Front Building of Nasha Town">
+        <img src="img/10_Kuuvahki Front - Nod-Krai.webp" id="img-1" alt="Kuuvahki Lines in Nasha Town">
+        <img src="img/11_Roof Foreground - Nod-Krai.webp" id="img-0" alt="Roof Foreground Nasha Town Background">
     </header>
 
     <main>
-        <img src="img/Traveler's Journey in Nod-Krai - Nod-Krai.webp" alt="Hai" width="50%">
+        <section id="title">
+            <img src="img/Traveler's Journey in Nod-Krai - Nod-Krai.webp" alt="Hai">
+            <h6 class="text-xs text-center">A personal record of places I walked through, people I met, and thoughts I probably shouldn't have written down.</h6>
+        </section>
+        <section>
+            <div class="img-span">
+                <div style="background-image: url(img/nod-krai/Hiisi-Island-View-CCW.png);"></div>
+                <div style="background-image: url(img/nod-krai/GenshinlmpactPhoto\ 2025_09_15\ 02_00_53.png);"></div>
+            </div>
+            <div class="text-span">
+                <h1 class="text-5xl text-center">Nod-Krai <span class="subtitle">Moon-Blessed Land, at The Edge of Teyvat.</span></h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit minus nemo consectetur nulla praesentium eligendi error necessitatibus? Molestiae ut iure pariatur at cum tempore, eligendi accusamus autem rem modi sit. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa harum libero veniam error voluptatem sunt necessitatibus, a est nihil hic, corporis ex distinctio ut sed illum obcaecati molestias. Dolorem, sapiente!</p>
+            </div>
+        </section>
+        <section class="flex flex-col lg:flex-row-reverse gap-5 bg-blue-950">
+            <!-- <div class="section-gradient"></div> -->
+            <div class="text-span">
+                <h2 class="text-4xl md:text-5xl lg:text-6xl">Hiisi Island</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit minus nemo consectetur nulla praesentium eligendi error necessitatibus? Molestiae ut iure pariatur at cum tempore, eligendi accusamus autem rem modi sit. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa harum libero veniam error voluptatem sunt necessitatibus, a est nihil hic, corporis ex distinctio ut sed illum obcaecati molestias. Dolorem, sapiente!</p>
+            </div>
+            <div class="img-span grow">
+                <div style="background-image: url(img/hiisi-island/Screenshot\ \(760\).png);"></div>
+                <div style="background-image: url(img/hiisi-island/Screenshot\ \(762\).png);"></div>
+                <div style="background-image: url(img/hiisi-island/Screenshot\ \(769\).png);"></div>
+            </div>
+        </section>
+        <section id="Clink-Clank" class="flex flex-col lg:flex-row gap-5 bg-purple-950">
+            <!-- <div class="section-gradient"></div> -->
+            <div class="text-span">
+                <h2 class="text-4xl md:text-5xl lg:text-6xl">Clink-Clank <br>Crumcake Workshop</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit minus nemo consectetur nulla praesentium eligendi error necessitatibus? Molestiae ut iure pariatur at cum tempore, eligendi accusamus autem rem modi sit. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa harum libero veniam error voluptatem sunt necessitatibus, a est nihil hic, corporis ex distinctio ut sed illum obcaecati molestias. Dolorem, sapiente!</p>
+            </div>
+            <div class="img-span grow">
+                <div style="background-image: url(img/clink-clank-workshop/Screenshot\ \(722\).png);"></div>
+                <div style="background-image: url(img/clink-clank-workshop/Screenshot\ \(728\).png);"></div>
+            </div>
+        </section>
+        <section class="flex flex-col lg:flex-row-reverse gap-5 bg-pink-950">
+            <!-- <div class="section-gradient"></div> -->
+            <div class="text-span">
+                <h2 class="text-4xl md:text-5xl lg:text-6xl">Nasha Town</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit minus nemo consectetur nulla praesentium eligendi error necessitatibus? Molestiae ut iure pariatur at cum tempore, eligendi accusamus autem rem modi sit. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa harum libero veniam error voluptatem sunt necessitatibus, a est nihil hic, corporis ex distinctio ut sed illum obcaecati molestias. Dolorem, sapiente!</p>
+            </div>
+            <div class="img-span grow">
+                <div style="background-image: url(img/nasha-town/Screenshot\ \(679\).png);"></div>
+                <div style="background-image: url(img/nasha-town/Screenshot\ \(718\).png);"></div>
+            </div>
+        </section>
     </main>
 
     <div id="loading-overlay">
@@ -38,7 +105,7 @@
         <div class="progress-track">
             <div class="progress-bar"></div>
         </div>
-        <p>Assets are originally made by Quackeyikz.</p>
+        <span class="block mt-3 text-white">Assets are originally made by Quackeyikz.</span>
     </div>
 
     <!-- Wobble effect (It's brutal for performance tho) -->
