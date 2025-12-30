@@ -5,7 +5,7 @@ html {
 * {
     box-sizing: border-box;
     /* transition: 0.3s; */
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Trebuchet MS', 'Segoe UI', 'Inter', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 body {
@@ -31,7 +31,7 @@ p {
 .subtitle {
     display: block;
     font-size: 0.8rem;
-    margin-top: 20px;
+    margin-top: 10px;
     color: #8F97C9;
 }
 
@@ -216,8 +216,11 @@ main {
 }
 
 
-
-/* =============== Main ============*/
+/* 
+========================== 
+        Main 
+==========================
+*/
 #title {
     display: flex;
     flex-direction: column;
@@ -234,6 +237,43 @@ main {
 }
 
 /* Nod-Krai Overview */
+.header-span > a {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: block;
+    flex-grow: 1;
+    min-width: 40%;
+    min-height: 400px;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    transition: 0.2s ease-out;
+}
+
+.header-span > a:hover {
+    transform: scale(1.03);
+}
+
+.header-span > a:hover h3 {
+    transform: translateY(-30px);
+}
+
+.header-span > a > div {
+    background-image: linear-gradient(to bottom, #080A2B00, #0406248f, #040624);
+    position: absolute;
+    width: 100%;
+    height: 60%;
+    padding: 10px 20px;
+    bottom: 0;
+}
+
+.header-span > a > div h3 {
+    position: absolute;
+    bottom: 30px;
+    transition: 0.3s ease-in-out;
+}
+
 .img-span {
     display: flex;
     flex-direction: column;
@@ -346,6 +386,10 @@ main {
 
     .text-span {
         padding: 35px 30px;
+    }
+
+    .header-span > a {
+        min-width: 20%;
     }
 }
 
