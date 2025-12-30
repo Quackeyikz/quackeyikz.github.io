@@ -102,6 +102,21 @@
                     php artisan make:model MyModel
                 </code></pre>
             </div>
+            <div class="code-block">
+                <h3>Eloquent</h3>
+                <pre><code>
+                    protected $table = 'employee';
+
+                    protected $fillable = [
+                        'name',
+                        'date',
+                        'address'
+                    ];
+                </code></pre>
+                <p>
+                    Query could be written in the controller, retreiving data ONLY on what's written in the $fillable variable inside the model. Also, if Laravel mistook the table name (tends to assume the table name is plural), specify using $table variable.
+                </p>
+            </div>
         </section>
 
         <h1 id="Controller"><a href="#Controller">#</a> Controller</h1>

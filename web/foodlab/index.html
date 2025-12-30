@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foodlab Review by Erik</title>
+    <style>
+        body { font-family: sans-serif; background: #f4f4f4; padding: 2rem; }
+        .card { background: white; padding: 1rem; margin-bottom: 1rem; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        .tags { font-size: 0.9em; color: #555; }
+        .card {
+            background: white;
+            padding: 1rem;
+            margin-bottom: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            transform-origin: center;
+            transition: transform 0.3s ease;
+        }
+        .card:hover {
+            transform: scale(1.02);
+        }
+        .tags {
+            font-size: 0.85em;
+            color: #666;
+            margin-top: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hai vro</h1>
+    <main id="content"></main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script>
+        gsap.registerPlugin(ScrollTrigger);
+
+        fetch('data/tenant.json')
+            .then(res => res.json())
+            .then(data => {
+                const container = document.getElementById('content');
+                data.forEach(tenant => {
+                    const card = document.createElement('div');
+                    card.className = 'card';
+                    card.innerHTML = `
+                        <h2>${tenant.nama}</h2>
+                        <p>${tenant.deskripsi}</p>
+                        <p>${tenant.rating}</p>
+                        <p>${tenant.layanan}</p>
+                        <p>${tenant.waktu}</p>
+                        <p>${tenant.rasa}</p>
+                        <p>${tenant.porsi}</p>
+                        <div class="tags">${tenant.tags != null ? tenant.tags.join(', ') : ''}</div>
+                    `;
+                    container.appendChild(card);
+                });
+
+                // Animate each card individually with unique delay and effect
+                const cards = gsap.utils.toArray('.card');
+                cards.forEach((el, index) => {
+                    gsap.from(el, {
+                        scrollTrigger: {
+                            trigger: el,
+                            start: "top 80%",
+                            toggleActions: "play none none none"
+                        },
+                        opacity: 0,
+                        y: 100 + index * 10, // each card pops from a slightly different depth
+                        rotation: index % 2 === 0 ? 5 : -5, // alternate rotation
+                        scale: 0.9 + (index % 3) * 0.05, // slight scale variation
+                        duration: 1 + (index % 3) * 0.3,
+                        ease: "power3.out"
+                    });
+                });
+            })
+            .catch(err => console.error(err));
+    </script>
+</body>
+</html>

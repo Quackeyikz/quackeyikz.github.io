@@ -1,0 +1,42 @@
+[
+    {
+        "nama": "MyTenant",
+        "deskripsi": "wleweowlewoewlewoe",
+        "rating": 4.5,
+        "layanan": 3.7,
+        "waktu": 1.0,
+        "rasa": 5.0,
+        "porsi": 4.6,
+        "tags": ["Nasi", "Ayam", "Sambal"]
+    },
+    {
+        "nama": "MyTenant",
+        "deskripsi": "wleweowlewoewlewoe",
+        "rating": 4.5,
+        "layanan": 3.7,
+        "waktu": 1.0,
+        "rasa": 5.0,
+        "porsi": 4.6,
+        "tags": ["Nasi", "Ayam", "Sambal"]
+    },
+    {
+        "nama": "MyTenant",
+        "deskripsi": "wleweowlewoewlewoe",
+        "rating": 4.5,
+        "layanan": 3.7,
+        "waktu": 1.0,
+        "rasa": 5.0,
+        "porsi": 4.6,
+        "tags": ["Nasi", "Ayam", "Sambal"]
+    },
+    {
+        "nama": "",
+        "deskripsi": "",
+        "rating": "",
+        "layanan": "",
+        "waktu": "",
+        "rasa": "",
+        "porsi": "",
+        "tags": ["", "", ""]
+    }
+]
