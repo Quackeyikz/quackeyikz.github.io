@@ -24,7 +24,10 @@ h3 {
 }
 
 p {
-    margin-top: 30px;
+    color: #B8C1E6;
+}
+
+p b {
     color: #B8C1E6;
 }
 
@@ -236,7 +239,7 @@ main {
     max-width: 700px;
 }
 
-/* Nod-Krai Overview */
+/* =========== Header-Link =========== */
 .header-span > a {
     background-size: cover;
     background-position: center;
@@ -253,10 +256,16 @@ main {
 
 .header-span > a:hover {
     transform: scale(1.03);
+    outline: 2px solid rgba(187, 253, 253, 0.05);
+    outline-offset: 5px;
 }
 
-.header-span > a:hover h3 {
+.header-span > a:hover p {
     transform: translateY(-30px);
+}
+
+.header-span > a:hover > div > div {
+    opacity: 1;
 }
 
 .header-span > a > div {
@@ -264,13 +273,26 @@ main {
     position: absolute;
     width: 100%;
     height: 60%;
-    padding: 10px 20px;
     bottom: 0;
 }
 
-.header-span > a > div h3 {
+.header-span > a > div p {
+    padding: 10px 20px;
     position: absolute;
     bottom: 30px;
+    transition: 0.3s ease-in-out;
+}
+
+.header-span > a > div > div {
+    display: flex;
+    opacity: 0;
+    flex-direction: column;
+    width: 100%;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 20px;
     transition: 0.3s ease-in-out;
 }
 
@@ -279,7 +301,8 @@ main {
     flex-direction: column;
     justify-content: space-between;
     margin: 25px 0px;
-    min-width: 60%;
+    /* min-width: 60%; */
+    width: 100%;
     gap: 10px;
     transition: 0.3s ease-in-out;
 }
@@ -301,43 +324,31 @@ main {
 
 .text-span {
     position: relative;
-    padding: 30px 20px;
+    padding: 0px 20px;
+    text-align: left;
 }
 
-/* CLink-Clank */
-#Clink-Clank {
-    position: relative;
-    /* background-image: url(../img/clink-clank-workshop/Screenshot\ \(727\).png); */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+.text-span p {
+    margin-top: 20px;
 }
 
-.section-gradient {
-    position: absolute;
-    display: block;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    z-index: 0;
-    background-image: linear-gradient(to bottom, #080A2B, #080A2B00, #080A2B00, #080A2B);
-    /* background-color: #0a184e; */
+
+/* =========== Nod-Krai Overview ========= */
+img.title-icon {
+    width: 50px;
+    transition: 0.2s ease-out;
 }
 
-/* Wobble on Hiisi Island */
-/* #img-9 {
-  filter: url(#lightWobbleSoft);
+img.title-icon:hover {
+    transform: scale(1.4);
+}
 
-  mask-image: radial-gradient(
-    120px 120px at 65% 30%,
-    black 0%,
-    black 35%,
-    transparent 60%
-  );
+img.title-divider {
+    width: 200px;
+    opacity: 0.5;
+}
 
-  will-change: filter;
-} */
+
 
 
 @media screen and (min-width: 760px) {
@@ -358,7 +369,7 @@ main {
     }
 
     .text-span {
-        padding: 30px 25px;
+        padding: 0px 25px;
     }
 }
 
@@ -385,7 +396,7 @@ main {
     }
 
     .text-span {
-        padding: 35px 30px;
+        padding: 0px 30px;
     }
 
     .header-span > a {
@@ -476,3 +487,17 @@ main {
         filter: brightness(1);
     }
 }
+
+/* Wobble on Hiisi Island */
+/* #img-9 {
+  filter: url(#lightWobbleSoft);
+
+  mask-image: radial-gradient(
+    120px 120px at 65% 30%,
+    black 0%,
+    black 35%,
+    transparent 60%
+  );
+
+  will-change: filter;
+} */
