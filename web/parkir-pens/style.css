@@ -1,0 +1,373 @@
+/* =============================================
+   PARKIR PENS — Stylesheet
+   ============================================= */
+
+:root {
+  /* Palette */
+  --bg:          #0f1117;
+  --surface:     #1a1d27;
+  --surface-alt: #222633;
+  --border:      #2e3348;
+  --text:        #e4e6f0;
+  --text-dim:    #8b8fa8;
+  --accent:      #6c5ce7;
+  --accent-glow: rgba(108, 92, 231, 0.35);
+  --confirm:     #00cec9;
+  --confirm-glow:rgba(0, 206, 201, 0.3);
+  --danger:      #ff6b6b;
+  --spot-empty:  #1e2230;
+  --spot-hover:  #2a2f44;
+  --spot-active: #6c5ce7;
+  --spot-parked: #00cec9;
+
+  /* Layout — ✏️ ADJUST THESE to match your real parking lot */
+  --grid-columns: 5;      /* number of columns */
+  --grid-gap: 10px;
+  --spot-height: 64px;
+
+  /* Misc */
+  --radius: 12px;
+  --radius-sm: 8px;
+  --transition: 0.2s ease;
+}
+
+/* Reset */
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100dvh;
+  display: flex;
+  justify-content: center;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* App Container */
+.app {
+  width: 100%;
+  max-width: 480px;
+  padding: 24px 16px 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* ---- Header ---- */
+.header {
+  text-align: center;
+  padding: 20px 0 8px;
+}
+
+.header-icon {
+  font-size: 40px;
+  margin-bottom: 8px;
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50%      { transform: translateY(-6px); }
+}
+
+.header h1 {
+  font-size: 1.75rem;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  background: linear-gradient(135deg, var(--accent), var(--confirm));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.subtitle {
+  color: var(--text-dim);
+  font-size: 0.9rem;
+  margin-top: 4px;
+}
+
+/* ---- Status Banner ---- */
+.status-banner {
+  background: var(--surface);
+  border: 1px solid var(--spot-parked);
+  border-radius: var(--radius);
+  padding: 14px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  box-shadow: 0 0 24px var(--confirm-glow);
+  animation: slideIn 0.35s ease;
+}
+
+@keyframes slideIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.status-banner.hidden { display: none; }
+
+.status-content {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.status-icon { font-size: 1.3rem; }
+
+.status-time {
+  font-size: 0.75rem;
+  color: var(--text-dim);
+  width: 100%;
+  padding-left: 32px;
+}
+
+#status-spot {
+  color: var(--spot-parked);
+}
+
+.btn-clear {
+  background: none;
+  border: none;
+  color: var(--text-dim);
+  font-size: 1.1rem;
+  cursor: pointer;
+  padding: 4px 8px;
+  border-radius: 6px;
+  transition: var(--transition);
+}
+.btn-clear:hover {
+  background: var(--surface-alt);
+  color: var(--danger);
+}
+
+/* ---- Grid ---- */
+.grid-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.grid-label {
+  font-size: 0.8rem;
+  color: var(--text-dim);
+  text-align: center;
+}
+
+.grid-label-icon {
+  animation: bounce 1.5s ease infinite;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50%      { transform: translateY(3px); }
+}
+
+.parking-grid {
+  display: grid;
+  grid-template-columns: repeat(var(--grid-columns), 1fr);
+  gap: var(--grid-gap);
+}
+
+/* Individual Spot */
+.spot {
+  height: var(--spot-height);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--spot-empty);
+  border: 2px solid var(--border);
+  border-radius: var(--radius-sm);
+  font-weight: 600;
+  font-size: 0.85rem;
+  cursor: pointer;
+  user-select: none;
+  transition: all var(--transition);
+  position: relative;
+  overflow: hidden;
+}
+
+.spot::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  opacity: 0;
+  transition: opacity var(--transition);
+}
+
+.spot:hover {
+  background: var(--spot-hover);
+  border-color: var(--accent);
+  transform: scale(1.04);
+}
+
+.spot:active {
+  transform: scale(0.97);
+}
+
+/* Selected (pre-confirm) */
+.spot.selected {
+  background: var(--spot-active);
+  border-color: var(--spot-active);
+  color: #fff;
+  box-shadow: 0 0 16px var(--accent-glow);
+  transform: scale(1.06);
+}
+
+/* Parked (confirmed) */
+.spot.parked {
+  background: var(--spot-parked);
+  border-color: var(--spot-parked);
+  color: #0f1117;
+  font-weight: 700;
+  box-shadow: 0 0 20px var(--confirm-glow);
+  animation: pulse 2.5s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { box-shadow: 0 0 12px var(--confirm-glow); }
+  50%      { box-shadow: 0 0 28px var(--confirm-glow); }
+}
+
+/* Spacer / blank cell — use class "spacer" on a spot to make it invisible */
+.spot.spacer {
+  visibility: hidden;
+  pointer-events: none;
+}
+
+/* Row labels — optional helper for labelling rows */
+.row-label {
+  grid-column: 1 / -1;
+  text-align: left;
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--text-dim);
+  padding: 8px 0 2px;
+}
+
+/* ---- Confirm Bar ---- */
+.confirm-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: var(--surface);
+  border-top: 1px solid var(--border);
+  padding: 16px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  z-index: 100;
+  backdrop-filter: blur(12px);
+  animation: slideUp 0.25s ease;
+}
+
+@keyframes slideUp {
+  from { transform: translateY(100%); }
+  to   { transform: translateY(0); }
+}
+
+.confirm-bar.hidden { display: none; }
+
+#confirm-spot { color: var(--accent); }
+
+.confirm-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: var(--radius-sm);
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: all var(--transition);
+}
+
+.btn-primary {
+  background: var(--accent);
+  color: #fff;
+}
+.btn-primary:hover {
+  background: #5a4bd4;
+  box-shadow: 0 4px 16px var(--accent-glow);
+}
+
+.btn-secondary {
+  background: var(--surface-alt);
+  color: var(--text-dim);
+}
+.btn-secondary:hover {
+  background: var(--border);
+  color: var(--text);
+}
+
+/* ---- Reset Button ---- */
+.reset-section {
+  display: flex;
+  justify-content: center;
+  padding-top: 8px;
+}
+
+.btn-reset {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 10px 24px;
+  background: transparent;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  color: var(--text-dim);
+  font-family: inherit;
+  font-size: 0.8rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all var(--transition);
+}
+
+.btn-reset:hover {
+  border-color: var(--danger);
+  color: var(--danger);
+  background: rgba(255, 107, 107, 0.08);
+  box-shadow: 0 0 16px rgba(255, 107, 107, 0.15);
+}
+
+.btn-reset:active {
+  transform: scale(0.96);
+}
+
+.reset-icon {
+  font-size: 1rem;
+}
+
+/* ---- Footer ---- */
+.footer {
+  text-align: center;
+  font-size: 0.72rem;
+  color: var(--text-dim);
+  opacity: 0.6;
+  padding-top: 12px;
+}
+
+/* ---- Responsive ---- */
+@media (max-width: 380px) {
+  :root {
+    --grid-gap: 6px;
+    --spot-height: 52px;
+  }
+  .spot { font-size: 0.75rem; }
+  .header h1 { font-size: 1.4rem; }
+}
