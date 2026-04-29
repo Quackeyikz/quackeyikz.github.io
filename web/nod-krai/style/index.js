@@ -1,6 +1,8 @@
-/* ===============================
+/*
+===============================
    SIMPLE ASSET LOADER
-================================ */
+================================ 
+*/
 
 function createLoader(total) {
   let completed = 0;
@@ -18,9 +20,11 @@ function createLoader(total) {
   };
 }
 
-/* ===============================
+/* 
+===============================
    MAIN
-================================ */
+================================ 
+*/
 
 document.addEventListener("DOMContentLoaded", async () => {
   const overlay = document.getElementById("loading-overlay");
@@ -85,9 +89,11 @@ document.addEventListener("DOMContentLoaded", async () => {
     overlay.remove();
   });
 
-  /* ===============================
+  /* 
+  ===============================
      IMAGE REFERENCES
-  ================================ */
+  ================================ 
+  */
 
   const images = Array.from({ length: 13 }, (_, i) =>
     document.getElementById(`img-${i}`)
